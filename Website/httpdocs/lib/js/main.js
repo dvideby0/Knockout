@@ -3,7 +3,9 @@ $(document).ready(function(){
 });
 
 function ShowModal(){
-    $('#myModal').show();
+    $('#myModal').modal({
+        backdrop: true
+    });
 }
 function HideModal(){
     $('#myModal').hide();
