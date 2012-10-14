@@ -1,0 +1,17 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.modal-backdrop {background-color: #000000;}
+
+.navbar .brand{
+    padding: 10px 20px 0 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+form{
+    margin: 2px 0 10px;
+}
+.hero-unit{
+    padding: 20px 60px 10px 60px;
+}
