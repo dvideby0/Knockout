@@ -1,19 +1,14 @@
 <html>
 <head>
     <link rel="stylesheet" href="lib/css/bootstrap.css">
-    <link rel="stylesheet" href="lib/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="lib/css/style.css">
 </head>
 <title>SU Admin Console</title>
 <body bgcolor=#FFFFFF text=#001C66>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar  navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
             <a class="brand" href="#">SU Admin Console</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
@@ -26,29 +21,46 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div class="row">
-        <div id="MainPanel" class="span11 alert alert-info">
-            <div class="row">
-                <div class="GraphSection span5">
-                    <h2>Some Report</h2>
-                    <div class="span5" id="chart1" style="height: 200px"></div>
-                </div>
-                <div class="GraphSection offset1 span5">
-                    <h2>Some Report</h2>
-                    <div class="span5" id="chart2" style="height: 200px"></div>
-                </div>
+        <div class="span2">
+            <ul class="nav navbar-fixed-top nav-pills nav-stacked span2" style="margin-top: 80px;">
+                <li class="active"><a href="#">Link One</a></li>
+                <li><a href="#">Link Two</a></li>
+                <li><a href="#">Link Three</a></li>
+                <li><a href="#">Link Four</a></li>
+                <li><a href="#">Link Five</a></li>
+                <li><a href="#">Link Six</a></li>
+                <li><a href="#">Link Seven</a></li>
+                <li><a href="#">Link Eight</a></li>
+                <li><a href="#">Link Nine</a></li>
+                <li><a href="#">Link Ten</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="span5">
+                <h2>Some Report</h2>
+                <div id="chart1" style="width: 100%; height: 200px"></div>
             </div>
-            <div class="row">
-                <div class="GraphSection span5">
-                    <h2>Some Report</h2>
-                    <div class="span5" id="chart3" style="height: 200px"></div>
-                </div>
-                <div class="GraphSection offset1 span5">
-                    <h2>Some Report</h2>
-                    <div class="span5" id="chart4" style="height: 200px"></div>
-                </div>
+            <div class="span5">
+                <h2>Some Report</h2>
+                <div id="chart2" style="width: 100%; height: 200px"></div>
+            </div>
+            <div class="offset2 span5">
+                <h2>Some Report</h2>
+                <div id="chart3" style="width: 100%; height: 200px"></div>
+            </div>
+            <div class="span5">
+                <h2>Some Report</h2>
+                <div id="chart4" style="width: 100%; height: 200px"></div>
+            </div>
+            <div class="offset2 span5">
+                <h2>Some Report</h2>
+                <div id="chart5" style="width: 100%; height: 200px"></div>
+            </div>
+            <div class="span5">
+                <h2>Some Report</h2>
+                <div id="chart6" style="width: 100%; height: 200px"></div>
             </div>
         </div>
     </div>
@@ -64,8 +76,8 @@
 </div>
 <script type="text/javascript" src="lib/js/jquery.js"></script>
 <script type="text/javascript" src="lib/js/bootstrap-modal.js"></script>
-<script type="text/javascript" src="lib/js/charts/js/highcharts.js"></script>
-<script type="text/javascript" src="lib/js/charts/js/themes/gray.js"></script>
+<script type="text/javascript" src="lib/js/charts/highcharts.js"></script>
+<script type="text/javascript" src="lib/js/charts/themes/gray.js"></script>
 <script type="text/javascript" src="lib/js/knockback-full-stack.min.js"></script>
 <script type="text/javascript" src="lib/js/main.js"></script>
 </body>
