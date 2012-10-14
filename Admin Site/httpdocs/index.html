@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="lib/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="lib/css/style.css">
 </head>
-<title>Awesome Credit Union</title>
+<title>SU Admin Console</title>
 <body bgcolor=#FFFFFF text=#001C66>
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -18,9 +18,9 @@
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li class="active"><a href="#">Dashboard</a></li>
-                    <li><a href="#about">Campaigns</a></li>
-                    <li><a href="#about">Reporting</a></li>
-                    <li><a href="#contact">Admin</a></li>
+                    <li><a href="#Campaigns">Campaigns</a></li>
+                    <li><a href="#Reporting">Reporting</a></li>
+                    <li><a href="#Admin">Admin</a></li>
                 </ul>
             </div>
         </div>
@@ -28,6 +28,30 @@
 </div>
 
 <div class="container">
+    <div class="row">
+        <div id="MainPanel" class="span11 alert alert-info">
+            <div class="row">
+                <div class="GraphSection span5">
+                    <h2>Some Report</h2>
+                    <div class="span5" id="chart1" style="height: 200px"></div>
+                </div>
+                <div class="GraphSection offset1 span5">
+                    <h2>Some Report</h2>
+                    <div class="span5" id="chart2" style="height: 200px"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="GraphSection span5">
+                    <h2>Some Report</h2>
+                    <div class="span5" id="chart3" style="height: 200px"></div>
+                </div>
+                <div class="GraphSection offset1 span5">
+                    <h2>Some Report</h2>
+                    <div class="span5" id="chart4" style="height: 200px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-------------------- Begin Footer ---------------------------->
@@ -40,7 +64,9 @@
 </div>
 <script type="text/javascript" src="lib/js/jquery.js"></script>
 <script type="text/javascript" src="lib/js/bootstrap-modal.js"></script>
-<script type="text/javascript" src="lib/js/main.js"></script>
+<script type="text/javascript" src="lib/js/charts/js/highcharts.js"></script>
+<script type="text/javascript" src="lib/js/charts/js/themes/gray.js"></script>
 <script type="text/javascript" src="lib/js/knockback-full-stack.min.js"></script>
+<script type="text/javascript" src="lib/js/main.js"></script>
 </body>
 </html>
