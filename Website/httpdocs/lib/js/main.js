@@ -1,5 +1,3 @@
-
-
 function ShowModal(){
     $('#myModal').modal({
         backdrop: true

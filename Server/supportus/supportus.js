@@ -16,14 +16,15 @@ app.get('/', function (req, res) {
     res.redirect(fb.getAuthorizeUrl({
         client_id: '359603454132277',
         redirect_uri: 'http://yearofthecu.com:3737/auth?ClientID=' + req.query.ClientID,
-        scope: 'offline_access,publish_stream,email,user_likes',
+        scope: 'offline_access,publish_stream,email,user_likes, friends_about_me',
         state: req.query.ReturnURL
     }));
 });
 
 app.get('/auth', function (req, res) {
     fb.getAccessToken('359603454132277', '43999899ea27f624240f77739579b34c', req.param('code'), 'http://yearofthecu.com:3737/auth?ClientID=' + req.query.ClientID, function (error, access_token, refresh_token) {
-        res.send('<script type="text/javascript">window.location = "' + req.query.state + '"</script>');
+        res.setHeader('content-type', 'text/html');
+        res.send('<html><head><script type="text/javascript">window.location = "' + decodeURI(req.query.state) + '"; </script></head></html>');
         aToken = access_token;
         fb.apiCall('GET', '/me',
             {fields: 'id,email,gender,name', access_token: aToken},
@@ -56,6 +57,7 @@ app.post('/message', function (req, res) {
         }
     );
 });
+
 
 app.get('/messages', function (req, res) {
     var stream = fb.apiCall('GET', '/me/feed', {access_token: req.param('access_token'), message: req.param('message')});
