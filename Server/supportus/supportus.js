@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
     res.redirect(fb.getAuthorizeUrl({
         client_id: '359603454132277',
         redirect_uri: 'http://yearofthecu.com:3737/auth?ClientID=' + req.query.ClientID,
-        scope: 'offline_access,publish_stream',
+        scope: 'offline_access,publish_stream,email,user_likes',
         state: req.query.ReturnURL
     }));
 });
@@ -26,12 +26,15 @@ app.get('/auth', function (req, res) {
         res.send('<script type="text/javascript">window.location = "' + req.query.state + '"</script>');
         aToken = access_token;
         fb.apiCall('GET', '/me',
-            {access_token: aToken, message: req.param('message')},
+            {fields: 'id,email,gender,name', access_token: aToken},
             function (error, response, body) {
-                console.log(body.id);
+                console.log(body);
                 users.findOne({ID: body.id}, function(err, post){
                     if(!post){
                         users.insert({
+                            Name: body.name,
+                            Email: body.email,
+                            Gender: body.gender,
                             ID: body.id,
                             ClientID: req.query.ClientID,
                             AccessToken: access_token
