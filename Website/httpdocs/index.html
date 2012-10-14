@@ -27,7 +27,7 @@
                     <input class="span2" type="text" placeholder="Customer ID">
                     <input class="span2" type="password" placeholder="Password">
                     <button type="submit" class="btn btn-small">Sign in</button>
-                    <a class="btn btn-success btn-small" id="SupportUsLink">Support Us</a>
+                    <a class="btn btn-success btn-small" data-toggle="modal" href="javascript:ShowModal();" role="button">Support Us</a>
                 </form>
             </div>
         </div>
@@ -66,7 +66,6 @@
             <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
         </div>
     </div>
-
     <hr>
 
     <footer>
@@ -74,8 +73,23 @@
     </footer>
 
 </div>
+<div class="modal hide" id="myModal" role="dialog" style="display: none;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">x</button>
+        <h3 id="myModalLabel">Support Us</h3>
+    </div>
+    <div class="modal-body">
+        <h2>Thank You</h2>
+        <p>We apprecate your help. When you choose to "support" us, you will be allowing Awesome Credit Union to tell your friends about all the great things we have going on here. In return we want to reward you with some REWARD points on your Awesome MasterCard.</p>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-warning" href="javascript:HideModal();">No Thanks</a>
+        <a class="btn btn-primary" id="SupportUsLink" data-dismiss="modal">Count Me In!</a>
+    </div>
+</div>
 <script type="text/javascript" src="lib/js/jquery.js"></script>
-<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="lib/js/bootstrap-modal.js"></script>
 <script type="text/javascript" src="lib/js/main.js"></script>
 </body>
 </html>
