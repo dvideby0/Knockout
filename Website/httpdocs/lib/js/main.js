@@ -8,5 +8,5 @@ function ShowModal(){
     });
 }
 function HideModal(){
-    $('#myModal').hide();
+    $('#myModal').modal('hide');
 }
