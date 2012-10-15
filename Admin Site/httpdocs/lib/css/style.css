@@ -29,7 +29,11 @@ footer{
     text-align: right;
     border: #0088cc 1px solid;
 }
-
+.txt-input{
+    border-radius: 3px;
+    text-align: left;
+    border: #0088cc 1px solid;
+}
 
 
 
