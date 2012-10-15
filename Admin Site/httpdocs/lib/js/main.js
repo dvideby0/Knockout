@@ -1,5 +1,6 @@
 //-------------------------------Document Ready -----------------------------------------
 $(document).ready(function(){
+    prettyPrint();
     $('#Dashboard-Page').show();
     $('#Btn-Background-Color').ColorPicker({
         color: '#0000ff',
@@ -110,7 +111,7 @@ $(document).ready(function(){
         },
         series: [{
             name: 'Jane',
-            data: [1, 0, 4]
+            data: [1, 3, 4]
         }, {
             name: 'John',
             data: [5, 7, 3]
@@ -134,7 +135,7 @@ $(document).ready(function(){
         },
         series: [{
             name: 'Jane',
-            data: [1, 0, 4]
+            data: [1, 3, 4]
         }, {
             name: 'John',
             data: [5, 7, 3]
@@ -158,7 +159,7 @@ $(document).ready(function(){
         },
         series: [{
             name: 'Jane',
-            data: [1, 0, 4]
+            data: [1, 3, 4]
         }, {
             name: 'John',
             data: [5, 7, 3]
@@ -182,7 +183,7 @@ $(document).ready(function(){
         },
         series: [{
             name: 'Jane',
-            data: [1, 0, 4]
+            data: [1, 3, 4]
         }, {
             name: 'John',
             data: [5, 7, 3]
@@ -206,7 +207,7 @@ $(document).ready(function(){
         },
         series: [{
             name: 'Jane',
-            data: [1, 0, 4]
+            data: [1, 3, 4]
         }, {
             name: 'John',
             data: [5, 7, 3]

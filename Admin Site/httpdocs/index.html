@@ -11,6 +11,7 @@
     <script type="text/javascript" src="lib/js/charts/themes/gray.js"></script>
     <script type="text/javascript" src="lib/js/knockback-full-stack.min.js"></script>
     <script type="text/javascript" src="lib/js/colorpicker.js"></script>
+    <script type="text/javascript" src="lib/js/prettify.js"></script>
     <script type="text/javascript" src="lib/js/main.js"></script>
 </head>
 <body bgcolor=#FFFFFF text=#001C66>
@@ -91,17 +92,52 @@
                     <li><a href="#">Link Four</a></li>
                 </ul>
             </div>
-            <div class="span8">
-                <h2 style="margin-bottom: 60px;">Button Designer</h2>
+            <div class="span5">
+                <h2 style="margin-bottom: 50px;">Button Designer</h2>
                 <div style="width: 300px; text-align: right;">
-                    <div style="margin-bottom: 15px;">
-                        Button Text: <input style="border: #cccccc 1px solid; border-radius: 3px; width: 120px;">
+                    <h4 style="text-align: left;">Values</h4>
+                    <div style="margin-bottom: 15px; margin-top: 80px;">
+                        Button Text: <input style=" margin-right: 40px;" class="btn-input" placeholder="Support Us">
                     </div>
-                    <div style="margin-bottom: 15px;">
-                        Background Color: <input style="width: 120px; text-align: right;" id="Btn-Background-Color">
+                    <div style="margin-bottom: 15px; margin-right: 40px;">
+                        Background Color: <input class="btn-input" id="Btn-Background-Color">
                     </div>
-                    Text Color: <input style="width: 120px; text-align: right;" id="Btn-Text-Color">
+                    <div>
+                        Text Color: <input style="margin-right: 40px;" class="btn-input" id="Btn-Text-Color">
+                    </div>
+                    <div>
+                        <button style="margin-top: 30px;  margin-right: 40px;" class="btn btn-primary">Generate</button>
+                    </div>
                 </div>
+            </div>
+            <div class="span5">
+                <div style="margin-top: 100px;">
+                    <h4>Preview</h4>
+                    <div id="Preview-Div" style="margin-top: 30px; margin-bottom: 30px;">
+                        <strong>Button</strong>
+                        <br />
+                        <button class="btn">Support Us</button>
+                        <br />
+                        <br />
+                        <strong>HTML</strong>
+                        <pre class="prettyprint linenums languague-css">
+class Foo {
+    public int Bar { get; set; }
+}
+                        </pre>
+                        <strong>JavaScript</strong>
+                        <pre class="prettyprint linenums languague-css">
+class Foo {
+    public int Bar { get; set; }
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset2 span10">
+                <p style="margin-top: 40px;"><strong>Instructions: </strong>Once you have generated your button you will need to copy and paste the code into your website. The Javascript code that needs to be placed in your site should go between the <i>&lt;head&gt;&lt;/head&gt;</i> tags in your HTML document. The HTML code for the button needs to be placed anywhere on your site in between the <i>&lt;body&gt;&lt;/body&gt;</i> tags.</p>
             </div>
         </div>
     </div>
