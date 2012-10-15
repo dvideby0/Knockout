@@ -2,3 +2,19 @@ body {
     padding-top: 60px;
     padding-bottom: 40px;
 }
+
+.dashboard{
+    text-align: center;
+}
+.graph{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chartpane{
+    color: #0088cc;
+    margin-bottom: 20px;
+}
+footer{
+    color: #0088cc;
+}

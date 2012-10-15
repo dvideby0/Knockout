@@ -10,9 +10,13 @@ Highcharts.theme = {
 		backgroundColor: {
 			linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
 			stops: [
-				[0, 'rgb(96, 96, 96)'],
-				[1, 'rgb(16, 16, 16)']
+				[0, 'rgb(0,136,204)'],
+				[1, 'rgb(0,78,117)']
 			]
+		},
+		style: {
+			color: '#FFF',
+			font: '16px Lucida Grande, Lucida Sans Unicode, Verdana, Arial, Helvetica, sans-serif'
 		},
 		borderWidth: 0,
 		borderRadius: 15,
@@ -28,23 +32,23 @@ Highcharts.theme = {
 	},
 	subtitle: {
 		style: {
-			color: '#DDD',
+			color: '#FFF',
 			font: '12px Lucida Grande, Lucida Sans Unicode, Verdana, Arial, Helvetica, sans-serif'
 		}
 	},
 	xAxis: {
 		gridLineWidth: 0,
-		lineColor: '#999',
-		tickColor: '#999',
+		lineColor: '#CCCCCC',
+		tickColor: '#CCCCCC',
 		labels: {
 			style: {
-				color: '#999',
+				color: '#FFF',
 				fontWeight: 'bold'
 			}
 		},
 		title: {
 			style: {
-				color: '#AAA',
+				color: '#FFF',
 				font: 'bold 12px Lucida Grande, Lucida Sans Unicode, Verdana, Arial, Helvetica, sans-serif'
 			}
 		}
@@ -57,31 +61,31 @@ Highcharts.theme = {
 		tickWidth: 0,
 		labels: {
 			style: {
-				color: '#999',
+				color: '#FFF',
 				fontWeight: 'bold'
 			}
 		},
 		title: {
 			style: {
-				color: '#AAA',
+				color: '#FFF',
 				font: 'bold 12px Lucida Grande, Lucida Sans Unicode, Verdana, Arial, Helvetica, sans-serif'
 			}
 		}
 	},
 	legend: {
 		itemStyle: {
-			color: '#CCC'
+			color: '#FFF'
 		},
 		itemHoverStyle: {
 			color: '#FFF'
 		},
 		itemHiddenStyle: {
-			color: '#333'
+			color: '#FFF'
 		}
 	},
 	labels: {
 		style: {
-			color: '#CCC'
+			color: '#FFF'
 		}
 	},
 	tooltip: {
@@ -102,30 +106,30 @@ Highcharts.theme = {
 	plotOptions: {
 		line: {
 			dataLabels: {
-				color: '#CCC'
+				color: '#FFF'
 			},
 			marker: {
-				lineColor: '#333'
+				lineColor: '#FFF'
 			}
 		},
 		spline: {
 			marker: {
-				lineColor: '#333'
+				lineColor: '#FFF'
 			}
 		},
 		scatter: {
 			marker: {
-				lineColor: '#333'
+				lineColor: '#FFF'
 			}
 		},
 		candlestick: {
-			lineColor: 'white'
+			lineColor: '#FFF'
 		}
 	},
 
 	toolbar: {
 		itemStyle: {
-			color: '#CCC'
+			color: '#FFF'
 		}
 	},
 
@@ -167,7 +171,7 @@ Highcharts.theme = {
 			},
 			stroke: '#000000',
 			style: {
-				color: '#CCC',
+				color: '#FFF',
 				fontWeight: 'bold'
 			},
 			states: {
@@ -181,7 +185,7 @@ Highcharts.theme = {
 					},
 					stroke: '#000000',
 					style: {
-						color: 'white'
+						color: '#FFF'
 					}
 				},
 				select: {
@@ -201,22 +205,22 @@ Highcharts.theme = {
 		},
 		inputStyle: {
 			backgroundColor: '#333',
-			color: 'silver'
+			color: '#FFF'
 		},
 		labelStyle: {
-			color: 'silver'
+			color: '#FFF'
 		}
 	},
 
 	navigator: {
 		handles: {
-			backgroundColor: '#666',
-			borderColor: '#AAA'
+			backgroundColor: '#FFF',
+			borderColor: '#FFF'
 		},
-		outlineColor: '#CCC',
+		outlineColor: '#FFF',
 		maskFill: 'rgba(16, 16, 16, 0.5)',
 		series: {
-			color: '#7798BF',
+			color: '#FFF',
 			lineColor: '#A6C7ED'
 		}
 	},
