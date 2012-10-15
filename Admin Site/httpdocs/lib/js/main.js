@@ -1,6 +1,51 @@
-var chart;
+//-------------------------------Document Ready -----------------------------------------
 $(document).ready(function(){
-    chart = new Highcharts.Chart({
+    $('#Dashboard-Page').show();
+    $('#Btn-Background-Color').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            $('.colorpicker div input').css({width:'45px', height: '15px', top:'0',paddingRight: '3px', marginTop:'2px', fontSize:'13px', border:'none'});
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#Btn-Background-Color div').css('backgroundColor', '#' + hex);
+            $('#Btn-Background-Color').val('#' + hex);
+        }
+    });
+    $('#Btn-Text-Color').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            $('.colorpicker div input').css({width:'45px', height: '15px', top:'0',paddingRight: '3px', marginTop:'2px', fontSize:'13px', border:'none'});
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#Btn-Text-Color div').css('backgroundColor', '#' + hex);
+            $('#Btn-Text-Color').val('#' + hex);
+        }
+    });
+
+
+//------------------------------Navigation Controls--------------------------------------
+
+    $('.nav li').click(function(){
+        $(this).parent('ul').children('li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+
+//-------------------------------Generate Charts-----------------------------------------
+
+    var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart1',
             plotBackgroundColor: null,
@@ -47,7 +92,7 @@ $(document).ready(function(){
             ]
         }]
     });
-    chart = new Highcharts.Chart({
+    var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart2',
             type: 'bar'
@@ -71,7 +116,7 @@ $(document).ready(function(){
             data: [5, 7, 3]
         }]
     });
-    chart = new Highcharts.Chart({
+    var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart3',
             type: 'bar'
@@ -95,7 +140,7 @@ $(document).ready(function(){
             data: [5, 7, 3]
         }]
     });
-    chart = new Highcharts.Chart({
+    var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart4',
             type: 'column'
@@ -119,7 +164,7 @@ $(document).ready(function(){
             data: [5, 7, 3]
         }]
     });
-    chart = new Highcharts.Chart({
+    var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart5',
             type: 'column'
@@ -143,7 +188,7 @@ $(document).ready(function(){
             data: [5, 7, 3]
         }]
     });
-    chart = new Highcharts.Chart({
+    var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart6',
             type: 'column'
@@ -168,3 +213,8 @@ $(document).ready(function(){
         }]
     });
 });
+
+function ChangePage(page){
+    $('.page').hide();
+    $('#' + page).fadeIn();
+}

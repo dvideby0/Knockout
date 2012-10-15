@@ -3,6 +3,11 @@ body {
     padding-bottom: 40px;
 }
 
+.page{
+    display: none;
+    min-height: 85%;
+}
+
 .dashboard{
     text-align: center;
 }
@@ -17,4 +22,8 @@ body {
 }
 footer{
     color: #0088cc;
+}
+#Btn-Background-Color, #Btn-Text-Color{
+    border-radius: 3px;
+    border: #cccccc 1px solid;
 }
