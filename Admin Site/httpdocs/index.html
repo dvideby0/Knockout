@@ -76,38 +76,30 @@
         <div class="row">
             <div class="span2">
                 <ul id="AdminSideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2" style="margin-top: 80px;">
-                    <li class="active"><a href="javascript:ChangePage('Campaigns-Page')">Campaigns</a></li>
-                    <li><a href="javascript:ChangePage('Campaigns-Page-New')">New Campaign</a></li>
+                    <li class="active"><a href="javascript:$('#Campaigns-New').hide();$('#Campaigns-Active').show();">Campaigns</a></li>
+                    <li><a href="javascript:$('#Campaigns-Active').hide();$('#Campaigns-New').show();">New Campaign</a></li>
                 </ul>
             </div>
-            <div class="span5">
-                <h1>Campaigns Page</h1>
+            <div id="Campaigns-Active" class="span8">
+                <h1>Campaigns</h1>
                 put grid of compaigns here.
             </div>
-        </div>
-    </div>
-    <div class="page" id="Campaigns-Page-New">
-        <div class="span2">
-            <ul id="CampaignSideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2" style="margin-top: 80px;">
-                <li><a href="javascript:ChangePage('Campaigns-Page')">Campaigns</a></li>
-                <li class="active"><a href="javascript:ChangePage('Campaigns-Page-New')">New Campaign</a></li>
-            </ul>
-        </div>
-        <div class="span8">
-            <h2 style="margin-bottom: 50px;">New Campaign</h2>
-            <div style="width: 100%; text-align: left;">
-                <h4 style="text-align: left;">Values</h4>
-                <div style="margin-bottom: 15px; margin-left: 20px;">
-                    Name: <input style="margin-right: 40px;" class="btn-input" />
-                </div>
-                <div style="margin-bottom: 15px;">
-                    Message: <textarea style="height: 300px;"  class="span5 txt-input"></textarea>
-                </div>
-                <div style="margin-bottom: 15px; margin-left: 15px;">
-                    Active: <input type="checkbox" class="btn-input" />
-                </div>
-                <div>
-                    <button style="margin-top: 30px;  margin-right: 40px;" class="btn btn-primary">Save</button>
+            <div id="Campaigns-New" style="display: none;" class="span8">
+                <h1>New Campaign</h1>
+                <div style="width: 100%; text-align: left;">
+                    <h4 style="text-align: left;">Values</h4>
+                    <div style="margin-bottom: 15px; margin-left: 20px;">
+                        Name: <input style="margin-right: 40px;" class="btn-input" />
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        Message: <textarea style="height: 300px;"  class="span5 txt-input"></textarea>
+                    </div>
+                    <div style="margin-bottom: 15px; margin-left: 15px;">
+                        Active: <input type="checkbox" class="btn-input" />
+                    </div>
+                    <div>
+                        <button style="margin-top: 30px;  margin-right: 40px;" class="btn btn-primary">Save</button>
+                    </div>
                 </div>
             </div>
         </div>
