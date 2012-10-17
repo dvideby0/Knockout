@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Admin Console</title>
@@ -21,28 +22,40 @@
             <a class="brand" href="#">Admin Console</a>
             <div class="nav-collapse collapse">
                 <ul id="TopNav" class="nav">
-                    <li class="active"><a href="javascript:ChangePage('Dashboard-Page')">Dashboard</a></li>
-                    <li><a href="javascript:ChangePage('Campaigns-Page')">Campaigns</a></li>
-                    <li><a href="javascript:ChangePage('Reporting-Page')">Reporting</a></li>
-                    <li><a href="javascript:ChangePage('Admin-Page')">Admin</a></li>
+                    <li class="active"><a href="javascript:ChangePage('Dashboard')">Dashboard</a></li>
+                    <li><a href="javascript:ChangePage('Campaigns')">Campaigns</a></li>
+                    <li><a href="javascript:ChangePage('Reports')">Reporting</a></li>
+                    <li><a href="javascript:ChangePage('Admin')">Admin</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
-
-    <div id="Dashboard-Page" class="page">
-        <div class="row">
-            <div class="span2">
-                <ul id="DashboardSideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2" style="margin-top: 80px;">
-                    <li class="active"><a href="#">Supporters</a></li>
-                    <li><a href="#">Campaigns</a></li>
-                    <li><a href="#">Rewards</a></li>
-                    <li><a href="#">Penetration</a></li>
-                </ul>
-            </div>
+<div class="container-fluid">
+    <div class="span2">
+        <ul id="Dashboard-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 80px;">
+            <li class="active"><a href="#">Supporters</a></li>
+            <li><a href="#">Campaigns</a></li>
+            <li><a href="#">Channels</a></li>
+        </ul>
+        <ul id="Campaigns-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 80px;">
+            <li class="active"><a href="javascript:$('#Campaigns-New').hide();$('#Campaigns-Active').show();">Campaigns</a></li>
+            <li><a href="javascript:$('#Campaigns-Active').hide();$('#Campaigns-New').show();">New Campaign</a></li>
+        </ul>
+        <ul id="Reports-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 80px;">
+            <li class="active"><a href="#">Supporters</a></li>
+            <li><a href="#">Campaigns</a></li>
+            <li><a href="#">Channels</a></li>
+        </ul>
+        <ul id="Admin-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 80px;">
+            <li class="active"><a href="#">User Administration</a></li>
+            <li><a href="#">Button Designer</a></li>
+            <li><a href="#">Redemption Designer</a></li>
+        </ul>
+    </div>
+    <div class="span10">
+        <div id="Dashboard-Page" class="row page">
             <div class="dashboard">
                 <div class="span5 chartpane">
                     <h2>Total Supporters</h2>
@@ -52,7 +65,7 @@
                     <h2>Total Campaigns</h2>
                     <div class="graph" id="chart2" style="width: 90%; height: 250px"></div>
                 </div>
-                <div class="offset2 span5 chartpane">
+                <div class="span5 chartpane">
                     <h2>Total Points</h2>
                     <div class="graph" id="chart3" style="width: 90%; height: 250px"></div>
                 </div>
@@ -60,7 +73,7 @@
                     <h2>Some Report</h2>
                     <div class="graph" id="chart4" style="width: 90%; height: 250px"></div>
                 </div>
-                <div class="offset2 span5 chartpane">
+                <div class="span5 chartpane">
                     <h2>Some Report</h2>
                     <div class="graph" id="chart5" style="width: 90%; height: 250px"></div>
                 </div>
@@ -70,16 +83,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="page" id="Campaigns-Page">
-        <div class="row">
-            <div class="span2">
-                <ul id="AdminSideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2" style="margin-top: 80px;">
-                    <li class="active"><a href="javascript:$('#Campaigns-New').hide();$('#Campaigns-Active').show();">Campaigns</a></li>
-                    <li><a href="javascript:$('#Campaigns-Active').hide();$('#Campaigns-New').show();">New Campaign</a></li>
-                </ul>
-            </div>
+        <div id="Campaigns-Page" class="row page">
             <div id="Campaigns-Active" class="span8">
                 <h1>Campaigns</h1>
                 put grid of compaigns here.
@@ -103,19 +107,12 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="page" id="Reporting-Page">
-        <h1>Reporting Page</h1>
-    </div>
-    <div class="page" id="Admin-Page">
-        <div class="row">
-            <div class="span2">
-                <ul id="ReportingSideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2" style="margin-top: 80px;">
-                    <li class="active"><a href="#">User Administration</a></li>
-                    <li><a href="#">Button Designer</a></li>
-                    <li><a href="#">Redemption Designer</a></li>
-                </ul>
+        <div id="Reports-Page" class="row page">
+            <div class="span8">
+                <h1>Reports</h1>
             </div>
+        </div>
+        <div id="Admin-Page" class="row page">
             <div class="span5">
                 <h2 style="margin-bottom: 50px;">Button Designer</h2>
                 <div style="width: 300px; text-align: right;">
@@ -158,21 +155,19 @@ class Foo {
                     </div>
                 </div>
             </div>
+                <div class="span10" style="margin-top: 30px; margin-bottom: 20px;">
+                    <strong>Instructions: </strong>Once you have generated your button you will need to copy and paste the code into your website. The Javascript code that needs to be placed in your site should go between the <i>&lt;head&gt;&lt;/head&gt;</i> tags in your HTML document. The HTML code for the button needs to be placed anywhere on your site in between the <i>&lt;body&gt;&lt;/body&gt;</i> tags.
+                </div>
         </div>
         <div class="row">
-            <div class="offset2 span10">
-                <p style="margin-top: 30px;"><strong>Instructions: </strong>Once you have generated your button you will need to copy and paste the code into your website. The Javascript code that needs to be placed in your site should go between the <i>&lt;head&gt;&lt;/head&gt;</i> tags in your HTML document. The HTML code for the button needs to be placed anywhere on your site in between the <i>&lt;body&gt;&lt;/body&gt;</i> tags.</p>
-            </div>
+            <hr class="span10" style="border-top: #0088cc 2px solid;">
+        </div>
+        <div class="row">
+            <footer class="span10">
+                <p>&copy; PSCU 2012</p>
+            </footer>
         </div>
     </div>
-
-    <!-------------------- Begin Footer ---------------------------->
-    <hr style="border-top: #0088cc 2px solid;">
-
-    <footer>
-        <p>&copy; PSCU 2012</p>
-    </footer>
-    <!-------------------- Footer End ---------------------------->
 </div>
 </body>
 </html>

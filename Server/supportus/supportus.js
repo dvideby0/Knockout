@@ -31,8 +31,14 @@ app.get('/auth', function (req, res) {
             function (error, response, body) {
                 users.findOne({ID: body.id}, function(err, post){
                     if(!post){
-                        var bdayArr = body.birthday.split('/');
-                        var d = new Date(bdayArr[2], bdayArr[0], bdayArr[1]);
+                        if(body.birthday){
+                            var bdayArr = body.birthday.split('/');
+                            var d = new Date(bdayArr[2], bdayArr[0], bdayArr[1]);
+                        }
+                        else{
+                            var d = new Date(0000,00,00);
+                        }
+
                         var today = new Date();
                         users.insert({
                             Name: body.name,
@@ -75,6 +81,10 @@ app.get('/SupportersCount', function(req, res){
         console.log(post);
         res.send({"count": post})
     });
+});
+app.post('/usersfriends', function(req,res){
+    console.log(req.body);
+
 });
 
 app.listen(3737);

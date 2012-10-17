@@ -1,7 +1,7 @@
 //-------------------------------Document Ready -----------------------------------------
 $(document).ready(function(){
     prettyPrint();
-    $('#Dashboard-Page').show();
+    $('#Dashboard-Page, #Dashboard-SideNav').show();
     $('#Btn-Background-Color').ColorPicker({
         color: '#0000ff',
         onShow: function (colpkr) {
@@ -228,5 +228,5 @@ $(document).ready(function(){
 
 function ChangePage(page){
     $('.page').hide();
-    $('#' + page).fadeIn();
+    $('#' + page + '-Page, #' + page + '-SideNav').fadeIn();
 }
