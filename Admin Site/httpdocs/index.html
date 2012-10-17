@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Console</title>
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/css/bootstrap-responsive.min.css">
@@ -16,9 +17,14 @@
     <script type="text/javascript" src="lib/js/main.js"></script>
 </head>
 <body bgcolor=#FFFFFF text=#001C66>
-<div class="navbar  navbar-fixed-top">
+<div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
             <a class="brand" href="#">Admin Console</a>
             <div class="nav-collapse collapse">
                 <ul id="TopNav" class="nav">
@@ -32,23 +38,23 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top: 60px;">
     <div class="span2">
-        <ul id="Dashboard-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 80px;">
-            <li class="active"><a href="#">Supporters</a></li>
-            <li><a href="#">Campaigns</a></li>
-            <li><a href="#">Channels</a></li>
+        <ul id="Dashboard-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+            <li class="active"><a>Supporters</a></li>
+            <li><a>Campaigns</a></li>
+            <li><a>Channels</a></li>
         </ul>
-        <ul id="Campaigns-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 80px;">
-            <li class="active"><a href="javascript:$('#Campaigns-New').hide();$('#Campaigns-Active').show();">Campaigns</a></li>
-            <li><a href="javascript:$('#Campaigns-Active').hide();$('#Campaigns-New').show();">New Campaign</a></li>
+        <ul id="Campaigns-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+            <li class="active"><a>Manage Campaigns</a></li>
+            <li><a>New Campaign</a></li>
         </ul>
-        <ul id="Reports-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 80px;">
-            <li class="active"><a href="#">Supporters</a></li>
-            <li><a href="#">Campaigns</a></li>
-            <li><a href="#">Channels</a></li>
+        <ul id="Reports-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+            <li class="active"><a href="#">Supporters Reports</a></li>
+            <li><a href="#">Campaigns Reports</a></li>
+            <li><a href="#">Channels Reports</a></li>
         </ul>
-        <ul id="Admin-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 80px;">
+        <ul id="Admin-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
             <li class="active"><a href="#">User Administration</a></li>
             <li><a href="#">Button Designer</a></li>
             <li><a href="#">Redemption Designer</a></li>
@@ -56,40 +62,72 @@
     </div>
     <div class="span10">
         <div id="Dashboard-Page" class="row page">
-            <div class="dashboard">
+            <div id="Supporters-View" class="dashboard view">
                 <div class="span5 chartpane">
                     <h2>Total Supporters</h2>
-                    <div class="graph" id="chart1" style="width: 90%; height: 250px"></div>
+                    <div class="graph span5" id="chart1"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Total Campaigns</h2>
-                    <div class="graph" id="chart2" style="width: 90%; height: 250px"></div>
+                    <h2>Age</h2>
+                    <div class="graph span5" id="chart2"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Total Points</h2>
-                    <div class="graph" id="chart3" style="width: 90%; height: 250px"></div>
+                    <h2>Gender</h2>
+                    <div class="graph span5" id="chart3"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Some Report</h2>
-                    <div class="graph" id="chart4" style="width: 90%; height: 250px"></div>
+                    <h2>Location</h2>
+                    <div class="graph span5" id="chart4"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Some Report</h2>
-                    <div class="graph" id="chart5" style="width: 90%; height: 250px"></div>
+                    <h2>Education</h2>
+                    <div class="graph span5" id="chart5"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Some Report</h2>
-                    <div class="graph" id="chart6" style="width: 90%; height: 250px"></div>
+                    <h2>Avg. Friends</h2>
+                    <div class="graph span5" id="chart6"></div>
+                </div>
+            </div>
+            <div id="Campaigns-View" class="dashboard view">
+                <div class="span5 chartpane">
+                    <h2>Clicks</h2>
+                    <div class="graph span5" id="chart7"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h2>Communications Sent</h2>
+                    <div class="graph span5" id="chart8"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h2>Points Awarded</h2>
+                    <div class="graph span5" id="chart9"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h2>Potential Reach</h2>
+                    <div class="graph span5" id="chart10"></div>
+                </div>
+            </div>
+            <div id="Channels-View" class="dashboard view">
+                <div class="span5 chartpane">
+                    <h2>Supporters by Network</h2>
+                    <div class="graph span5" id="chart11"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h2>Clicks by Network</h2>
+                    <div class="graph span5" id="chart12"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h2>Distribution by Network</h2>
+                    <div class="graph span5" id="chart13"></div>
                 </div>
             </div>
         </div>
         <div id="Campaigns-Page" class="row page">
-            <div id="Campaigns-Active" class="span8">
-                <h1>Campaigns</h1>
+            <div id="Manage-Campaigns-View" class="view span10">
+                <h2>Campaigns</h2>
                 put grid of compaigns here.
             </div>
-            <div id="Campaigns-New" style="display: none;" class="span8">
-                <h1>New Campaign</h1>
+            <div id="New-Campaign-View" class="view span10">
+                <h2>New Campaign</h2>
                 <div style="width: 100%; text-align: left;">
                     <h4 style="text-align: left;">Values</h4>
                     <div style="margin-bottom: 15px; margin-left: 20px;">
@@ -108,56 +146,70 @@
             </div>
         </div>
         <div id="Reports-Page" class="row page">
-            <div class="span8">
-                <h1>Reports</h1>
+            <div id="Supporters-Reports-View" class="view span10">
+                <h2>Supporters Reports</h2>
+            </div>
+            <div id="Campaigns-Reports-View" class="view span10">
+                <h2>Campaigns Reports</h2>
+            </div>
+            <div id="Channels-Reports-View" class="view span10">
+                <h2>Channels Reports</h2>
             </div>
         </div>
         <div id="Admin-Page" class="row page">
-            <div class="span5">
-                <h2 style="margin-bottom: 50px;">Button Designer</h2>
-                <div style="width: 300px; text-align: right;">
-                    <h4 style="text-align: left;">Values</h4>
-                    <div style="margin-bottom: 15px; margin-top: 80px;">
-                        Button Text: <input style=" margin-right: 40px;" class="btn-input" placeholder="Support Us">
-                    </div>
-                    <div style="margin-bottom: 15px; margin-right: 40px;">
-                        Background Color: <input class="btn-input" id="Btn-Background-Color">
-                    </div>
-                    <div>
-                        Text Color: <input style="margin-right: 40px;" class="btn-input" id="Btn-Text-Color">
-                    </div>
-                    <div>
-                        <button style="margin-top: 30px;  margin-right: 40px;" class="btn btn-primary">Generate</button>
+            <div id="User-Administration-View" class="view">
+                <h2 class="span10">User Administration</h2>
+            </div>
+            <div id="Button-Designer-View" class="view">
+                <div class="span5">
+                    <h2 style="margin-bottom: 50px;">Button Designer</h2>
+                    <div style="width: 300px; text-align: right;">
+                        <h4 style="text-align: left;">Values</h4>
+                        <div style="margin-bottom: 15px; margin-top: 80px;">
+                            Button Text: <input style=" margin-right: 40px;" class="btn-input" placeholder="Support Us">
+                        </div>
+                        <div style="margin-bottom: 15px; margin-right: 40px;">
+                            Background Color: <input class="btn-input" id="Btn-Background-Color">
+                        </div>
+                        <div>
+                            Text Color: <input style="margin-right: 40px;" class="btn-input" id="Btn-Text-Color">
+                        </div>
+                        <div>
+                            <button style="margin-top: 30px;  margin-right: 40px;" class="btn btn-primary">Generate</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="span5">
-                <div style="margin-top: 100px;">
-                    <h4>Preview</h4>
-                    <div id="Preview-Div" style="margin-top: 30px; margin-bottom: 30px;">
-                        <strong>Button</strong>
-                        <br />
-                        <button class="btn">Support Us</button>
-                        <br />
-                        <br />
-                        <strong>HTML</strong>
+                <div class="span5">
+                    <div style="margin-top: 100px;">
+                        <h4>Preview</h4>
+                        <div id="Preview-Div" style="margin-top: 30px; margin-bottom: 30px;">
+                            <strong>Button</strong>
+                            <br />
+                            <button class="btn">Support Us</button>
+                            <br />
+                            <br />
+                            <strong>HTML</strong>
                         <pre class="prettyprint linenums languague-css">
 class Foo {
     public int Bar { get; set; }
 }
                         </pre>
-                        <strong>JavaScript</strong>
+                            <strong>JavaScript</strong>
                         <pre class="prettyprint linenums languague-css">
 class Foo {
     public int Bar { get; set; }
 }
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div class="span10" style="margin-top: 30px; margin-bottom: 20px;">
                     <strong>Instructions: </strong>Once you have generated your button you will need to copy and paste the code into your website. The Javascript code that needs to be placed in your site should go between the <i>&lt;head&gt;&lt;/head&gt;</i> tags in your HTML document. The HTML code for the button needs to be placed anywhere on your site in between the <i>&lt;body&gt;&lt;/body&gt;</i> tags.
                 </div>
+            </div>
+            <div id="Redemption-Designer-View" class="view">
+                <h2 class="span10">Redemption Designer</h2>
+            </div>
         </div>
         <div class="row">
             <hr class="span10" style="border-top: #0088cc 2px solid;">

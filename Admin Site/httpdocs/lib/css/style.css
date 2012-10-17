@@ -1,9 +1,4 @@
-body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-
-.page{
+.page, .view{
     display: none;
 }
 
@@ -13,6 +8,7 @@ body {
 .graph{
     margin-left: auto;
     margin-right: auto;
+    height: 250px;
 }
 
 .chartpane{
