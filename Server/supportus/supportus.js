@@ -26,6 +26,8 @@ app.get('/auth', function (req, res) {
         res.setHeader('content-type', 'text/html');
         res.send('<html><head><script type="text/javascript">window.location = "' + decodeURI(req.query.state) + '"; </script></head></html>');
         var aToken = access_token;
+        var Location;
+        var ID;
         fb.apiCall('GET', '/me',
             {fields: 'id,email,gender,name,birthday,location', access_token: aToken},
             function (error, response, body) {
@@ -38,14 +40,14 @@ app.get('/auth', function (req, res) {
                         else{
                             var d = new Date(0000,00,00);
                         }
-
+                        Location = body.location;
+                        ID = body.id;
                         var today = new Date();
                         users.insert({
                             Name: body.name,
                             Email: body.email,
                             Gender: body.gender,
                             DOB: d.getTime()/1000.0,
-                            Location: body.location,
                             ID: body.id,
                             ClientID: req.query.ClientID,
                             Date: parseInt(today.getTime()/1000.0),
@@ -68,23 +70,15 @@ app.get('/auth', function (req, res) {
                                     }
                                 }
                             });
+                        fb.apiCall('GET', '/' + Location.id,
+                            {fields: 'location', access_token: aToken},
+                            function(error, response, body){
+                                users.update({ID: ID}, {"$addToSet": {Location: {Lat: body.location.latitude, Lon: body.location.longitude, Name: Location.name}}});
+                            });
                     }
                 });
             }
         );
     });
 });
-
-app.get('/SupportersCount', function(req, res){
-    console.log()
-    users.count({ClientID: req.query.ClientID}, function(err, post){
-        console.log(post);
-        res.send({"count": post})
-    });
-});
-app.post('/usersfriends', function(req,res){
-    console.log(req.body);
-
-});
-
 app.listen(3737);

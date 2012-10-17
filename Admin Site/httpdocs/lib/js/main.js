@@ -232,7 +232,7 @@ $(document).ready(function(){
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart7',
-            type: 'area',
+            type: 'column',
             marginBottom: 70
         },
         title: {
@@ -314,7 +314,7 @@ $(document).ready(function(){
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart9',
-            type: 'column'
+            type: 'area'
         },
         title: {
             text: 'Fruit Consumption'
