@@ -20,23 +20,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
+      <file leaf-file-name="2-supportus.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/2-supportus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="10" selection-start="5853" selection-end="5853" vertical-scroll-proportion="0.0">
+            <state line="21" column="3" selection-start="1846" selection-end="1846" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
+      <file leaf-file-name="13-functions.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/13-functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="890" selection-end="890" vertical-scroll-proportion="0.43293718">
-              <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#3;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="95" column="10" selection-start="0" selection-end="3468" vertical-scroll-proportion="0.5652759">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,14 +60,17 @@
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/core.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/core_maybe.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/index.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/2-supportus.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/13-functions.js" />
+        <option value="$PROJECT_DIR$/Server/supportus/functions.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="149" />
-    <option name="width" value="1266" />
-    <option name="height" value="810" />
+    <option name="x" value="277" />
+    <option name="y" value="49" />
+    <option name="width" value="1517" />
+    <option name="height" value="938" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -130,6 +130,10 @@
               <option name="myItemId" value="Server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="supportus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -176,8 +180,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -192,7 +196,7 @@
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -227,13 +231,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="149" width="1266" height="810" extended-state="0" />
+    <frame x="277" y="49" width="1517" height="938" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938875" sideWeight="0.9972715" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24898511" sideWeight="0.9972715" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -301,23 +305,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Website/httpdocs/lib/js/jquery.js">
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="209" column="10" selection-start="5949" selection-end="5949" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/httpdocs/lib/js/main.js">
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+        <state line="15" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.027070064">
-          <folding />
-        </state>
+        <state line="38" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.027070064" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/node_modules/mongolian/examples/mongolian_trainer.js">
@@ -340,9 +344,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/node_modules/express/node_modules/connect/lib/connect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="9" selection-start="1342" selection-end="1342" vertical-scroll-proportion="1.7324841">
-          <folding />
-        </state>
+        <state line="64" column="9" selection-start="1342" selection-end="1342" vertical-scroll-proportion="1.7324841" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/knockback-full-stack.min.js">
@@ -354,9 +356,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/node_modules/express/Readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="87" selection-start="146" selection-end="182" vertical-scroll-proportion="0.110569105">
-          <folding />
-        </state>
+        <state line="4" column="87" selection-start="146" selection-end="182" vertical-scroll-proportion="0.110569105" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/supportus/supportus.js">
@@ -366,20 +366,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="10" selection-start="5853" selection-end="5853" vertical-scroll-proportion="0.0">
+        <state line="15" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="0.023709903">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="890" selection-end="890" vertical-scroll-proportion="0.43293718">
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#3;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="209" column="10" selection-start="5949" selection-end="5949" vertical-scroll-proportion="0.022880215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/2-supportus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="3" selection-start="1846" selection-end="1846" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/supportus/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="17" selection-start="3468" selection-end="3468" vertical-scroll-proportion="0.9717362">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/13-functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="10" selection-start="0" selection-end="3468" vertical-scroll-proportion="0.5652759">
+          <folding />
         </state>
       </provider>
     </entry>
