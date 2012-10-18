@@ -1,10 +1,27 @@
-var express = require('express')
-    , fb = require('facebook-js')
-    , app = express.createServer(
-        express.bodyParser()
-        , express.cookieParser()
-        , express.session({ secret: 'some secret' })
+var express = require('express'),
+    fb = require('facebook-js'),
+    app = express.createServer(
+        express.bodyParser(),
+        express.cookieParser(),
+        express.session({ secret: 'some secret' })
     );
+
+app.options('*',function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
+    res.send('options response');
+});
+
+app.post('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
+    res.send('post response');
+});
+
 var Mongolian = require("mongolian");
 var uuid = require('node-uuid');
 var jQuery = require('jquery');
@@ -15,8 +32,15 @@ var campaigns = db.collection("campaigns");
 
 app.get('/supportersByAge', function (req, res) {
 
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
+
     var results = [];
-    var clientId = req.query.clientId;
+    var clientId = parseInt(req.query.clientId);
+
+    //console.log("webservice hit, clientId: " + clientId);
 
     if (clientId) {
 
@@ -25,9 +49,11 @@ app.get('/supportersByAge', function (req, res) {
         });
 
         for (var i = 0; i < users.length; i++) {
-            results.push({ age: getAge(users[i].DOB * 1000) });
+            var age = getAge(users[i].DOB * 1000);
+            results.push({ name: age });
         }
 
+        //console.log("returning data: " + results);
         res.send(results);
 
     }
@@ -40,27 +66,12 @@ var creditUnionsJson = [
         ClientId: "1",
         Name: "ABC Credit Union",
         FBUsers: [
-            {
-                Id: "1335106967"
-            },
-            {
-                Id: "2244149"
-            }
-        ]
-    },
-    {
-        ClientId: "2",
-        Name: "Fictional CU",
-        FBUsers: [
-            {
-                Id: "1335106967"
-            },
-            {
-                Id: "2244149"
-            }
+            { Id: 1335106967 },
+            { Id: 2244149 },
+            { Id: 38508706 }
         ]
     }
-]
+];
 
 var usersJson = [
     {
@@ -68,14 +79,24 @@ var usersJson = [
         Email: "jthope@gmail.com",
         Gender: "male",
         DOB: 488174400,
-        FBUserId: "2244149",
-        ClientId: "1",
+        FBUserId: 2244149,
+        ClientId: 1,
+        Date: 1350514559,
+        AccessToken: "AAAFHDrQkwDUBAG3n7XnCi8XFywW8B9MAEDpmN6ZCUfU3nOZATeF3P31K6VtoJ8p7jdBJDXh0jvZBH88HnHLe2iYwkmwbGAZD"
+    },
+    {
+        Name: "Nate Ogg",
+        Email: "naogg@gmail.com",
+        Gender: "male",
+        DOB: 508174400,
+        FBUserId: 38508706,
+        ClientId: 1,
         Date: 1350514559,
         AccessToken: "AAAFHDrQkwDUBAG3n7XnCi8XFywW8B9MAEDpmN6ZCUfU3nOZATeF3P31K6VtoJ8p7jdBJDXh0jvZBH88HnHLe2iYwkmwbGAZD"
     },
     {
         AccessToken: "AAAFHDrQkwDUBAJZBH7nUdzza2KJIXk5JzGlcB744in8fxegJJOrsOS5Q8uaopEnQZAAG26Kq18A3CqkqCXU5RyotBMpLp9ZA69txIQihgZDZD",
-        ClientId: "1",
+        ClientId: 1,
         CommentsAvg: [
             0.08
         ],
@@ -83,7 +104,7 @@ var usersJson = [
         Date: 1350529246,
         Email: "rbrookfield@yahoo.com",
         Gender: "male",
-        FBUserId: "1335106967",
+        FBUserId: 1335106967,
         LikesAvg: [
             0.23
         ],
