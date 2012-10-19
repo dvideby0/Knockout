@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //-------------------------------Document Ready -----------------------------------------
 $(document).ready(function(){
     prettyPrint();
