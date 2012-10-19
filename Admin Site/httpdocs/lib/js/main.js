@@ -602,22 +602,22 @@ $(document).ready(function(){
             type: 'column'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Gender'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: ['Gender']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Supporters'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
+            name: 'Male',
+            data: [1562]
         }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'Female',
+            data: [895]
         }]
     });
     var chart = new Highcharts.Chart({
