@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfe034b9-aa9b-4138-891f-f5ab55e14232" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbScripts/script" afterPath="$PROJECT_DIR$/dbScripts/script" />
-    </list>
+    <list default="true" id="cfe034b9-aa9b-4138-891f-f5ab55e14232" name="Default" comment="" />
     <ignored path="Knockout.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/supportus/users.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state line="236" column="45" selection-start="12381" selection-end="12381" vertical-scroll-proportion="0.16025642">
+            <state line="24" column="68" selection-start="1577" selection-end="1577" vertical-scroll-proportion="-4.0">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -50,6 +46,7 @@
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -71,32 +68,37 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="reports.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/reports.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="1272" selection-end="1272" vertical-scroll-proportion="-15.038462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reportingdata.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="21" selection-start="3415" selection-end="3415" vertical-scroll-proportion="0.3181818">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="jquery-ui-1.8.16.custom.min.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="28" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-=======
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="jquery.event.drag-2.0.min.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="4617" selection-start="4788" selection-end="4788" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reportingdata.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="18" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,104 +117,49 @@
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/grid.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="195" column="0" selection-start="7461" selection-end="7461" vertical-scroll-proportion="0.0">
-=======
-      <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/supportus/functions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="16" selection-start="2586" selection-end="2594" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="slickgrid.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/slickgrid.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="166" column="0" selection-start="4205" selection-end="4205" vertical-scroll-proportion="0.0">
-=======
-      <file leaf-file-name="script" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dbScripts/script">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="1" selection-start="4112" selection-end="4112" vertical-scroll-proportion="3.1455805">
->>>>>>> new data models with updated json formats
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="slickgrid.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/slickgrid.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="65" column="403" selection-start="26112" selection-end="26112" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1350672448269" expanded="false" signature="3800:3817" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="4060:4077" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="6805:6875" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="31931:31943" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="32112:32203" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="33579:33634" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="33718:33752" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="33817:33844" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="33922:33956" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="34103:34137" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="34198:34211" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="34328:34382" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="39872:40000" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="40057:40115" placeholder="..." />
-                <marker date="1350672448269" expanded="false" signature="40147:40163" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="3800:3817" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="4060:4077" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="6805:6875" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="31931:31943" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="32112:32203" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="33579:33634" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="33718:33752" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="33817:33844" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="33922:33956" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="34103:34137" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="34198:34211" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="34328:34382" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="39872:40000" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="40057:40115" placeholder="..." />
+                <marker date="1350680595585" expanded="false" signature="40147:40163" placeholder="..." />
               </folding>
-=======
-      <file leaf-file-name="report.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbScripts/report.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="199" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="network.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbScripts/network.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="54" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="campaign.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbScripts/campaign.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="347" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbScripts/client.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="385" vertical-scroll-proportion="0.0">
-              <folding />
->>>>>>> new data models with updated json formats
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="914" column="0" selection-start="24006" selection-end="24009" vertical-scroll-proportion="0.0">
-=======
-      <file leaf-file-name="user.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbScripts/user.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="1266" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
               <folding />
             </state>
           </provider>
@@ -231,14 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-<<<<<<< HEAD
-=======
-        <option value="$USER_HOME$/AppData/Local/Temp/13-functions.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/14-functions.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/15-functions.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/17-functions.js" />
->>>>>>> new data models with updated json formats
-        <option value="$USER_HOME$/AppData/Local/Temp/1-index.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/20-functions.js" />
         <option value="$PROJECT_DIR$/Server/supportus/functions.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css" />
@@ -249,32 +188,20 @@
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/grid.css" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/slickgrid.css" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/slickgrid.js" />
-        <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/jquery.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js" />
+        <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/index.html" />
-        <option value="$PROJECT_DIR$/dbScripts/user.json" />
-        <option value="$PROJECT_DIR$/dbScripts/client.json" />
-        <option value="$PROJECT_DIR$/dbScripts/campaign.json" />
-        <option value="$PROJECT_DIR$/dbScripts/network.json" />
-        <option value="$PROJECT_DIR$/dbScripts/report.json" />
-        <option value="$PROJECT_DIR$/dbScripts/script" />
+        <option value="$PROJECT_DIR$/Admin Site/httpdocs/reports.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
-    <option name="x" value="75" />
-    <option name="y" value="47" />
-    <option name="width" value="1406" />
-    <option name="height" value="865" />
-=======
-    <option name="x" value="-22" />
-    <option name="y" value="25" />
-    <option name="width" value="1280" />
-    <option name="height" value="711" />
->>>>>>> new data models with updated json formats
+    <option name="x" value="202" />
+    <option name="y" value="56" />
+    <option name="width" value="1499" />
+    <option name="height" value="950" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -351,6 +278,10 @@
               <option name="myItemId" value="Server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -362,15 +293,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dbScripts" />
+              <option name="myItemId" value="Admin Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="httpdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Knockout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Knockout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="httpdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slickgrid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,22 +383,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.editor" />
+    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\github\Knockout\Server\node_modules" />
-      <recent name="C:\Projects\github\Knockout\Admin Site\httpdocs\lib\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\github\Knockout\Admin Site\httpdocs\lib\css\slickgrid" />
-      <recent name="C:\Projects\github\Knockout\Admin Site\httpdocs\lib\css\vendor" />
-      <recent name="C:\Projects\github\Knockout\Admin Site\httpdocs\lib\js" />
-      <recent name="C:\Projects\github\Knockout\Admin Site\httpdocs" />
-    </key>
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -458,24 +399,6 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cfe034b9-aa9b-4138-891f-f5ab55e14232" name="Default" comment="" />
@@ -485,22 +408,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="75" y="47" width="1406" height="865" extended-state="0" />
-=======
-    <frame x="-22" y="25" width="1280" height="711" extended-state="0" />
->>>>>>> new data models with updated json formats
+    <frame x="202" y="56" width="1499" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22750549" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16207455" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
->>>>>>> new data models with updated json formats
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2130137" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291367" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -568,42 +482,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/20-functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="0" selection-end="4559" vertical-scroll-proportion="0.27079645" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="26287" selection-start="26516" selection-end="26516" vertical-scroll-proportion="0.24070796">
-=======
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="57" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="919" column="35" selection-start="24421" selection-end="24421" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Server/supportus/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="10" selection-start="3360" selection-end="3360" vertical-scroll-proportion="0.8517442">
-=======
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
-          <folding />
-        </state>
+        <state line="116" column="10" selection-start="3360" selection-end="3360" vertical-scroll-proportion="0.8517442" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/slickgrid/slickgrid.css">
@@ -613,252 +501,138 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/grid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="0" selection-start="7461" selection-end="7461" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/recline.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="28" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.5037037">
           <folding>
-            <marker date="1350668092162" expanded="true" signature="68567:69011" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="68609:68624" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="68625:68998" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="68682:68983" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="79150:80384" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="79184:80373" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="79215:80008" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="79293:79624" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="79314:79607" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="79714:79932" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="79735:79915" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="79976:79993" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="80045:80121" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="80209:80223" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="80224:80359" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="80481:80818" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="80497:80627" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="80655:80805" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="80674:80790" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="86852:87582" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="86933:87569" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="86970:87507" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="86985:87490" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="87107:87174" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="87193:87279" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="87348:87468" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="90587:90678" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="91687:91754" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="91755:91998" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="91803:91984" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="93064:93439" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="93207:93426" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="93261:93411" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="96424:96475" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112037:114194" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112068:113616" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112110:112520" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112146:112324" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112360:112503" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112569:113199" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112660:112875" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112683:112856" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112967:113182" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="112990:113163" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="113254:113266" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="113267:113601" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="113369:113584" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="113392:113565" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="113653:113732" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="113769:114101" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="113805:113942" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="113977:114086" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="121537:122436" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="121620:122335" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="121653:121862" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="121715:121847" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="121905:121984" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="122017:122252" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="122082:122237" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="122300:122315" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="133308:133409" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="133538:133632" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="146874:146916" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="151015:151069" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="157257:157748" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="157286:157506" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="157301:157427" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="157562:157604" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="157634:157735" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="159153:159665" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="159169:159289" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="159182:159272" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="159305:159648" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="159335:159614" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="159350:159388" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="159456:159495" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="159562:159600" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="161929:162475" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="162005:162442" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="162020:162055" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="162090:162427" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="164802:165862" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="164925:165831" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="164967:165255" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="165022:165238" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="165068:165220" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="165326:165816" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="165368:165799" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="165456:165714" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="165497:165693" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="168345:169347" placeholder="..." />
-            <marker date="1350668092162" expanded="false" signature="168478:168492" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="168493:169077" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="168514:169061" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="168583:168713" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="168792:168980" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="169121:169334" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="169446:169854" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="169467:169839" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="169488:169672" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="169929:170604" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="169950:170589" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="169971:170155" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="170686:171601" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="170707:171586" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="170728:170912" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="175516:175864" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="175529:175851" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="177550:177874" placeholder="..." />
-            <marker date="1350668092162" expanded="true" signature="177597:177798" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="68567:69011" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="68609:68624" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="68625:68998" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="68682:68983" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="79150:80384" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="79184:80373" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="79215:80008" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="79293:79624" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="79314:79607" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="79714:79932" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="79735:79915" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="79976:79993" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="80045:80121" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="80209:80223" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="80224:80359" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="80481:80818" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="80497:80627" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="80655:80805" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="80674:80790" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="86852:87582" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="86933:87569" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="86970:87507" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="86985:87490" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="87107:87174" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="87193:87279" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="87348:87468" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="90587:90678" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="91687:91754" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="91755:91998" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="91803:91984" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="93064:93439" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="93207:93426" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="93261:93411" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="96424:96475" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112037:114194" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112068:113616" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112110:112520" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112146:112324" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112360:112503" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112569:113199" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112660:112875" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112683:112856" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112967:113182" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="112990:113163" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="113254:113266" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="113267:113601" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="113369:113584" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="113392:113565" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="113653:113732" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="113769:114101" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="113805:113942" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="113977:114086" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="121537:122436" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="121620:122335" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="121653:121862" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="121715:121847" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="121905:121984" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="122017:122252" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="122082:122237" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="122300:122315" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="133308:133409" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="133538:133632" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="146874:146916" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="151015:151069" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="157257:157748" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="157286:157506" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="157301:157427" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="157562:157604" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="157634:157735" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="159153:159665" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="159169:159289" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="159182:159272" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="159305:159648" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="159335:159614" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="159350:159388" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="159456:159495" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="159562:159600" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="161929:162475" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="162005:162442" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="162020:162055" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="162090:162427" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="164802:165862" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="164925:165831" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="164967:165255" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="165022:165238" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="165068:165220" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="165326:165816" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="165368:165799" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="165456:165714" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="165497:165693" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="168345:169347" placeholder="..." />
+            <marker date="1350680595547" expanded="false" signature="168478:168492" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="168493:169077" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="168514:169061" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="168583:168713" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="168792:168980" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="169121:169334" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="169446:169854" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="169467:169839" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="169488:169672" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="169929:170604" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="169950:170589" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="169971:170155" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="170686:171601" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="170707:171586" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="170728:170912" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="175516:175864" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="175529:175851" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="177550:177874" placeholder="..." />
+            <marker date="1350680595547" expanded="true" signature="177597:177798" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/slickgrid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="403" selection-start="26112" selection-end="26112" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1350672448269" expanded="false" signature="3800:3817" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="4060:4077" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="6805:6875" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="31931:31943" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="32112:32203" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="33579:33634" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="33718:33752" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="33817:33844" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="33922:33956" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="34103:34137" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="34198:34211" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="34328:34382" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="39872:40000" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="40057:40115" placeholder="..." />
-            <marker date="1350672448269" expanded="false" signature="40147:40163" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/slickgrid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="4205" selection-end="4205" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26287" selection-start="26516" selection-end="26516" vertical-scroll-proportion="0.24070796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="57" selection-start="722" selection-end="722" vertical-scroll-proportion="0.027124774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="919" column="35" selection-start="24421" selection-end="24421" vertical-scroll-proportion="0.025996534">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.025423728">
->>>>>>> new data models with updated json formats
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/Server/supportus/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4617" selection-start="4788" selection-end="4788" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/dbScripts/user.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1266" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="914" column="0" selection-start="24006" selection-end="24009" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/dbScripts/client.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="385" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="34" selection-start="0" selection-end="94839" vertical-scroll-proportion="0.0778626">
-=======
-    <entry file="file://$PROJECT_DIR$/Server/supportus/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="16" selection-start="2586" selection-end="2594" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/dbScripts/campaign.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="347" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/bootstrap-transition.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="19" selection-start="900" selection-end="900" vertical-scroll-proportion="0.55988026">
@@ -871,26 +645,64 @@
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/dbScripts/network.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbScripts/report.json">
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/slickgrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="199" vertical-scroll-proportion="0.0">
->>>>>>> new data models with updated json formats
+        <state line="65" column="403" selection-start="26112" selection-end="26112" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1350680595585" expanded="false" signature="3800:3817" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="4060:4077" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="6805:6875" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="31931:31943" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="32112:32203" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="33579:33634" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="33718:33752" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="33817:33844" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="33922:33956" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="34103:34137" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="34198:34211" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="34328:34382" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="39872:40000" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="40057:40115" placeholder="..." />
+            <marker date="1350680595585" expanded="false" signature="40147:40163" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/slickgrid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="0" selection-start="4205" selection-end="4205" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbScripts/script">
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="236" column="45" selection-start="12381" selection-end="12381" vertical-scroll-proportion="0.16025642">
+        <state line="5" column="28" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4617" selection-start="4788" selection-end="4788" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="0" selection-start="7461" selection-end="7461" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="68" selection-start="1577" selection-end="1577" vertical-scroll-proportion="-4.0">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -913,6 +725,7 @@
             <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -930,28 +743,23 @@
             <element signature="n#style#0;n#hr#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-=======
-        <state line="121" column="1" selection-start="4112" selection-end="4112" vertical-scroll-proportion="3.1455805">
-          <folding />
->>>>>>> new data models with updated json formats
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/reports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1272" selection-end="1272" vertical-scroll-proportion="-15.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="21" selection-start="3415" selection-end="3415" vertical-scroll-proportion="0.3181818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 
