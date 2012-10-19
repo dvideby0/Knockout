@@ -64,60 +64,63 @@
     <div class="span10">
         <div id="Dashboard-Page" class="row page">
             <div id="Supporters-View" class="dashboard view">
+                <h2>Supporters</h2>
                 <div class="span5 chartpane">
-                    <h2>Total Supporters</h2>
+                    <h3>Total Supporters</h3>
                     <div class="graph span5" id="chart1"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Age</h2>
+                    <h3>Age</h3>
                     <div class="graph span5" id="chart2"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Gender</h2>
+                    <h3>Gender</h3>
                     <div class="graph span5" id="chart3"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Location</h2>
+                    <h3>Location</h3>
                     <div class="graph span5" id="chart4"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Education</h2>
+                    <h3>Education</h3>
                     <div class="graph span5" id="chart5"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Avg. Friends</h2>
+                    <h3>Avg. Friends</h3>
                     <div class="graph span5" id="chart6"></div>
                 </div>
             </div>
             <div id="Campaigns-View" class="dashboard view">
+                <h2>Campaigns</h2>
                 <div class="span5 chartpane">
-                    <h2>Clicks</h2>
+                    <h3>Clicks</h3>
                     <div class="graph span5" id="chart7"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Communications Sent</h2>
+                    <h3>Communications Sent</h3>
                     <div class="graph span5" id="chart8"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Points Awarded</h2>
+                    <h3>Points Awarded</h3>
                     <div class="graph span5" id="chart9"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Potential Reach</h2>
+                    <h3>Potential Reach</h3>
                     <div class="graph span5" id="chart10"></div>
                 </div>
             </div>
             <div id="Channels-View" class="dashboard view">
+                <h2>Channels</h2>
                 <div class="span5 chartpane">
-                    <h2>Supporters by Network</h2>
+                    <h3>Supporters by Network</h3>
                     <div class="graph span5" id="chart11"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Clicks by Network</h2>
+                    <h3>Clicks by Network</h3>
                     <div class="graph span5" id="chart12"></div>
                 </div>
                 <div class="span5 chartpane">
-                    <h2>Distribution by Network</h2>
+                    <h3>Distribution by Network</h3>
                     <div class="graph span5" id="chart13"></div>
                 </div>
             </div>
@@ -126,55 +129,60 @@
             <div id="Manage-Campaigns-View" class="view">
                 <div class="span10">
                     <h2>Campaigns</h2>
+                    <div class="btn-group" style="margin-bottom: 30px; text-align: right;">
+                        <button class="btn active">Active</button>
+                        <button class="btn">Inactive</button>
+                        <button class="btn">Completed</button>
+                    </div>
                     <table id="Manage-Campaign-Table" class="table">
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
                             <th>Start</th>
                             <th>End</th>
-                            <th>Active</th>
+                            <th>Status</th>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>Campaign 1</td>
                             <td>10-20-2012</td>
                             <td>10-30-2012</td>
-                            <td>Yes</td>
+                            <td>Active</td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Campaign 2</td>
                             <td>10-20-2012</td>
                             <td>10-30-2012</td>
-                            <td>Yes</td>
+                            <td>Active</td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>Campaign 3</td>
                             <td>10-20-2012</td>
                             <td>10-30-2012</td>
-                            <td>Yes</td>
+                            <td>Active</td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>Campaign 4</td>
                             <td>10-20-2012</td>
                             <td>10-30-2012</td>
-                            <td>Yes</td>
+                            <td>Active</td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>Campaign 5</td>
                             <td>10-20-2012</td>
                             <td>10-30-2012</td>
-                            <td>Yes</td>
+                            <td>Active</td>
                         </tr>
                         <tr>
                             <td>6</td>
                             <td>Campaign 6</td>
                             <td>10-20-2012</td>
                             <td>10-30-2012</td>
-                            <td>Yes</td>
+                            <td>Active</td>
                         </tr>
                     </table>
                 </div>
@@ -182,27 +190,42 @@
             <div id="New-Campaign-View" class="view">
                 <div class="span4">
                     <h2>New Campaign</h2>
-                    <div style="margin-bottom: 15px;">
+                    <div>
                         Name: <input id="Campaign-Name-Input" class="btn-input span4" />
                     </div>
-                    <div style="margin-bottom: 15px;">
-                        Message: <textarea id="Campaign-Message-Input" style="height: 200px;"  class="span4 txt-input"></textarea>
+                    <div>
+                        URL: <input id="Campaign-URL-Input" class="btn-input span4" />
                     </div>
                     <div>
-                        <button style="margin-top: 30px;" class="btn btn-primary">Save</button>
+                        Message: <textarea id="Campaign-Message-Input" style="height: 200px;"  class="span4 txt-input"></textarea>
                     </div>
                 </div>
-                <div class="span6" style="margin-top: 75px;">
-                    <div class="input-append date span3" id="Campaign-Start-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
-                        <input class="span2" size="16" type="text" value="Start Date" readonly="">
-                        <span class="add-on"><i class="icon-calendar"></i></span>
-                    </div>
-                    <div class="input-append date span2" id="Campaign-End-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
-                        <input class="span2" size="16" type="text" value="End Date" readonly="">
-                        <span class="add-on"><i class="icon-calendar"></i></span>
+                <div class="span3">
+                    <div style="margin-top: 55px;">
+                        Age: <input id="Campaign-Name-Input" class="btn-input span3" />
+                        Sex: <input id="Campaign-Name-Input" class="btn-input span3" />
+                        Location: <input id="Campaign-Name-Input" class="btn-input span3" />
+                        Education: <input id="Campaign-Name-Input" class="btn-input span3" />
+                        Influence Score: <input id="Campaign-Name-Input" class="btn-input span3" />
+                        Avg. Friend Count: <input id="Campaign-Name-Input" class="btn-input span3" />
                     </div>
                 </div>
-                <!--Active: <input type="checkbox" class="btn-input" />-->
+                <div class="span2"  style="margin-top: 70px; text-align: right;">
+                    <div class="input-append date" id="Campaign-Start-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
+                        <input size="16" type="text" value="Start Date" readonly="">
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                    <div style="margin-top: 30px;" class="input-append date" id="Campaign-End-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
+                        <input size="16" type="text" value="End Date" readonly="">
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                    <div style="margin-top: 30px;" class="span2">
+                        Active: <input style="margin-top: -3px; margin-right: -45px;" id="Campaign-Active-CBox" type="checkbox" />
+                    </div>
+                </div>
+                <div class="span10" style="text-align: right;">
+                    <button style="margin-top: 30px;" class="btn btn-primary">Save</button>
+                </div>
             </div>
         </div>
         <div id="Reports-Page" class="row page">
