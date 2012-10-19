@@ -773,48 +773,28 @@ $(document).ready(function(){
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart8',
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
+            type: 'bar'
         },
         title: {
-            text: 'Browser market Share'
+            text: 'Communications Sent'
         },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
-            }
+        xAxis: {
+            title: {
+                text: 'Active Campaigns'
+            },
+            categories: ['Points', 'iTunes', 'Home Depot']
         },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    color: '#DDD',
-                    connectorColor: '#FFF',
-                    formatter: function() {
-                        return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
-                    }
-                }
+        yAxis: {
+            title: {
+                text: '# Sent'
             }
         },
         series: [{
-            type: 'pie',
-            name: 'Browser share',
-            data: [
-                ['Firefox',   45.0],
-                ['IE',       26.8],
-                {
-                    name: 'Chrome',
-                    y: 12.8,
-                    sliced: true,
-                    selected: true
-                },
-                ['Safari',    8.5],
-                ['Opera',     6.2],
-                ['Others',   0.7]
-            ]
+            name: 'Successful',
+            data: [640, 530, 190]
+        }, {
+            name: 'Failed',
+            data: [84, 12, 9]
         }]
     });
     var chart = new Highcharts.Chart({
