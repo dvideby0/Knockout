@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -340,4 +341,350 @@ function SURegister(){window.location = 'http://yearofthecu.com:3737?ClientID=<c
     </div>
 </div>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Console</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="lib/css/colorpicker.css">
+    <link rel="stylesheet" href="lib/css/datepicker.css">
+    <link rel="stylesheet" href="lib/css/style.css">
+    <script type="text/javascript" src="lib/js/jquery.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="lib/js/charts/highcharts.js"></script>
+    <script type="text/javascript" src="lib/js/charts/themes/gray.js"></script>
+    <script type="text/javascript" src="lib/js/knockback-full-stack.min.js"></script>
+    <script type="text/javascript" src="lib/js/colorpicker.js"></script>
+    <script type="text/javascript" src="lib/js/pretify.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="lib/js/main.js"></script>
+</head>
+<body bgcolor=#FFFFFF text=#001C66>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Admin Console</a>
+            <div class="nav-collapse collapse">
+                <ul id="TopNav" class="nav">
+                    <li class="active"><a href="javascript:ChangePage('Dashboard')">Dashboard</a></li>
+                    <li><a href="javascript:ChangePage('Campaigns')">Campaigns</a></li>
+                    <li><a href="javascript:ChangePage('Reports')">Reporting</a></li>
+                    <li><a href="javascript:ChangePage('Admin')">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 60px;">
+    <div class="span2">
+        <ul id="Dashboard-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+            <li class="active"><a>Supporters</a></li>
+            <li><a>Campaigns</a></li>
+            <li><a>Channels</a></li>
+        </ul>
+        <ul id="Campaigns-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+            <li class="active"><a>Manage Campaigns</a></li>
+            <li><a>New Campaign</a></li>
+        </ul>
+        <ul id="Reports-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+            <li class="active"><a href="#">Supporter Reports</a></li>
+            <li><a href="#">Campaign Reports</a></li>
+            <li><a href="#">Channel Reports</a></li>
+        </ul>
+        <ul id="Admin-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+            <li class="active"><a href="#">User Administration</a></li>
+            <li><a href="#">Button Designer</a></li>
+        </ul>
+    </div>
+    <div class="span10" style="margin-bottom: 40px;">
+        <div id="Dashboard-Page" class="row page">
+            <div id="Supporters-View" class="dashboard view">
+                <h2>Supporters</h2>
+                <div class="span5 chartpane">
+                    <h3>Total Supporters</h3>
+                    <div class="graph span5" id="chart1"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Age</h3>
+                    <div class="graph span5" id="chart2"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Gender</h3>
+                    <div class="graph span5" id="chart3"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Location</h3>
+                    <div class="graph span5" id="chart4"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Education</h3>
+                    <div class="graph span5" id="chart5"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Avg. Friends</h3>
+                    <div class="graph span5" id="chart6"></div>
+                </div>
+            </div>
+            <div id="Campaigns-View" class="dashboard view">
+                <h2>Campaigns</h2>
+                <div class="span5 chartpane">
+                    <h3>Clicks</h3>
+                    <div class="graph span5" id="chart7"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Communications Sent</h3>
+                    <div class="graph span5" id="chart8"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Points Awarded</h3>
+                    <div class="graph span5" id="chart9"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Potential Reach</h3>
+                    <div class="graph span5" id="chart10"></div>
+                </div>
+            </div>
+            <div id="Channels-View" class="dashboard view">
+                <h2>Channels</h2>
+                <div class="span5 chartpane">
+                    <h3>Supporters by Network</h3>
+                    <div class="graph span5" id="chart11"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Clicks by Network</h3>
+                    <div class="graph span5" id="chart12"></div>
+                </div>
+                <div class="span5 chartpane">
+                    <h3>Distribution by Network</h3>
+                    <div class="graph span5" id="chart13"></div>
+                </div>
+            </div>
+        </div>
+        <div id="Campaigns-Page" class="row page">
+            <div id="Manage-Campaigns-View" class="view">
+                <div class="span10">
+                    <h2>Campaigns</h2>
+                    <div class="btn-group" style="margin-bottom: 30px; text-align: right;">
+                        <button class="btn active">Active</button>
+                        <button class="btn">Inactive</button>
+                        <button class="btn">Completed</button>
+                    </div>
+                    <table id="Manage-Campaign-Table" class="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Campaign 1</td>
+                            <td>10-20-2012</td>
+                            <td>10-30-2012</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Campaign 2</td>
+                            <td>10-20-2012</td>
+                            <td>10-30-2012</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Campaign 3</td>
+                            <td>10-20-2012</td>
+                            <td>10-30-2012</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Campaign 4</td>
+                            <td>10-20-2012</td>
+                            <td>10-30-2012</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Campaign 5</td>
+                            <td>10-20-2012</td>
+                            <td>10-30-2012</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Campaign 6</td>
+                            <td>10-20-2012</td>
+                            <td>10-30-2012</td>
+                            <td>Active</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="New-Campaign-View" class="view">
+                <div class="span4">
+                    <h2>New Campaign</h2>
+                    <div>
+                        Name: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span4" />
+                    </div>
+                    <div>
+                        URL: <input style="margin-bottom: 35px;" id="Campaign-URL-Input" class="btn-input span4" />
+                    </div>
+                    <div>
+                        Message: <textarea id="Campaign-Message-Input" style="height: 200px;"  class="span4 txt-input"></textarea>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div style="margin-top: 55px;">
+                        Age: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Sex: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Location: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Education: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Influence Score: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Avg. Friend Count: <input id="Campaign-Name-Input" class="btn-input span3" />
+                    </div>
+                </div>
+                <div class="span2"  style="margin-top: 70px; text-align: right;">
+                    <div class="input-append date" id="Campaign-Start-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
+                        <input size="16" type="text" value="Start Date" readonly="">
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                    <div style="margin-top: 30px;" class="input-append date" id="Campaign-End-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
+                        <input size="16" type="text" value="End Date" readonly="">
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                    <div style="margin-top: 30px;" class="span2">
+                        Active: <input style="margin-top: 0; margin-right: -45px;" id="Campaign-Active-CBox" type="checkbox" />
+                    </div>
+                </div>
+                <div class="span10" style="text-align: right;">
+                    <button style="margin-top: 30px;" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+        <div id="Reports-Page" class="row page">
+            <div id="Supporter-Reports-View" class="view span10">
+                <h2>Supporter Reports</h2>
+            </div>
+            <div id="Campaign-Reports-View" class="view span10">
+                <h2>Campaign Reports</h2>
+            </div>
+            <div id="Channel-Reports-View" class="view span10">
+                <h2>Channel Reports</h2>
+            </div>
+        </div>
+        <div id="Admin-Page" class="row page">
+            <div id="User-Administration-View" class="view">
+                <div class="span10">
+                    <h2>User Administration</h2>
+                    <table id="Admin-User-Table" class="table">
+                        <tr>
+                            <th>Username</th>
+                            <th>Role</th>
+                            <th>Active</th>
+                            <th>Password</th>
+                        </tr>
+                        <tr>
+                            <td>rbrookfield</td>
+                            <td>Administrator</td>
+                            <td>Yes</td>
+                            <td><a href="javascript:" class="btn btn-danger">Reset</a></td>
+                        </tr>
+                        <tr>
+                            <td>jthope</td>
+                            <td>Administrator</td>
+                            <td>Yes</td>
+                            <td><a href="javascript:" class="btn btn-danger">Reset</a></td>
+                        </tr>
+                        <tr>
+                            <td>hmareddy</td>
+                            <td>Administrator</td>
+                            <td>Yes</td>
+                            <td><a href="javascript:" class="btn btn-danger">Reset</a></td>
+                        </tr>
+                        <tr>
+                            <td>mtormeno</td>
+                            <td>Administrator</td>
+                            <td>Yes</td>
+                            <td><a href="javascript:" class="btn btn-danger">Reset</a></td>
+                        </tr>
+                        <tr>
+                            <td>bprymicz</td>
+                            <td>Administrator</td>
+                            <td>Yes</td>
+                            <td><a href="javascript:" class="btn btn-danger">Reset</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="Button-Designer-View" class="view">
+                <div class="span5">
+                    <h2 style="margin-bottom: 140px;">Button Designer</h2>
+                    <div style="width: 300px; text-align: right;">
+                        <div style="margin-bottom: 15px; margin-top: 80px;">
+                            Button Text: <input style="margin-right: 40px;" class="btn-input" id="Btn-Text" placeholder="Support Us">
+                        </div>
+                        <div style="margin-bottom: 15px; margin-right: 40px;">
+                            Background Color: <input class="btn-input" id="Btn-Background-Color">
+                        </div>
+                        <div>
+                            Text Color: <input style="margin-bottom: 15px; margin-right: 40px;" class="btn-input" id="Btn-Text-Color">
+                        </div>
+                        <div style="margin-right: 40px;">
+                            Border Color: <input class="btn-input" id="Btn-Border-Color">
+                        </div>
+                        <div>
+                            <button style="margin-top: 30px;  margin-right: 40px;" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="span5">
+                    <div style="margin-top: 100px;">
+                        <div id="Btn-Preview-Div" style="margin-top: 30px; margin-bottom: 30px;">
+                            <strong>Button Preview</strong>
+                            <br />
+                            <br />
+                            <button class="btn">Support Us</button>
+                            <br />
+                            <br />
+                            <strong>HTML</strong>
+                        <pre class="prettyprint linenums languague-css">
+&lt;!-- Support Us HTML Code --&gt;
+&lt;a href="javascript:SURegister();"><code id="Btn-Text-Gen">Support Us</code>&lt;/a&gt;
+&lt;!-- End --&gt;
+                        </pre>
+                            <strong>JavaScript</strong>
+                        <pre class="prettyprint linenums languague-css">
+//Support Us JavaScript Code
+&lt;script&gt;
+function SURegister(){window.location = 'http://yearofthecu.com:3737?ClientID=<code id="Btn-ClientID-Text">12345678910</code>&ReturnURL=' + location.href;}
+&lt;/script&gt;
+//End
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="span10" style="margin-top: 20px;">
+                    <strong>Instructions: </strong>Once you have generated your button you will need to copy and paste the code into your website. The Javascript code that needs to be placed in your site should go between the <i>&lt;head&gt;&lt;/head&gt;</i> tags in your HTML document. The HTML code for the button needs to be placed anywhere on your site in between the <i>&lt;body&gt;&lt;/body&gt;</i> tags.
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-fixed-bottom" style="background-color: #ffffff; z-index: 3; text-align: right; height: 40px;">
+            <hr style="border-top: #0088cc 2px solid; width: 100%; margin-top: 0">
+            <p style="margin-top: -10px;">&copy; PSCU 2012</p>
+        </div>
+    </div>
+</div>
+</body>
+>>>>>>> renamed preview
 </html>
