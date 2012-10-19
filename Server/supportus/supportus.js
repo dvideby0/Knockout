@@ -33,12 +33,13 @@ app.get('/auth', function (req, res) {
             function (error, response, body) {
                 users.findOne({ID: body.id}, function(err, post){
                     if(!post){
+                        console.log(body);
                         if(body.birthday){
                             var bdayArr = body.birthday.split('/');
-                            var d = new Date(bdayArr[2], bdayArr[0], bdayArr[1]);
+                            var d = new Date(bdayArr[2], (bdayArr[0] -1), bdayArr[1]);
                         }
                         else{
-                            var d = new Date(0000,00,00);
+                            var d = new Date();
                         }
                         Location = body.location;
                         ID = body.id;
@@ -73,7 +74,8 @@ app.get('/auth', function (req, res) {
                         fb.apiCall('GET', '/' + Location.id,
                             {fields: 'location', access_token: aToken},
                             function(error, response, body){
-                                users.update({ID: ID}, {"$addToSet": {Location: {Lat: body.location.latitude, Lon: body.location.longitude, Name: Location.name}}});
+                                var locArray = Location.name.split(', ');
+                                users.update({ID: ID}, {"$addToSet": {Location: {Lat: body.location.latitude, Lon: body.location.longitude, City: locArray[0], State: locArray[1]}}});
                             });
                     }
                 });

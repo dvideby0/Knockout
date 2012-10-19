@@ -19,14 +19,15 @@ footer{
     color: #0088cc;
 }
 .btn-input{
-    border-radius: 3px;
+    font-size: 18px;
+    border-radius: 4px;
     width: 120px;
-    border: #0088cc 1px solid;
+    border: #0088cc 2px solid;
 }
 .txt-input{
-    border-radius: 3px;
+    border-radius: 4px;
     text-align: left;
-    border: #0088cc 1px solid;
+    border: #0088cc 2px solid;
 }
 
 
@@ -62,4 +63,10 @@ ol.linenums li {
     color: #bebec5;
     line-height: 20px;
     text-shadow: 0 1px 0 #fff;
+}
+tr th{
+    font-size: 20px;
+}
+#Admin-User-Table tr td, #Admin-User-Table tr th, #Manage-Campaign-Table tr td, #Manage-Campaign-Table tr th{
+    text-align: center;
 }
