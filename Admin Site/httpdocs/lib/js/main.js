@@ -717,22 +717,22 @@ $(document).ready(function(){
             type: 'column'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Avg. Friends'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: ['Gender']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Average'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
+            name: 'Male',
+            data: [352]
         }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'Female',
+            data: [415]
         }]
     });
     chart = new Highcharts.Chart({
