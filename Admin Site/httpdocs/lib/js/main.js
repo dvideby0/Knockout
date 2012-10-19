@@ -443,7 +443,7 @@ function ChangePage(page){
     $('.page').hide();
     $('#' + page + '-Page, #' + page + '-SideNav').fadeIn();
     $('#' + page + '-SideNav ').children('li :first').click();
-=======
+}
 //-------------------------------Document Ready -----------------------------------------
 $(document).ready(function(){
     prettyPrint();
@@ -902,5 +902,4 @@ function ChangePage(page){
     $('.page').hide();
     $('#' + page + '-Page, #' + page + '-SideNav').fadeIn();
     $('#' + page + '-SideNav ').children('li :first').click();
->>>>>>> More UI additions to admin; updated server
 }
