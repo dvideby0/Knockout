@@ -668,25 +668,47 @@ $(document).ready(function(){
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart5',
-            type: 'line'
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Education'
         },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+        tooltip: {
+            formatter: function() {
+                return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+            }
         },
-        yAxis: {
-            title: {
-                text: 'Fruit eaten'
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#DDD',
+                    connectorColor: '#FFF',
+                    formatter: function() {
+                        return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                    }
+                }
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
+            type: 'pie',
+            name: 'Education',
+            data: [
+                ['High School', 13.5],
+                ['Associates Degree', 16.5],
+                {
+                    name: 'Bachelors Degree',
+                    y: 52.2,
+                    sliced: true,
+                    selected: true
+                },
+                ['Masters Degree', 12.8],
+                ['N/A', 5.0]
+            ]
         }]
     });
     var chart = new Highcharts.Chart({
