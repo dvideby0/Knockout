@@ -559,7 +559,7 @@ $(document).ready(function(){
             plotShadow: false
         },
         title: {
-            text: 'Browser market Share'
+            text: 'Age'
         },
         tooltip: {
             formatter: function() {
@@ -582,19 +582,17 @@ $(document).ready(function(){
         },
         series: [{
             type: 'pie',
-            name: 'Browser share',
+            name: 'Age',
             data: [
-                ['Firefox',   45.0],
-                ['IE',       26.8],
+                ['Ages 31 - 40',   20.0],
+                ['Ages 13 - 19',       12.00],
                 {
-                    name: 'Chrome',
-                    y: 12.8,
+                    name: 'Ages 20 - 30',
+                    y: 65.0,
                     sliced: true,
                     selected: true
                 },
-                ['Safari',    8.5],
-                ['Opera',     6.2],
-                ['Others',   0.7]
+                ['Ages 41 - 60',    3]
             ]
         }]
     });
