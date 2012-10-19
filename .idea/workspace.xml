@@ -20,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="68" selection-start="1577" selection-end="1577" vertical-scroll-proportion="-4.0">
+            <state line="244" column="16" selection-start="12723" selection-end="12723" vertical-scroll-proportion="0.55847955">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,7 +48,6 @@
                 <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -71,16 +70,16 @@
       <file leaf-file-name="reports.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/reports.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="1272" selection-end="1272" vertical-scroll-proportion="-15.038462">
+            <state line="22" column="4" selection-start="1216" selection-end="1271" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reportingdata.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="reportingdata.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="21" selection-start="3415" selection-end="3415" vertical-scroll-proportion="0.3181818">
+            <state line="46" column="18" selection-start="2834" selection-end="2834" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,14 +191,14 @@
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/jquery.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js" />
-        <option value="$PROJECT_DIR$/Admin Site/httpdocs/index.html" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/reports.html" />
+        <option value="$PROJECT_DIR$/Admin Site/httpdocs/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="202" />
-    <option name="y" value="56" />
+    <option name="x" value="166" />
+    <option name="y" value="30" />
     <option name="width" value="1499" />
     <option name="height" value="950" />
   </component>
@@ -408,7 +407,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="56" width="1499" height="950" extended-state="0" />
+    <frame x="166" y="30" width="1499" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -700,9 +699,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="18" selection-start="2834" selection-end="2834" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/reports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="4" selection-start="1216" selection-end="1271" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="68" selection-start="1577" selection-end="1577" vertical-scroll-proportion="-4.0">
+        <state line="244" column="16" selection-start="12723" selection-end="12723" vertical-scroll-proportion="0.55847955">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -727,7 +740,6 @@
             <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -743,20 +755,6 @@
             <element signature="n#style#0;n#hr#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/reports.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1272" selection-end="1272" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="21" selection-start="3415" selection-end="3415" vertical-scroll-proportion="0.3181818">
-          <folding />
         </state>
       </provider>
     </entry>
