@@ -800,25 +800,25 @@ $(document).ready(function(){
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart9',
-            type: 'area'
+            type: 'bar'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Points Awarded'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            title: {
+                text: 'Active Campaigns'
+            },
+            categories: ['Points', 'iTunes', 'Home Depot']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Awarded'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'Points',
+            data: [10526, 4521, 6857]
         }]
     });
     var chart = new Highcharts.Chart({
