@@ -25,3 +25,41 @@ function login() {
         }
     },{scope: 'email'});
 }
+
+
+    function GetPoints(){
+
+        $('#points_totals').empty();
+        var aRow = "<div class='row'>";
+        aRow += "<div class='span1 company-image'><img alt='Your credit union' src='lib/img/green-savings.jpg' /></div>";
+        aRow += "<div class='span1 company-name'>Awesome CU</div>";
+        aRow += "<div class='span1 points-current'>Current: 1210218</div>";
+        aRow += "<div class='span1 points-pending'>Pending: 1214</div>";
+        aRow += "<div class='span1 view-rewards'><a href='http://yearofthecu.com/rewards.html'>View Rewards!</a></div>";
+        aRow += "<div class='span1 points-pending'>x</div>";
+        aRow += "<div class='span1 points-pending'>y</div>";
+        aRow += "<div class='span1 points-pending'>z</div>";
+        aRow += "<div class='span1 points-pending'>9</div>";
+        aRow += "<div class='span1 points-pending'>10</div>";
+        aRow += "<div class='span1 points-pending'>11</div>";
+        aRow += "<div class='span1 points-pending'>12</div>";
+        aRow += "</div>"
+        $('#points_totals').append(aRow);
+
+        aRow = "<div class='row'>";
+        aRow += "<div class='span1 company-image'><img alt='Your credit union' src='lib/img/childrens-mircle-network1.jpg' /></div>";
+        aRow += "<div class='span1 company-name'>Children's Miracle Network</div>";
+        aRow += "<div class='span1 points-current'>Current: 12218</div>";
+        aRow += "<div class='span1 points-pending'>Pending: 3214</div>";
+        aRow += "<div class='span1 view-rewards'><a href='http://yearofthecu.com/rewards.html'>View Rank!</a></div>";
+        aRow += "<div class='span1 points-pending'>x</div>";
+        aRow += "<div class='span1 points-pending'>y</div>";
+        aRow += "<div class='span1 points-pending'>z</div>";
+        aRow += "<div class='span1 points-pending'>9</div>";
+        aRow += "<div class='span1 points-pending'>10</div>";
+        aRow += "<div class='span1 points-pending'>11</div>";
+        aRow += "<div class='span1 points-pending'>12</div>";
+        aRow += "</div>"
+        $('#points_totals').append(aRow);
+
+}
