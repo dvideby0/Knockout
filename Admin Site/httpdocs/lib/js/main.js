@@ -101,46 +101,6 @@ $(document).ready(function(){
 
     var chart = new Highcharts.Chart({
         chart: {
-            renderTo: 'chart2',
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
-        },
-        title: {
-            text: 'Age'
-        },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
-            }
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    color: '#DDD',
-                    connectorColor: '#FFF',
-                    formatter: function() {
-                        return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
-                    }
-                }
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Supporters by Age',
-            data: (function() {
-                GetSupportersByAge(1, function(data) {
-                    return data;
-                });
-            })()
-        }]
-    });
-
-    var chart = new Highcharts.Chart({
-        chart: {
             renderTo: 'chart3',
             type: 'column'
         },
