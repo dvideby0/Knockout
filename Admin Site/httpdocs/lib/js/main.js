@@ -848,25 +848,60 @@ $(document).ready(function(){
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart11',
-            type: 'line'
+            type: 'column'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Network'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: [
+                'Jul',
+                'Aug',
+                'Sep',
+                'Oct'
+            ]
         },
         yAxis: {
+            min: 0,
             title: {
-                text: 'Fruit eaten'
+                text: 'Supporters'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            backgroundColor: '#444',
+            //textColor: '#000',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 270,
+            y: 1,
+            floating: true,
+            shadow: true
+        },
+        tooltip: {
+            formatter: function() {
+                return ''+
+                    this.x +': '+ this.y +'';
+            }
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
+            name: 'Facebook',
+            data: [854, 1542, 2351, 3254]
+
         }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'Twitter',
+            data: [425, 980, 1300, 2100]
+
+        }, {
+            name: 'MySpace',
+            data: [125, 450, 814, 920]
+
         }]
     });
     var chart = new Highcharts.Chart({
