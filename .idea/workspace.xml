@@ -23,7 +23,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="56" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.3243243">
+            <state line="236" column="45" selection-start="12381" selection-end="12381" vertical-scroll-proportion="0.16025642">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,7 +46,6 @@
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -81,9 +80,7 @@
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="4617" selection-start="4788" selection-end="4788" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,9 +107,7 @@
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/grid.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="195" column="0" selection-start="7461" selection-end="7461" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#4125#6244#2" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,15 +155,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -203,9 +189,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="75" />
-    <option name="y" value="42" />
+    <option name="y" value="47" />
     <option name="width" value="1406" />
-    <option name="height" value="870" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -410,66 +396,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="httpdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slickgrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="httpdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -479,8 +405,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -532,7 +458,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="42" width="1406" height="870" extended-state="1" />
+    <frame x="75" y="47" width="1406" height="865" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -606,11 +532,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/1-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.44155845" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/20-functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="0" selection-end="4559" vertical-scroll-proportion="0.27079645" />
@@ -619,13 +540,6 @@
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="26287" selection-start="26516" selection-end="26516" vertical-scroll-proportion="0.24070796">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -647,9 +561,7 @@
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/grid.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="0" selection-start="7461" selection-end="7461" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#4125#6244#2" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -811,9 +723,7 @@
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="4617" selection-start="4788" selection-end="4788" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -838,9 +748,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/bootstrap-transition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="19" selection-start="900" selection-end="900" vertical-scroll-proportion="0.55988026">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.3243243">
+        <state line="236" column="45" selection-start="12381" selection-end="12381" vertical-scroll-proportion="0.16025642">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -863,7 +789,6 @@
             <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
