@@ -30,8 +30,16 @@ footer{
     border: #0088cc 2px solid;
 }
 
-
-
+input[type=number] {
+    border-radius: 4px;
+    text-align: left;
+    border: #0088cc 2px solid;
+}
+select{
+    border-radius: 4px;
+    text-align: left;
+    border: #0088cc 2px solid;
+}
 
 
 .com { color: #93a1a1; }

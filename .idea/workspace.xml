@@ -23,7 +23,31 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="34" selection-start="6716" selection-end="6716" vertical-scroll-proportion="0.50389105">
+            <state line="204" column="18" selection-start="10074" selection-end="10074" vertical-scroll-proportion="0.70233464">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -42,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/models.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/charts/core.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/sandbox.html" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/sandbox.html" />
@@ -57,6 +80,7 @@
         <option value="$USER_HOME$/AppData/Local/Temp/20-functions.js" />
         <option value="$PROJECT_DIR$/Server/supportus/functions.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js" />
+        <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/index.html" />
       </list>
     </option>
@@ -348,11 +372,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Server/node_modules/express/Readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="87" selection-start="146" selection-end="182" vertical-scroll-proportion="0.110569105" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/13-functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="22" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
@@ -451,10 +470,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="34" selection-start="6716" selection-end="6716" vertical-scroll-proportion="0.50389105">
-          <folding />
+        <state line="204" column="18" selection-start="10074" selection-end="10074" vertical-scroll-proportion="0.70233464">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

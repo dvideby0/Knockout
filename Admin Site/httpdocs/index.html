@@ -180,7 +180,10 @@
                         Name: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span4" />
                     </div>
                     <div>
-                        URL: <input style="margin-bottom: 35px;" id="Campaign-URL-Input" class="btn-input span4" />
+                        URL: <input style="margin-bottom: 20px;" id="Campaign-URL-Input" class="btn-input span4" />
+                    </div>
+                    <div>
+                        Points to Award: <input type="number" style="margin-bottom: 35px;" id="Campaign-Points-Input" class="btn-input span4" />
                     </div>
                     <div>
                         Message: <textarea id="Campaign-Message-Input" style="height: 200px;"  class="span4 txt-input"></textarea>
@@ -188,10 +191,19 @@
                 </div>
                 <div class="span3">
                     <div style="margin-top: 55px;">
-                        Age: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
-                        Sex: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Age From: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Age To: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Sex:<br/>
+                        <select style="margin-bottom: 20px;" id="Campaign-Name-Input" class="">
+                            <option value="Both" selected>Both</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        </select><br/>
                         Location: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
-                        Education: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
+                        Education:<br/>
+                            <input type="checkbox" id="Campaign-Name-Input" class="btn-input span1" title="All"/>All<br/>
+                            <input type="checkbox" id="Campaign-Name-Input" class="btn-input span1" title="High School"/>High School<br/>
+                            <input type="checkbox" id="Campaign-Name-Input" class="btn-input span1" title="College"/>College<br/><br/>
                         Influence Score: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
                         Avg. Friend Count: <input id="Campaign-Name-Input" class="btn-input span3" />
                     </div>
