@@ -614,34 +614,55 @@ $(document).ready(function(){
         },
         series: [{
             name: 'Male',
-            data: [1562]
+            data: [2370]
         }, {
             name: 'Female',
-            data: [895]
+            data: [1240]
         }]
     });
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart4',
-            type: 'bar'
+            type: 'area'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Location'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: ['July', 'Aug', 'Sep', 'Oct', 'Nov'],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Supporters'
+            }
+        },
+        tooltip: {
+            formatter: function() {
+                return this.series.name +' has<b>'+
+                    Highcharts.numberFormat(this.y, 0) +'</b><br/>supporters in '+ this.x;
+            }
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
+            name: 'St. Petersburg',
+            data: [null, 2, 24, 152, 380]
         }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'Tampa',
+            data: [null, 12, 72, 224, 424]
         }]
     });
     var chart = new Highcharts.Chart({
