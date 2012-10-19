@@ -1,0 +1,50 @@
+{
+    "id": "1335106967",
+    "name": "Rich Brookfield",
+    "email": {
+        "email_address":"rbrookfield@yahoo.com",
+        "verified": true
+    },
+    "dob":508174400,
+    "gender": "male",
+    "client":[
+        {
+            "id":12345
+        },
+        {
+            "id":45678
+        }
+    ],
+    "network_id":123445,
+    "access_token" : "AAAFHDrQkwDUBAJZBH7nUdzza2KJIXk5JzGlcB744in8fxegJJOrsOS5Q8uaopEnQZAAG26Kq18A3CqkqCXU5RyotBMpLp9ZA69txIQihgZDZD",
+    "education":"G",
+    "likes_avg" :0.98,
+    "comments_avg" :0.98,
+    "state":"Florida",
+    "city":"st petersburg",
+    "Lat" : 27.906142924118,
+    "Lon" : -82.785370074997,
+    "friends":[
+        {
+            "id": "1335106967",
+            "dob":508174400,
+            "gender": "male",
+            "education":"G",
+            "state":"Florida",
+            "city":"st petersburg",
+            "Lat" : 27.906142924118,
+            "Lon" : -82.785370074997,
+        },
+        {
+            "id": "1335106967",
+            "dob":508174400,
+            "gender": "male",
+            "education":"G",
+            "state":"Florida",
+            "city":"st petersburg",
+            "Lat" : 27.906142924118,
+            "Lon" : -82.785370074997
+        }
+    ],
+    "created_date": "10/17/2012"
+}

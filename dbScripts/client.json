@@ -1,0 +1,19 @@
+{
+    "client_id" : "12345678910",
+    "name": "GTE",
+    "users":[
+        {
+            "user_name":"adminUser",
+            "real_name":"rich",
+            "role":"A",
+            "status":"on"
+        }
+    ],
+    "button":{
+        "text":"lick us",
+        "button_color":"blue",
+        "text_color":"black",
+        "background_color":"red",
+        "main_text":"black"
+    }
+}

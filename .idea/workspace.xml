@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfe034b9-aa9b-4138-891f-f5ab55e14232" name="Default" comment="" />
+    <list default="true" id="cfe034b9-aa9b-4138-891f-f5ab55e14232" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbScripts/script" afterPath="$PROJECT_DIR$/dbScripts/script" />
+    </list>
     <ignored path="Knockout.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,9 +23,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
+      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/supportus/users.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="236" column="45" selection-start="12381" selection-end="12381" vertical-scroll-proportion="0.16025642">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -71,11 +75,15 @@
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="28" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+=======
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="jquery.event.drag-2.0.min.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,20 +115,34 @@
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/grid.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="195" column="0" selection-start="7461" selection-end="7461" vertical-scroll-proportion="0.0">
+=======
+      <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/supportus/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="16" selection-start="2586" selection-end="2594" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="slickgrid.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/slickgrid.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="166" column="0" selection-start="4205" selection-end="4205" vertical-scroll-proportion="0.0">
+=======
+      <file leaf-file-name="script" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dbScripts/script">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="1" selection-start="4112" selection-end="4112" vertical-scroll-proportion="3.1455805">
+>>>>>>> new data models with updated json formats
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="slickgrid.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/slickgrid.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -142,14 +164,55 @@
                 <marker date="1350672448269" expanded="false" signature="40057:40115" placeholder="..." />
                 <marker date="1350672448269" expanded="false" signature="40147:40163" placeholder="..." />
               </folding>
+=======
+      <file leaf-file-name="report.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbScripts/report.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="199" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="network.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbScripts/network.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="54" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="campaign.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbScripts/campaign.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="347" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbScripts/client.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="385" vertical-scroll-proportion="0.0">
+              <folding />
+>>>>>>> new data models with updated json formats
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="914" column="0" selection-start="24006" selection-end="24009" vertical-scroll-proportion="0.0">
+=======
+      <file leaf-file-name="user.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbScripts/user.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="1266" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
               <folding />
             </state>
           </provider>
@@ -168,6 +231,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$USER_HOME$/AppData/Local/Temp/13-functions.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/14-functions.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/15-functions.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/17-functions.js" />
+>>>>>>> new data models with updated json formats
         <option value="$USER_HOME$/AppData/Local/Temp/1-index.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/20-functions.js" />
         <option value="$PROJECT_DIR$/Server/supportus/functions.js" />
@@ -184,14 +254,27 @@
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/jquery.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/index.html" />
+        <option value="$PROJECT_DIR$/dbScripts/user.json" />
+        <option value="$PROJECT_DIR$/dbScripts/client.json" />
+        <option value="$PROJECT_DIR$/dbScripts/campaign.json" />
+        <option value="$PROJECT_DIR$/dbScripts/network.json" />
+        <option value="$PROJECT_DIR$/dbScripts/report.json" />
+        <option value="$PROJECT_DIR$/dbScripts/script" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="75" />
     <option name="y" value="47" />
     <option name="width" value="1406" />
     <option name="height" value="865" />
+=======
+    <option name="x" value="-22" />
+    <option name="y" value="25" />
+    <option name="width" value="1280" />
+    <option name="height" value="711" />
+>>>>>>> new data models with updated json formats
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -219,7 +302,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,10 +351,6 @@
               <option name="myItemId" value="Server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -284,59 +362,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Admin Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="httpdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="httpdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Knockout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="httpdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="dbScripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -398,12 +424,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
+    <property name="options.lastSelected" value="preferences.editor" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -458,13 +485,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="75" y="47" width="1406" height="865" extended-state="0" />
+=======
+    <frame x="-22" y="25" width="1280" height="711" extended-state="0" />
+>>>>>>> new data models with updated json formats
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22750549" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16207455" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> new data models with updated json formats
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291367" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -532,6 +568,7 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/AppData/Local/Temp/20-functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="0" selection-end="4559" vertical-scroll-proportion="0.27079645" />
@@ -540,13 +577,31 @@
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="26287" selection-start="26516" selection-end="26516" vertical-scroll-proportion="0.24070796">
+=======
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="57" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="919" column="35" selection-start="24421" selection-end="24421" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Server/supportus/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="10" selection-start="3360" selection-end="3360" vertical-scroll-proportion="0.8517442">
+=======
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
           <folding />
         </state>
       </provider>
@@ -558,6 +613,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/grid.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="0" selection-start="7461" selection-end="7461" vertical-scroll-proportion="0.0">
@@ -709,45 +765,100 @@
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/recline/slickgrid.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="166" column="0" selection-start="4205" selection-end="4205" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+=======
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="26287" selection-start="26516" selection-end="26516" vertical-scroll-proportion="0.24070796" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4617" selection-start="4788" selection-end="4788" vertical-scroll-proportion="0.0">
+        <state line="13" column="57" selection-start="722" selection-end="722" vertical-scroll-proportion="0.027124774">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="914" column="0" selection-start="24006" selection-end="24009" vertical-scroll-proportion="0.0">
+        <state line="919" column="35" selection-start="24421" selection-end="24421" vertical-scroll-proportion="0.025996534">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.025423728">
+>>>>>>> new data models with updated json formats
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="18" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/Server/supportus/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery.event.drag-2.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4617" selection-start="4788" selection-end="4788" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/dbScripts/user.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1266" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="914" column="0" selection-start="24006" selection-end="24009" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/dbScripts/client.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="385" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="34" selection-start="0" selection-end="94839" vertical-scroll-proportion="0.0778626">
+=======
+    <entry file="file://$PROJECT_DIR$/Server/supportus/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="16" selection-start="2586" selection-end="2594" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="28" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/dbScripts/campaign.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="347" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/bootstrap-transition.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="19" selection-start="900" selection-end="900" vertical-scroll-proportion="0.55988026">
@@ -760,12 +871,25 @@
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/dbScripts/network.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="54" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
+    <entry file="file://$PROJECT_DIR$/dbScripts/report.json">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="199" vertical-scroll-proportion="0.0">
+>>>>>>> new data models with updated json formats
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbScripts/script">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="236" column="45" selection-start="12381" selection-end="12381" vertical-scroll-proportion="0.16025642">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -806,9 +930,28 @@
             <element signature="n#style#0;n#hr#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+=======
+        <state line="121" column="1" selection-start="4112" selection-end="4112" vertical-scroll-proportion="3.1455805">
+          <folding />
+>>>>>>> new data models with updated json formats
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

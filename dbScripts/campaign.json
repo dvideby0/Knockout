@@ -1,0 +1,12 @@
+{
+    "campaign_id" : 12345,
+    "name": "auto loan",
+    "client_id":"12345678910",
+    "start_date":"12/10/2012",
+    "end_date":"01/03/2013",
+    "message": "1.9% auto loan rates",
+    "url":"www.autoloan.com",
+    "image":"blob data or link to image",
+    "status":"ON",
+    "filter":"age,sex,education,location,friend_count,influence_score"
+}

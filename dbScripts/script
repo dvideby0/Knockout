@@ -10,76 +10,115 @@ db.createCollection("networks");
 
 -- insert a user --
 
-db.users.save( {
-  "userId": "1335106967", 
-  "name": "Rich Brookfield", 
-  "first_name": "Rich", 
-  "last_name": "Brookfield", 
-  "link": "http://www.facebook.com/rbrookfield", 
-  "username": "rbrookfield", 
-  "birthday": "09/26/1983", 
-  "hometown": {
-    "id": "103095296397919", 
-    "name": "Largo, Florida"
-  }, 
-  "Location" : [ 	{ 	"Lat" : 27.906142924118, 	"Lon" : -82.785370074997, 	"Name" : "Largo, Florida" } ],
-  "work": [
-    {
-      "employer": {
-        "id": "152912851497967", 
-        "name": "PSCU"
-      }, 
-      "position": {
-        "id": "321818051195586", 
-        "name": "Advanced Technology Research Analyst"
-      }, 
-      "start_date": "2007-01"
-    }
-  ], 
-  "gender": "male", 
-  "relationship_status": "Engaged",
-  "email": "rbrookfield@yahoo.com",
-  "timezone": -4, 
-  "locale": "en_US", 
-  "verified": true, 
-  "updated_time": "2012-09-16T01:26:10+0000", 
-  "friends_count": 524,
-  "created_date": "10/17/2012",
-  "AccessToken" : "AAAFHDrQkwDUBAJZBH7nUdzza2KJIXk5JzGlcB744in8fxegJJOrsOS5Q8uaopEnQZAAG26Kq18A3CqkqCXU5RyotBMpLp9ZA69txIQihgZDZD", 
-  "ClientID" : "12345678910",
-  "networkId" : "1234567"
-});
+db.users.insert( {
+                     "user_id": "1335106967",
+                     "name": "Rich Brookfield",
+                     "email": {
+                         "email_address":"rbrookfield@yahoo.com",
+                         "verified": true
+                     },
+                     "dob":508174400,
+                     "gender": "male",
+                     "client":[
+                         {
+                             "id":12345
+                         },
+                         {
+                             "id":45678
+                         }
+                     ],
+                     "network_id":123445,
+                     "access_token" : "AAAFHDrQkwDUBAJZBH7nUdzza2KJIXk5JzGlcB744in8fxegJJOrsOS5Q8uaopEnQZAAG26Kq18A3CqkqCXU5RyotBMpLp9ZA69txIQihgZDZD",
+                     "education":"G",
+                     "likes_avg" :0.98,
+                     "comments_avg" :0.98,
+                     "state":"Florida",
+                     "city":"st petersburg",
+                     "Lat" : 27.906142924118,
+                     "Lon" : -82.785370074997,
+                     "friends":[
+                         {
+                             "id": "1335106967",
+                             "dob":508174400,
+                             "gender": "male",
+                             "education":"G",
+                             "state":"Florida",
+                             "city":"st petersburg",
+                             "Lat" : 27.906142924118,
+                             "Lon" : -82.785370074997,
+                         },
+                         {
+                             "id": "1335106967",
+                             "dob":508174400,
+                             "gender": "male",
+                             "education":"G",
+                             "state":"Florida",
+                             "city":"st petersburg",
+                             "Lat" : 27.906142924118,
+                             "Lon" : -82.785370074997
+                         }
+                     ],
+                     "created_date": "10/17/2012"
+                 });
 
 
 -- insert a client --
 
-db.clients.save({   "clientId" : "12345678910", "name": "GTE"  });
+db.clients.insert({
+                      "client_id" : "12345678910",
+                      "name": "GTE",
+                      "users":[
+                          {
+                              "user_name":"adminUser",
+                              "real_name":"rich",
+                              "role":"A",
+                              "status":"on"
+                          }
+                      ],
+                      "button":{
+                          "text":"lick us",
+                          "button_color":"blue",
+                          "text_color":"black",
+                          "background_color":"red",
+                          "main_text":"black"
+                      }
+                  });
+
 
 -- insert a campaign --
-db.campaigns.save({
-     "campaignId" : "auto loan",
-	 "name": "auto loan",
-	 "message": "1.9% auto loan rates",
-	 "url":"www.autoloan.com",
-	 "image":"blob data or link to image",
-	 "status":"ON",
-	 "condition":" "
-});
+db.campaigns.insert({
+                      "campaign_id" : 12345,
+                      "name": "auto loan",
+                      "client_id":"12345678910",
+                      "start_date":"12/10/2012",
+                      "end_date":"01/03/2013",
+                      "message": "1.9% auto loan rates",
+                      "url":"www.autoloan.com",
+                      "image":"blob data or link to image",
+                      "status":"ON",
+                      "filter":"age,sex,education,location,friend_count,influence_score"
+                  });
 
 
 -- insert a network --
 
-db.networks.save({ "networkId" : "1234567", "name":"Facebook" });
+db.networks.insert(
+          {
+              "networkId" : "1234567",
+              "name":"Facebook"
+          });
 
 -- insert a report --
 
-db.reports.save({
-   "userId": "1335106967",
-   "campaignId" : "auto loan",
-   "clientId" : "12345678910", 
-   "networkId" : "1234567",
-   "pointRewarded" : "10",
-   "pointsredeemed" : "0"
+db.reports.insert(
+{
+    "r_id": 1,
+    "user_id": "1335106967",
+    "campaign_id" : "auto loan",
+    "client_id" : "12345678910",
+    "network_id" : "1234567",
+    "point_given" : "10",
+    "point_accumulated" : "0"
 });
 
 
