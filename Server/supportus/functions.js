@@ -43,7 +43,7 @@ var supporters = {
                     no.Education = data[i].education;
                 }
                 no.LikesAvg = data[i].likes_avg;
-                no.CommentsAvg = data[i].comments_avg;
+                no.CmmtsAvg = data[i].comments_avg;
                 no.City = data[i].city;
                 no.State = data[i].state;
                 //no.CreatedOn = new Date(data[i].created_date*1000).format("mm-dd-yyyy h:MM:ss TT");
@@ -59,10 +59,6 @@ var supporters = {
     }
 
 }
-
-
-
-
 
 
 /*
