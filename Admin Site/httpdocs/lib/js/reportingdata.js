@@ -117,13 +117,22 @@ function GetSupporters(onSuccess) {
         url: "http://yearofthecu.com:3838/supporters",
         dataType: "json",
         success: function(data) {
-            newSupporters = data;
             onSuccess(data);
         }
     })
 }
 
-var newSupporters = null;
+function GetSupporters(onSuccess) {
+    $.ajax({
+        type: "GET",
+        url: "http://yearofthecu.com:3838/campaigns",
+        dataType: "json",
+        success: function(data) {
+            newSupporters = data;
+            onSuccess(data);
+        }
+    })
+}
 
 var supportersDs = new recline.Model.Dataset({
     records: [

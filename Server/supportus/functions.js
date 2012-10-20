@@ -89,22 +89,27 @@ var campaignsNS = {
 
                 if (data[i].campaign_id) {
 
-                    no.Id = data[i].campaign_id;
-                    no.Name = data[i].name;
+                    //no.Id = data[i].campaign_id;
+                    no.Name = data[i].Name;
+                    no.Url = data[i].URL;
+                    no.Message = data[i].Message;
+                    no.AgeFrom = data[i].AgeFrom;
+                    no.AgeTo = data[i].AgeTo;
+                    no.Gender = data[i].Gender;
+                    //no.Location = data[i].Location;
+
                     try {
-                        no.StartDate = new Date(data[i].start_date * 1000).format("mm-dd-yyyy");
+                        no.Start = new Date(data[i].Start * 1000).format("mm-dd-yyyy");
                     } catch (ex) {
-                        no.StartDate = null;
+                        no.Start = null;
                     }
                     try {
-                        no.EndDate = new Date(data[i].end_date * 1000).format("mm-dd-yyyy");
+                        no.EndDate = new Date(data[i].End * 1000).format("mm-dd-yyyy");
                     } catch (ex) {
                         no.EndDate = null;
                     }
-                    no.Message = data[i].message;
-                    no.Url = data[i].url;
-                    no.Status = data[i].status;
-                    no.Filter = data[i].filter;
+
+                    no.Active = data[i].Active;
 
                     formattedData.push(no);
 
