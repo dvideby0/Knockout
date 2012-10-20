@@ -260,6 +260,10 @@ $(document).ready(function(){
             data: [6, 12, 72, 224, 424]
         }]
     });
+
+    GetSupportersByEducation(callbackEducation);
+
+    function callbackEducation(data5){
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart5',
@@ -293,19 +297,28 @@ $(document).ready(function(){
             type: 'pie',
             name: 'Education',
             data: [
-                ['High School', 13.5],
-                ['Associates Degree', 16.5],
-                {
-                    name: 'Bachelors Degree',
-                    y: 52.2,
-                    sliced: true,
-                    selected: true
-                },
-                ['Masters Degree', 12.8],
-                ['N/A', 5.0]
+                ['High School', data5.high],
+                ['Bachelors Degree',data5.bach],
+                ['Masters Degree', data5.master],
+                ['N/A', data5.none]
             ]
         }]
     });
+    }
+    function GetSupportersByEducation(callbackEducation) {
+        $.ajax({
+            type: "GET",
+            url: "http://yearofthecu.com:3738/usersByEducation",
+            dataType: "json",
+            success: function(data) {
+                callbackEducation(data);
+            }
+        })
+    }
+
+    GetSupportersByFriendsGender(callbackFriendsGender);
+
+    function callbackFriendsGender(data6){
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart6',
@@ -324,10 +337,10 @@ $(document).ready(function(){
         },
         series: [{
             name: 'Male',
-            data: [352]
+            data: [data6.male]
         }, {
             name: 'Female',
-            data: [415]
+            data: [data6.female]
         }]
     });
 
@@ -364,6 +377,18 @@ $(document).ready(function(){
             data: [19, 152, 480, 725, 900]
         }]
     });
+
+    }
+    function GetSupportersByFriendsGender(callbackFriendsGender) {
+        $.ajax({
+            type: "GET",
+            url: "http://yearofthecu.com:3738/usersFriendsByGender",
+            dataType: "json",
+            success: function(data) {
+                callbackFriendsGender(data);
+            }
+        })
+    }
 
     chart = new Highcharts.Chart({
         chart: {
