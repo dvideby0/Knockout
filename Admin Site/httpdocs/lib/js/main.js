@@ -507,7 +507,7 @@ $(document).ready(function(){
     function GetNetworks(callNetwork) {
         $.ajax({
             type: "GET",
-            url: "http://localhost:3938/supportersByNetwork",
+            url: "http://yearofthecu.com:3738/supportersByNetwork",
             dataType: "json",
             success: function(data) {
                 callNetwork(data);
