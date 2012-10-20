@@ -137,6 +137,10 @@ app.post('/campaign', function(req, res){
 });
 
 app.get('/campaigns', function(req,res){
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
     campaigns.find({},{_id:0}).toArray(function(err, array){res.send(array);});
 });
 

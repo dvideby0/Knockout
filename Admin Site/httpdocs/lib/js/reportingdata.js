@@ -49,9 +49,12 @@ $(document).ready(function() {
                 }
             });
 
-            filterEditor = new recline.View.FilterEditor({
-                model: campaignsDs
-            });
+                filterEditor = new recline.View.FilterEditor({
+                    model: campaignsDs
+                });
+
+                renderGrid();
+                addFilter();
 
             break;
 
@@ -67,10 +70,12 @@ $(document).ready(function() {
                 }
             });
 
-            filterEditor = new recline.View.FilterEditor({
-                model: channelsDs
-            });
+                filterEditor = new recline.View.FilterEditor({
+                    model: channelsDs
+                });
 
+                renderGrid();
+                addFilter();
             break;
 
         default:
@@ -122,17 +127,6 @@ function GetSupporters(onSuccess) {
     })
 }
 
-function GetCampaigns(onSuccess) {
-    $.ajax({
-        type: "GET",
-        url: "http://yearofthecu.com:3838/campaigns",
-        dataType: "json",
-        success: function(data) {
-            newSupporters = data;
-            onSuccess(data);
-        }
-    })
-}
 
 var supportersDs = new recline.Model.Dataset({
     records: [
