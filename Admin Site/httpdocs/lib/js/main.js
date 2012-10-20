@@ -260,7 +260,7 @@ $(document).ready(function(){
                 },
                 series: [{
                     name: 'Supporters',
-                    data: data4.data
+                    data: data4.count
                 }]
             });
     }
@@ -269,7 +269,7 @@ $(document).ready(function(){
     function GetSupportersByArea(callbackArea) {
         $.ajax({
             type: "GET",
-            url: "http://yearofthecu.com:3738/usersByDate",
+            url: "http://yearofthecu.com:3738/usersByArea",
             dataType: "json",
             success: function(data) {
                 callbackArea(data);
