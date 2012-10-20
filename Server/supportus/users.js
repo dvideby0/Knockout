@@ -85,26 +85,34 @@ function getUsersByArea(CallbackUsersByArea){
     var data1 = [];
     users.find().toArray(function(err, data){
         for(var i=0 ; i < data.length ; i++){
-            for(var d = 0; d < data[i].friends.length ; d ++){
-                data1.push(data[i].friends[d].gender);
-            }
-        }
-        var mCounter = 0 ;
-        var fCounter = 0 ;
-        for(var z =0 ; z< data1.length; z++ ){
-            if(data1[z]=="male"){
-                mCounter++;
-            }
-            if(data1[z]=="female"){
-                fCounter++;
+            var area = new Object();
+            area.name =data[i].state;
+            area.count = 1;
+            var flag = true;
+             for(var t = 0 ; t < data1.length ; t++){
+                 console.log(data1[t].nam + "db" + area.name);
+                 if(data1[t].name == area.name){
+                     data1[t].count = data1[t].count+area.count;
+                     flag = false;
+                 }
+             }
+            if(flag){
+                data1.push(area);
             }
         }
 
-        var genderCount = new Object();
-        genderCount.male = mCounter;
-        genderCount.female = fCounter;
+        var states = [];
+        var count = [];
+        var areas = new Object();
+        for(var t = 0 ; t < data1.length ; t++){
+            states.push(data1[t].name);
+            count.push(data1[t].count);
+        }
+        areas.states = states;
+        areas.count = count;
 
-        CallbackFriendsByGender(genderCount);
+
+        CallbackUsersByArea(areas);
     });
 }
 
@@ -113,8 +121,12 @@ function getUsersFriendsByGender(CallbackFriendsByGender){
     var data1 = [];
     users.find().toArray(function(err, data){
         for(var i=0 ; i < data.length ; i++){
-            for(var d = 0; d < data[i].friends.length ; d ++){
-                data1.push(data[i].friends[d].gender);
+            var data2 = data[i].friends[0];
+            for(var d = 0; d < data2.length ; d ++){
+                console.log(data2[d].gender);
+                if(data2[d].gender){
+                data1.push(data2[d].gender);
+                }
             }
         }
         var mCounter = 0 ;

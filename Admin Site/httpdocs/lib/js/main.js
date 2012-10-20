@@ -101,7 +101,7 @@ $(document).ready(function(){
                 tooltip: {
                     formatter: function() {
                         return '<b>'+ this.series.name +'</b><br/>'+
-                            this.x +': '+ this.y +'°C';
+                            this.x +': '+ this.y +'';
                     }
                 },
                 series: [{
@@ -215,51 +215,56 @@ $(document).ready(function(){
         })
     }
 
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart4',
-            type: 'area'
-        },
-        title: {
-            text: 'Location'
-        },
-        xAxis: {
-            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
-            tickmarkPlacement: 'on',
-            title: {
-                enabled: false
+    GetSupportersByArea(callbackArea);
+
+    function callbackArea(data4){
+        var chart = new Highcharts.Chart(
+            {
+                chart: {
+                    renderTo: 'chart4',
+                    type: 'area',
+                    marginBottom: 70
+                },
+                title: {
+                    text: 'Total: '
+                },
+                xAxis: {
+                    categories: data4.states
+                },
+                yAxis: {
+                    title: {
+                        text: 'Count'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    formatter: function() {
+                        return '<b>'+ this.series.name +'</b><br/>'+
+                            this.x +': '+ this.y +'';
+                    }
+                },
+                series: [{
+                    name: 'Supporters',
+                    data: data4.count
+                }]
+            });
+    }
+
+
+    function GetSupportersByArea(callbackArea) {
+        $.ajax({
+            type: "GET",
+            url: "http://yearofthecu.com:3738/usersByArea",
+            dataType: "json",
+            success: function(data) {
+                callbackArea(data);
             }
-        },
-        yAxis: {
-            title: {
-                text: 'Supporters'
-            }
-        },
-        tooltip: {
-            formatter: function() {
-                return this.series.name +' has<b>'+
-                    Highcharts.numberFormat(this.y, 0) +'</b><br/>supporters in '+ this.x;
-            }
-        },
-        plotOptions: {
-            area: {
-                stacking: 'normal',
-                lineColor: '#666666',
-                lineWidth: 1,
-                marker: {
-                    lineWidth: 1,
-                    lineColor: '#666666'
-                }
-            }
-        },
-        series: [{
-            name: 'St. Petersburg',
-            data: [5, 15, 24, 152, 380]
-        }, {
-            name: 'Tampa',
-            data: [6, 12, 72, 224, 424]
-        }]
-    });
+        })
+    }
 
     GetSupportersByEducation(callbackEducation);
 
