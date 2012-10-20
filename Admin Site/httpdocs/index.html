@@ -156,27 +156,6 @@
                             <th>End</th>
                             <th>Status</th>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>iTunes</td>
-                            <td>10-25-2012</td>
-                            <td>10-30-2012</td>
-                            <td>Active</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Bed Bath & Beyond</td>
-                            <td>11-15-2012</td>
-                            <td>12-05-2012</td>
-                            <td>Active</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Home Depot</td>
-                            <td>11-20-2012</td>
-                            <td>11-30-2012</td>
-                            <td>Active</td>
-                        </tr>
                     </table>
                 </div>
             </div>
@@ -195,8 +174,9 @@
                 </div>
                 <div class="span3">
                     <div style="margin-top: 55px;">
-                        Age From: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Age-From-Input" class="btn-input span3" />
-                        Age To: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Age-To-Input" class="btn-input span3" />
+                        Age:<br>
+                        From: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Age-From-Input" class="btn-input span1" />
+                        To: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Age-To-Input" class="btn-input span1" /><br>
                         Sex:
                         <select style="margin-bottom: 20px;" id="Campaign-Gender-Input" class="span3">
                             <option value="Both" selected>Both</option>
@@ -221,7 +201,9 @@
                 <div class="span3"  style="margin-top: 55px; text-align: left;">
                     <div>
                         Influence Score: <input style="margin-bottom: 20px;" id="Campaign-Influence-Input" class="btn-input span3" />
-                        Avg. Friend Count: <input id="Campaign-Friend-Count-Input" class="btn-input span3" />
+                        Average Friends:<br>
+                        From: <input id="Campaign-Friend-Count-Input" class="btn-input span1" /> To: <input id="Campaign-Friend-Count-To" class="btn-input span1" />
+
                     </div>
                     <div style="margin-top: 30px; margin-left: 0;" class="input-append date span3" id="Campaign-Start-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
                         <input size="16" type="text" value="Start Date" readonly="">

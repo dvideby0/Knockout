@@ -55,6 +55,17 @@ $(document).ready(function(){
         $(this).datepicker('show');
     });
 
+    $.ajax({
+        type: 'GET',
+        url: 'http://yearofthecu.com:3737/campaigns',
+        timeout: 20000,
+        success: function(data){
+            for(var i = 0; i <data.length; i++){
+                $('#Manage-Campaign-Table').append('<tr><td>' + i + '</td><td>' + data[i].Name + '</td><td>' + data[i].Start + '</td><td>' + data[i].End + '</td><td>' + data[i].Active + '</td></tr>')
+            }
+        }
+    });
+
 //------------------------------Navigation Controls--------------------------------------
 
     $('.nav li').click(function(){
@@ -608,12 +619,16 @@ function ChangePage(page){
 function SaveCampaign(){
     $.ajax({
         type: 'POST',
-        url: 'http://yearofthecu:3737/campaign',
+        url: 'http://yearofthecu.com:3737/campaign',
         dataType: 'application/json',
-        data: JSON.stringify({Name: $('#Campaign-Name-Input').val(), URL: $('#Campaign-URL-Input').val(), Message: $('#Campaign-Message-Input').val(), AgeFrom: $('#Campaign-Age-From-Input').val(), AgeTo: $('#Campaign-Age-To-Input').val(), Gender: $('#Campaign-Gender-Input').val(), Location: $('#Campaign-Location-Input').val(), HS: $('#Campaign-HS-Input').val(), College: $('#Campaign-College-Input').val(), Graduate: $('#Campaign-Graduate-Input').val(), Influence: $('#Campaign-Influence-Input').val(), Friends: $('#Campaign-Friend-Count-Input').val(), Start: $('#Campaign-Start-Input').val(), End: $('#Campaign-End-Input').val(), Active: $('#Campaign-Active-CBox').val()}),
+        data: {Name: $('#Campaign-Name-Input').val(), URL: $('#Campaign-URL-Input').val(), Message: $('#Campaign-Message-Input').val(), AgeFrom: $('#Campaign-Age-From-Input').val(), AgeTo: $('#Campaign-Age-To-Input').val(), Gender: $('#Campaign-Gender-Input').val(), Location: $('#Campaign-Location-Input').val(), HS: $('#Campaign-HS-Input').val(), College: $('#Campaign-College-Input').val(), Graduate: $('#Campaign-Graduate-Input').val(), Influence: $('#Campaign-Influence-Input').val(), Friends: $('#Campaign-Friend-Count-Input').val(), Start: $('#Campaign-Start-Input').val(), End: $('#Campaign-End-Input').val(), Active: $('#Campaign-Active-CBox').val()},
         timeout: 20000,
         success: function(data){
-            alert(data);
+
+        },
+        complete: function(){
+            alert('Campaign Submitted!');
+            $('input, select, textarea').val('');
         }
     });
 }
