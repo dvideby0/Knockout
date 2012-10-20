@@ -1,64 +1,42 @@
-var express = require('express'),
-    fb = require('facebook-js'),
-    app = express.createServer(
-        express.bodyParser(),
-        express.cookieParser(),
-        express.session({ secret: 'some secret' })
-    );
-
-app.options('*',function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
-    res.header("Access-Control-Allow-Headers", "Content-Type");
-    res.header("Access-Control-Max-Age", "3628800");
-    res.send('options response');
-});
-
-app.post('/', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
-    res.header("Access-Control-Allow-Headers", "Content-Type");
-    res.header("Access-Control-Max-Age", "3628800");
-    res.send('post response');
-});
-
+var express = require('express')
+var app = express.createServer();
 var Mongolian = require("mongolian");
-var uuid = require('node-uuid');
-var jQuery = require('jquery');
+//var uuid = require('node-uuid');
 var server = new Mongolian;
-var db = server.db("supportus");
+var db = server.db("knockoutDB");
 var users = db.collection("users");
-var campaigns = db.collection("campaigns");
 
-app.get('/supportersByAge', function (req, res) {
+app.get('/supporters', function (req, res) {
 
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
     res.header("Access-Control-Allow-Headers", "Content-Type");
     res.header("Access-Control-Max-Age", "3628800");
 
-    var results = [];
-    var clientId = parseInt(req.query.clientId);
+    supporters.getAll(function (data) {
+        res.send(data);
+    });
 
-    //console.log("webservice hit, clientId: " + clientId);
 
-    if (clientId) {
+});
 
-        var users = jQuery.grep(usersJson, function(user) {
-            return user.ClientId === clientId;
+var supporters = {
+
+    getAll: function(getAllCallBack) {
+
+        users.find().toArray(function(err, data){
+
+            for (var i = 0; i < data.length; i++) {
+                data[i]._id = null;
+            }
+
+            getAllCallBack(data);
+
         });
-
-        for (var i = 0; i < users.length; i++) {
-            var age = getAge(users[i].DOB * 1000);
-            results.push({ name: age });
-        }
-
-        //console.log("returning data: " + results);
-        res.send(results);
 
     }
 
-});
+}
 
 
 var creditUnionsJson = [
@@ -72,7 +50,6 @@ var creditUnionsJson = [
         ]
     }
 ];
-
 var usersJson = [
     {
         Name: "JT Hope",
@@ -118,7 +95,6 @@ var usersJson = [
         Name: "Rich Brookfield"
     }
 ];
-
 var campaignsJson = [
     {
         Id: 1,

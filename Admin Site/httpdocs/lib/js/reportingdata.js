@@ -10,18 +10,40 @@ $(document).ready(function() {
 
         case "supporters":
 
-            grid = new recline.View.SlickGrid({
-                model: supportersDs,
-                el: gridElement,
-                state: {
-                    gridOptions: {
-                        forceFitColumns: true
-                    }
-                }
-            });
+            GetSupporters(function(data) {
 
-            filterEditor = new recline.View.FilterEditor({
-                model: supportersDs
+                var ds = new recline.Model.Dataset({
+                    records: data,
+                    fields: [
+                        {id: 'id'},
+                        {id: 'name'},
+                        {id: 'email'},
+                        {id: 'dob', type: 'date'},
+                        {id: 'gender'},
+                        {id: 'education'},
+                        {id: 'city'},
+                        {id: 'state'},
+                        {id: 'created_date', type: 'date'}
+                    ]
+                });
+
+                grid = new recline.View.SlickGrid({
+                    model: ds,
+                    el: gridElement,
+                    state: {
+                        gridOptions: {
+                            forceFitColumns: true
+                        }
+                    }
+                });
+
+                filterEditor = new recline.View.FilterEditor({
+                    model: ds
+                });
+
+                renderGrid();
+                addFilter();
+
             });
 
             break;
@@ -67,14 +89,18 @@ $(document).ready(function() {
 
     }
 
-    if (filterEditor) {
-        $('#filterEditor').append(filterEditor.el);
+    function renderGrid() {
+        if (grid) {
+            grid.visible = true;
+            grid.autosizeColumns = true;
+            grid.render();
+        }
     }
 
-    if (grid) {
-        grid.visible = true;
-        grid.autosizeColumns = true;
-        grid.render();
+    function addFilter() {
+        if (filterEditor) {
+            $('#filterEditor').append(filterEditor.el);
+        }
     }
 
     function resizeReportUI() {
@@ -96,22 +122,19 @@ $(document).ready(function() {
 
 });
 
-$.extend({
-    getUrlVars: function(){
-        var vars = [], hash;
-        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-        for(var i = 0; i < hashes.length; i++)
-        {
-            hash = hashes[i].split('=');
-            vars.push(hash[0]);
-            vars[hash[0]] = hash[1];
+function GetSupporters(onSuccess) {
+    $.ajax({
+        type: "GET",
+        url: "http://yearofthecu.com:3838/supporters",
+        dataType: "json",
+        success: function(data) {
+            newSupporters = data;
+            onSuccess(data);
         }
-        return vars;
-    },
-    getUrlVar: function(name){
-        return $.getUrlVars()[name];
-    }
-});
+    })
+}
+
+var newSupporters = null;
 
 var supportersDs = new recline.Model.Dataset({
     records: [
@@ -164,4 +187,21 @@ var channelsDs = new recline.Model.Dataset({
         { Id: 4, Channel: 'foursquare', Supporters:34, Reach:8252, AverageAge:35 },
         { Id: 5, Channel: 'LinkedIn', Supporters:52, Reach:5333, AverageAge:45 }
     ]
+});
+
+$.extend({
+    getUrlVars: function(){
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++)
+        {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    },
+    getUrlVar: function(name){
+        return $.getUrlVars()[name];
+    }
 });
