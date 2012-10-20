@@ -161,7 +161,7 @@ var channelsDs = new recline.Model.Dataset({
         { Id: 1, Channel: 'Facebook', Supporters:30, Reach:3000, AverageAge:35 },
         { Id: 2, Channel: 'G+', Supporters:42, Reach:4325, AverageAge:30 },
         { Id: 3, Channel: 'Twitter', Supporters:28, Reach:4345, AverageAge:28 },
-        { Id: 4, Channel: 'FourSquare', Supporters:34, Reach:8252, AverageAge:35 },
+        { Id: 4, Channel: 'foursquare', Supporters:34, Reach:8252, AverageAge:35 },
         { Id: 5, Channel: 'LinkedIn', Supporters:52, Reach:5333, AverageAge:45 }
     ]
 });

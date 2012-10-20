@@ -355,22 +355,28 @@ $(document).ready(function(){
             type: 'column'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Clicks by Network'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: ['August', 'September', 'October']
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: 'Clicks'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
+            name: 'Facebook',
+            data: [11520, 21310, 32240]
         }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'G+',
+            data: [3250, 4480, 5720]
+        }, {
+            name: 'Twitter',
+            data: [11200, 14342, 15542]
+        }, {
+            name: 'MySpace',
+            data: [1120, 2750, 3830]
         }]
     });
     var chart = new Highcharts.Chart({
@@ -811,83 +817,31 @@ $(document).ready(function(){
             type: 'column'
         },
         title: {
-            text: 'Network'
+            text: 'Supporters by Network'
         },
         xAxis: {
-            categories: [
-                'Jul',
-                'Aug',
-                'Sep',
-                'Oct'
-            ]
+            categories: ['August', 'September', 'October']
         },
         yAxis: {
-            min: 0,
             title: {
-                text: 'Supporters'
-            }
-        },
-        legend: {
-            layout: 'vertical',
-            backgroundColor: '#444',
-            //textColor: '#000',
-            align: 'left',
-            verticalAlign: 'top',
-            x: 270,
-            y: 1,
-            floating: true,
-            shadow: true
-        },
-        tooltip: {
-            formatter: function() {
-                return ''+
-                    this.x +': '+ this.y +'';
-            }
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+                text: 'Clicks'
             }
         },
         series: [{
             name: 'Facebook',
-            data: [854, 1542, 2351, 3254]
-
+            data: [1520, 2310, 3240]
+        }, {
+            name: 'G+',
+            data: [350, 480, 520]
         }, {
             name: 'Twitter',
-            data: [425, 980, 1300, 2100]
-
+            data: [1200, 1342, 1542]
         }, {
             name: 'MySpace',
-            data: [125, 450, 814, 920]
+            data: [120, 250, 330]
+        }]
+    });
 
-        }]
-    });
-    var chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart12',
-            type: 'column'
-        },
-        title: {
-            text: 'Fruit Consumption'
-        },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
-        },
-        yAxis: {
-            title: {
-                text: 'Fruit eaten'
-            }
-        },
-        series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
-    });
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart13',
