@@ -36,6 +36,17 @@ $(document).ready(function(){
         }
     });
 
+//    function GetSupportersByAge(clientId, onSuccess) {
+//        $.ajax({
+//            type: "GET",
+//            url: "http://yearofthecu.com:3838/supportersByAge",
+//            data: { "clientId": 1 },
+//            dataType: "json",
+//            success: function(data) {
+//                onSuccess(data);
+//            }
+//        })
+//    }
 
 //------------------------------Navigation Controls--------------------------------------
 
@@ -64,8 +75,7 @@ $(document).ready(function(){
             text: 'Supporters'
         },
         xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov']
         },
         yAxis: {
             title: {
@@ -80,26 +90,14 @@ $(document).ready(function(){
         tooltip: {
             formatter: function() {
                 return '<b>'+ this.series.name +'</b><br/>'+
-                    this.x +': '+ this.y +'°C';
+                    this.x +': '+ this.y;
             }
         },
         series: [{
             name: 'Supporters',
-            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            data: [4, 152, 480, 725, 900]
         }]
     });
-
-    function GetSupportersByAge(clientId, onSuccess) {
-        $.ajax({
-            type: "GET",
-            url: "http://yearofthecu.com:3838/supportersByAge",
-            data: { "clientId": 1 },
-            dataType: "json",
-            success: function(data) {
-                onSuccess(data);
-            }
-        })
-    }
 
     chart = new Highcharts.Chart({
         chart: {
@@ -111,8 +109,7 @@ $(document).ready(function(){
             text: 'Supporters'
         },
         xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov']
         },
         yAxis: {
             title: {
@@ -127,12 +124,12 @@ $(document).ready(function(){
         tooltip: {
             formatter: function() {
                 return '<b>'+ this.series.name +'</b><br/>'+
-                    this.x +': '+ this.y +'°C';
+                    this.x +': '+ this.y;
             }
         },
         series: [{
             name: 'Supporters',
-            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            data: [19, 152, 480, 725, 900]
         }]
     });
 
@@ -310,39 +307,7 @@ $(document).ready(function(){
 
 //-------------------------------Generate Charts-----------------------------------------
 
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart1',
-            type: 'area',
-            marginBottom: 70
-        },
-        title: {
-            text: 'Supporters'
-        },
-        xAxis: {
-            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov']
-        },
-        yAxis: {
-            title: {
-                text: 'Count'
-            },
-            plotLines: [{
-                value: 0,
-                width: 1,
-                color: '#808080'
-            }]
-        },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.series.name +'</b><br/>'+
-                    this.x +': '+ this.y +'°C';
-            }
-        },
-        series: [{
-            name: 'Supporters',
-            data: [0, 6.9, 9.5, 14.5, 18.2]
-        }]
-    });
+
 
     chart = new Highcharts.Chart({
         chart: {
@@ -422,7 +387,7 @@ $(document).ready(function(){
             text: 'Location'
         },
         xAxis: {
-            categories: ['July', 'Aug', 'Sep', 'Oct', 'Nov'],
+            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
             tickmarkPlacement: 'on',
             title: {
                 enabled: false
@@ -452,10 +417,10 @@ $(document).ready(function(){
         },
         series: [{
             name: 'St. Petersburg',
-            data: [null, 2, 24, 152, 380]
+            data: [5, 15, 24, 152, 380]
         }, {
             name: 'Tampa',
-            data: [null, 12, 72, 224, 424]
+            data: [6, 12, 72, 224, 424]
         }]
     });
     chart = new Highcharts.Chart({
@@ -586,23 +551,17 @@ $(document).ready(function(){
             type: 'bar'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Reach'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: [null, null, null]
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: '...'
             }
         },
-        series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
+        series: []
     });
     chart = new Highcharts.Chart({
         chart: {

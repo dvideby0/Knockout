@@ -36,7 +36,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="33" selection-start="4996" selection-end="4996" vertical-scroll-proportion="-0.5882353">
+            <state line="108" column="18" selection-start="5449" selection-end="5449" vertical-scroll-proportion="-3.9215686">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -95,7 +95,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="342" column="19" selection-start="10395" selection-end="10395" vertical-scroll-proportion="0.79972565">
+            <state line="105" column="16" selection-start="3302" selection-end="3302" vertical-scroll-proportion="0.37798408">
               <folding />
             </state>
           </provider>
@@ -134,8 +134,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="29" />
-    <option name="y" value="70" />
+    <option name="x" value="341" />
+    <option name="y" value="73" />
     <option name="width" value="1499" />
     <option name="height" value="949" />
   </component>
@@ -346,7 +346,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="29" y="70" width="1499" height="949" extended-state="0" />
+    <frame x="341" y="73" width="1499" height="949" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -644,7 +644,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="33" selection-start="4996" selection-end="4996" vertical-scroll-proportion="-0.5882353">
+        <state line="108" column="18" selection-start="5449" selection-end="5449" vertical-scroll-proportion="-3.9215686">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -699,7 +699,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="342" column="19" selection-start="10395" selection-end="10395" vertical-scroll-proportion="0.79972565">
+        <state line="105" column="16" selection-start="3302" selection-end="3302" vertical-scroll-proportion="0.37798408">
           <folding />
         </state>
       </provider>
