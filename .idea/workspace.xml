@@ -23,7 +23,7 @@
       <file leaf-file-name="reports.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/reports.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="20" selection-start="1292" selection-end="1292" vertical-scroll-proportion="-14.807693">
+            <state line="40" column="47" selection-start="1993" selection-end="1993" vertical-scroll-proportion="-21.307692">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -33,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="43" selection-start="7278" selection-end="7278" vertical-scroll-proportion="0.42958748">
+            <state line="145" column="43" selection-start="7136" selection-end="7136" vertical-scroll-proportion="-4.5882354">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reportingdata.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="reportingdata.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="30" selection-start="5766" selection-end="5766" vertical-scroll-proportion="0.0">
+            <state line="48" column="20" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.36870027">
               <folding />
             </state>
           </provider>
@@ -126,10 +126,10 @@
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/jquery.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/slickgrid/jquery-ui-1.8.16.custom.min.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reporting/recline.js" />
-        <option value="$PROJECT_DIR$/Admin Site/httpdocs/reports.html" />
-        <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js" />
         <option value="$PROJECT_DIR$/Admin Site/httpdocs/index.html" />
+        <option value="$PROJECT_DIR$/Admin Site/httpdocs/reports.html" />
+        <option value="$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js" />
       </list>
     </option>
   </component>
@@ -631,24 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/reports.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="20" selection-start="1292" selection-end="1292" vertical-scroll-proportion="-14.807693">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="30" selection-start="5766" selection-end="5766" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="10" selection-start="3164" selection-end="3164" vertical-scroll-proportion="0.0">
@@ -658,7 +640,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="43" selection-start="7278" selection-end="7278" vertical-scroll-proportion="0.42958748">
+        <state line="145" column="43" selection-start="7136" selection-end="7136" vertical-scroll-proportion="-4.5882354">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -701,6 +683,24 @@
             <element signature="n#style#0;n#hr#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/reports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="47" selection-start="1993" selection-end="1993" vertical-scroll-proportion="-21.307692">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="20" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.36870027">
+          <folding />
         </state>
       </provider>
     </entry>
