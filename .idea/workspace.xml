@@ -86,7 +86,7 @@
       <file leaf-file-name="reportingdata.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="53" selection-start="7327" selection-end="7327" vertical-scroll-proportion="0.85562915">
+            <state line="101" column="78" selection-start="2316" selection-end="2316" vertical-scroll-proportion="-0.1576159">
               <folding />
             </state>
           </provider>
@@ -289,8 +289,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="166" />
-    <option name="y" value="40" />
+    <option name="x" value="264" />
+    <option name="y" value="75" />
     <option name="width" value="1499" />
     <option name="height" value="950" />
   </component>
@@ -392,6 +392,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Knockout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Knockout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="httpdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Knockout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Knockout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="httpdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -453,7 +501,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="166" y="40" width="1499" height="950" extended-state="0" />
+    <frame x="264" y="75" width="1499" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -806,7 +854,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Admin Site/httpdocs/lib/js/reportingdata.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="53" selection-start="7327" selection-end="7327" vertical-scroll-proportion="0.85562915">
+        <state line="101" column="78" selection-start="2316" selection-end="2316" vertical-scroll-proportion="-0.1576159">
           <folding />
         </state>
       </provider>
