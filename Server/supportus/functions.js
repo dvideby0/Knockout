@@ -33,7 +33,7 @@ var supporters = {
                 var no = new Object();
                 data[i]._id = null;
 
-                no.Id = data[i].id;
+                //no.Id = data[i].id;
                 no.Name = data[i].name;
                 no.Email = data[i].email.email_address;
                 no.DOB = new Date(data[i].dob*1000).format("mm-dd-yyyy");
@@ -46,7 +46,7 @@ var supporters = {
                 no.CommentsAvg = data[i].comments_avg;
                 no.City = data[i].city;
                 no.State = data[i].state;
-                no.CreatedOn = new Date(data[i].created_date*1000).format("mm-dd-yyyy h:MM:ss TT");
+                //no.CreatedOn = new Date(data[i].created_date*1000).format("mm-dd-yyyy h:MM:ss TT");
 
                 formattedData.push(no);
 
