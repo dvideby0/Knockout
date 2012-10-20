@@ -7,6 +7,20 @@ var server = new Mongolian;
 var db = server.db("knockoutDB");
 var users = db.collection("users");
 
+
+
+
+app.get('/usersByAge', function (req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
+    getUsersByAge(CallbackAge);
+    function CallbackAge(data2){
+        res.send(JSON.stringify(data2));
+    }
+});
+
 app.get('/usersByDate', function (req, res) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
@@ -18,14 +32,13 @@ app.get('/usersByDate', function (req, res) {
     }
 });
 
-
-app.get('/usersByAge', function (req, res) {
+app.get('/usersByEducation', function (req, res) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
     res.header("Access-Control-Allow-Headers", "Content-Type");
     res.header("Access-Control-Max-Age", "3628800");
-    getUsersByAge(CallbackAge);
-    function CallbackAge(data2){
+    getUsersByEducation(CallbackEducation);
+    function CallbackEducation(data2){
         res.send(JSON.stringify(data2));
     }
 });
@@ -42,6 +55,87 @@ app.get('/usersByGender', function (req, res) {
     }
 });
 
+
+app.get('/usersFriendsByGender', function (req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
+    getUsersFriendsByGender(CallbackFriendsByGender);
+    function CallbackFriendsByGender(data2){
+        res.send(JSON.stringify(data2));
+    }
+});
+
+
+function getUsersFriendsByGender(CallbackFriendsByGender){
+
+    var data1 = [];
+    users.find().toArray(function(err, data){
+        for(var i=0 ; i < data.length ; i++){
+            for(var d = 0; d < data[i].friends.length ; d ++){
+                data1.push(data[i].friends[d].gender);
+            }
+        }
+        var mCounter = 0 ;
+        var fCounter = 0 ;
+        for(var z =0 ; z< data1.length; z++ ){
+            if(data1[z]=="M"){
+                mCounter++;
+            }
+            if(data1[z]=="F"){
+                fCounter++;
+            }
+        }
+
+        var genderCount = new Object();
+        genderCount.male = mCounter;
+        genderCount.female = fCounter;
+
+        CallbackFriendsByGender(genderCount);
+    });
+}
+
+
+
+
+
+function getUsersByEducation(CallbackEducation){
+
+    var data1 = [];
+    users.find().toArray(function(err, data){
+        for(var i=0 ; i < data.length ; i++){
+            data1.push(data[i].education);
+        }
+        var hCounter = 0 ;
+        var bCounter = 0 ;
+        var mCounter = 0 ;
+        var nCounter = 0 ;
+
+        for(var z =0 ; z< data1.length; z++ ){
+            if(data1[z]=="H"){
+                hCounter++;
+            }
+            if(data1[z]=="N"){
+                nCounter++;
+            }
+            if(data1[z]=="G"){
+                mCounter++;
+            }
+            if(data1[z]=="C"){
+                bCounter++;
+            }
+        }
+
+        var educationCount = new Object();
+        educationCount.high = hCounter;
+        educationCount.bach = bCounter;
+        educationCount.master = mCounter;
+        educationCount.none = nCounter;
+
+        CallbackEducation(educationCount);
+    });
+}
 
 
 function getUsersByGender(CallbackGender){
@@ -172,18 +266,18 @@ function getUsersCreateDate(Callback){
             var count = 0;
             while(dates[k] < max){
                 count++;
-                    if(k > dates_length-1){
-                        break;
-                    }else{
-                        k++;
-                    }
+                if(k > dates_length-1){
+                    break;
+                }else{
+                    k++;
+                }
             }
             cat.push(months[parseInt(max.getMonth(),10)]+parseInt(max.getDate(),10));
             val.push(count);
             if(dates[dates_length-1] < max){
                 break;
             }else{
-            max.setDate(max.getDate()+5);
+                max.setDate(max.getDate()+5);
             }
         }
         var chart1 = new Object();
@@ -203,5 +297,3 @@ var date_sort_asc = function (date1, date2) {
     return 0;
 };
 app.listen(3738);
-
-
