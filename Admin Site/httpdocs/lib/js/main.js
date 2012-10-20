@@ -333,6 +333,40 @@ $(document).ready(function(){
 
     chart = new Highcharts.Chart({
         chart: {
+            renderTo: 'chart7',
+            type: 'column',
+            marginBottom: 70
+        },
+        title: {
+            text: 'Supporters'
+        },
+        xAxis: {
+            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov']
+        },
+        yAxis: {
+            title: {
+                text: 'Count'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            formatter: function() {
+                return '<b>'+ this.series.name +'</b><br/>'+
+                    this.x +': '+ this.y;
+            }
+        },
+        series: [{
+            name: 'Supporters',
+            data: [19, 152, 480, 725, 900]
+        }]
+    });
+
+    chart = new Highcharts.Chart({
+        chart: {
             renderTo: 'chart8',
             type: 'bar'
         },
@@ -420,6 +454,102 @@ $(document).ready(function(){
         yAxis: {
             title: {
                 text: 'Supporters'
+            }
+        },
+        series: [{
+            name: 'Facebook',
+            data: [1520, 2310, 3240]
+        }, {
+            name: 'G+',
+            data: [350, 480, 520]
+        }, {
+            name: 'Twitter',
+            data: [1200, 1342, 1542]
+        }, {
+            name: 'MySpace',
+            data: [120, 250, 330]
+        }]
+    });
+    chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'chart12',
+            type: 'column'
+        },
+        title: {
+            text: 'Clicks'
+        },
+        xAxis: {
+            categories: ['Aug', 'Sept', 'Oct']
+        },
+        yAxis: {
+            title: {
+                text: 'Clicks'
+            }
+        },
+        series: [{
+            name: 'Facebook',
+            data: [11520, 21310, 32240]
+        }, {
+            name: 'G+',
+            data: [3250, 4480, 5720]
+        }, {
+            name: 'Twitter',
+            data: [11200, 14342, 15542]
+        }, {
+            name: 'MySpace',
+            data: [1120, 2750, 3830]
+        }]
+    });
+
+    chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'chart13',
+            type: 'column'
+        },
+        title: {
+            text: 'Distribution'
+        },
+        xAxis: {
+            categories: ['Aug', 'Sept', 'Oct']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Supporters'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: 100,
+            verticalAlign: 'top',
+            y: 20,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function() {
+                return '<b>'+ this.x +'</b><br/>'+
+                    this.series.name +': '+ this.y +'<br/>'+
+                    'Total: '+ this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                }
             }
         },
         series: [{
