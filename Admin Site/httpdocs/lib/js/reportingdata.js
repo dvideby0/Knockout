@@ -122,7 +122,7 @@ function GetSupporters(onSuccess) {
     })
 }
 
-function GetSupporters(onSuccess) {
+function GetCampaigns(onSuccess) {
     $.ajax({
         type: "GET",
         url: "http://yearofthecu.com:3838/campaigns",
