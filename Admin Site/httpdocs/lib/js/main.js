@@ -355,10 +355,10 @@ $(document).ready(function(){
             type: 'column'
         },
         title: {
-            text: 'Clicks by Network'
+            text: 'Clicks'
         },
         xAxis: {
-            categories: ['August', 'September', 'October']
+            categories: ['Aug', 'Sept', 'Oct']
         },
         yAxis: {
             title: {
@@ -382,25 +382,66 @@ $(document).ready(function(){
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart13',
-            type: 'bar'
+            type: 'column'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Distribution'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: ['Aug', 'Sept', 'Oct']
         },
         yAxis: {
+            min: 0,
             title: {
-                text: 'Fruit eaten'
+                text: 'Supporters'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -100,
+            verticalAlign: 'top',
+            y: 20,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function() {
+                return '<b>'+ this.x +'</b><br/>'+
+                    this.series.name +': '+ this.y +'<br/>'+
+                    'Total: '+ this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                }
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
+            name: 'Facebook',
+            data: [1520, 2310, 3240]
         }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: 'G+',
+            data: [350, 480, 520]
+        }, {
+            name: 'Twitter',
+            data: [1200, 1342, 1542]
+        }, {
+            name: 'MySpace',
+            data: [120, 250, 330]
         }]
     });
 });
@@ -817,14 +858,14 @@ $(document).ready(function(){
             type: 'column'
         },
         title: {
-            text: 'Supporters by Network'
+            text: 'Supporters'
         },
         xAxis: {
             categories: ['August', 'September', 'October']
         },
         yAxis: {
             title: {
-                text: 'Clicks'
+                text: 'Supporters'
             }
         },
         series: [{
@@ -842,30 +883,6 @@ $(document).ready(function(){
         }]
     });
 
-    var chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart13',
-            type: 'bar'
-        },
-        title: {
-            text: 'Fruit Consumption'
-        },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
-        },
-        yAxis: {
-            title: {
-                text: 'Fruit eaten'
-            }
-        },
-        series: [{
-            name: 'Jane',
-            data: [1, 3, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
-    });
 });
 
 function ChangePage(page){
