@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var supportersDS = new recline.Model.Dataset({
+    var supportersDs = new recline.Model.Dataset({
         records: [
             { Id: 1, Date: '10-19-2012', Supporter: 'JT Hope', Age: '27', Location: 'Detroit, MI', Education: 'BS', Friends: '485' },
             { Id: 2, Date: '10-20-2012', Supporter: 'Brad Prymicz', Age: '13', Location: 'Largo, FL', Education: 'MBA', Friends: '260' },
@@ -35,13 +35,41 @@ $(document).ready(function() {
         ]
     });
 
-    var supportersGridElement = $('#uxSupportersGrid');
+    var pageWrapper = $("#pageWrapper");
+    var gridElement = $('#grid');
+    var filterEditor = new recline.View.FilterEditor({
+        model: supportersDs
+    });
+
+    $('#filterEditor').append(filterEditor.el);
+
     var supportersGrid = new recline.View.SlickGrid({
-        model: supportersDS,
-        el: supportersGridElement
+        model: supportersDs,
+        el: gridElement,
+        state: {
+            gridOptions: {
+                forceFitColumns: true,
+                autosizeColumns: true
+            }
+        }
     });
     supportersGrid.visible = true;
+    supportersGrid.autosizeColumns = true;
     supportersGrid.render();
 
+    function resizeReportUI() {
+        var gridHeight = pageWrapper.height();
+        gridElement.height(gridHeight);
+        $(".slick-viewport").height(gridHeight);
+        supportersGrid.render();
+    }
+
+    $(window).load(function () {
+        resizeReportUI();
+    });
+
+    $(window).resize(function () {
+        resizeReportUI();
+    });
 
 });
