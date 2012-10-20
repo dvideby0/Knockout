@@ -554,14 +554,20 @@ $(document).ready(function(){
             text: 'Reach'
         },
         xAxis: {
-            categories: [null, null, null]
+            categories: ['Facebook', 'G+', 'Twitter', 'MySpace']
         },
         yAxis: {
             title: {
                 text: '...'
             }
         },
-        series: []
+        series: [{
+            name: 'Supporters',
+            data: [500, 350, 440, 100]
+        }, {
+            name: 'Reach',
+            data: [6232, 3500, 5123, 420]
+        }]
     });
     chart = new Highcharts.Chart({
         chart: {
