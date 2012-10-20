@@ -121,12 +121,14 @@ function getUsersFriendsByGender(CallbackFriendsByGender){
     var data1 = [];
     users.find().toArray(function(err, data){
         for(var i=0 ; i < data.length ; i++){
+            if(data[i].friends){
             var data2 = data[i].friends[0];
             for(var d = 0; d < data2.length ; d ++){
                 console.log(data2[d].gender);
                 if(data2[d].gender){
                 data1.push(data2[d].gender);
                 }
+             }
             }
         }
         var mCounter = 0 ;
@@ -264,7 +266,7 @@ function getUsersByAge(CallbackAge){
             }
             cat.push('Ages '+min+' - '+max);
             console.log(count);
-            var per = (count/dates_length)*100;
+            var per = Math.round((count/dates_length)*100);
             val.push(per);
             min = max;
             if(dates[dates_length-1] < max){

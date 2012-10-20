@@ -112,7 +112,7 @@ $(document).ready(function(){
                 tooltip: {
                     formatter: function() {
                         return '<b>'+ this.series.name +'</b><br/>'+
-                            this.x +': '+ this.y +'';
+                            this.x +': '+ this.y +'°C';
                     }
                 },
                 series: [{
@@ -255,12 +255,12 @@ $(document).ready(function(){
                 tooltip: {
                     formatter: function() {
                         return '<b>'+ this.series.name +'</b><br/>'+
-                            this.x +': '+ this.y +'';
+                            this.x +': '+ this.y +'°C';
                     }
                 },
                 series: [{
                     name: 'Supporters',
-                    data: data4.count
+                    data: data4.data
                 }]
             });
     }
@@ -269,7 +269,7 @@ $(document).ready(function(){
     function GetSupportersByArea(callbackArea) {
         $.ajax({
             type: "GET",
-            url: "http://yearofthecu.com:3738/usersByArea",
+            url: "http://yearofthecu.com:3738/usersByDate",
             dataType: "json",
             success: function(data) {
                 callbackArea(data);
@@ -481,6 +481,9 @@ $(document).ready(function(){
             data: [6232, 3500, 5123, 420]
         }]
     });
+
+    GetNetworks(callNetwork);
+    function callNetwork(data11){
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart11',
@@ -490,27 +493,28 @@ $(document).ready(function(){
             text: 'Supporters'
         },
         xAxis: {
-            categories: ['August', 'September', 'October']
+            categories: data11.x
         },
         yAxis: {
             title: {
                 text: 'Supporters'
             }
         },
-        series: [{
-            name: 'Facebook',
-            data: [1520, 2310, 3240]
-        }, {
-            name: 'G+',
-            data: [350, 480, 520]
-        }, {
-            name: 'Twitter',
-            data: [1200, 1342, 1542]
-        }, {
-            name: 'MySpace',
-            data: [120, 250, 330]
-        }]
+        series: data11.y
     });
+    }
+
+    function GetNetworks(callNetwork) {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:3938/supportersByNetwork",
+            dataType: "json",
+            success: function(data) {
+                callNetwork(data);
+            }
+        })
+    }
+
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart12',

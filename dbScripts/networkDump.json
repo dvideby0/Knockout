@@ -1,4 +1,18 @@
-{
-    "networkId" : 11111,
-    "name":"Facebook"
-}
+[
+    {
+        "network_id" : 11111,
+        "name":"Facebook"
+    },
+    {
+        "network_id" : 22222,
+        "name":"Google+"
+    },
+    {
+        "network_id" : 33333,
+        "name":"Twitter"
+    },
+    {
+        "network_id" : 44444,
+        "name":"MySpace"
+    }
+]
