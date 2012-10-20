@@ -1,240 +1,3 @@
-
-//-------------------------------Document Ready -----------------------------------------
-$(document).ready(function(){
-    prettyPrint();
-    $('#Dashboard-Page, #Dashboard-SideNav, #Supporters-View').show();
-    $('#Btn-Background-Color').ColorPicker({
-        color: '#0000ff',
-        onShow: function (colpkr) {
-            $(colpkr).fadeIn(500);
-            $('.colorpicker div input').css({width:'45px', height: '15px', top:'0',paddingRight: '3px', marginTop:'2px', fontSize:'13px', border:'none'});
-            return false;
-        },
-        onHide: function (colpkr) {
-            $(colpkr).fadeOut(500);
-            return false;
-        },
-        onChange: function (hsb, hex, rgb) {
-            $('#Btn-Background-Color div').css('backgroundColor', '#' + hex);
-            $('#Btn-Background-Color').val('#' + hex);
-        }
-    });
-    $('#Btn-Text-Color').ColorPicker({
-        color: '#0000ff',
-        onShow: function (colpkr) {
-            $(colpkr).fadeIn(500);
-            $('.colorpicker div input').css({width:'45px', height: '15px', top:'0',paddingRight: '3px', marginTop:'2px', fontSize:'13px', border:'none'});
-            return false;
-        },
-        onHide: function (colpkr) {
-            $(colpkr).fadeOut(500);
-            return false;
-        },
-        onChange: function (hsb, hex, rgb) {
-            $('#Btn-Text-Color div').css('backgroundColor', '#' + hex);
-            $('#Btn-Text-Color').val('#' + hex);
-        }
-    });
-
-//    function GetSupportersByAge(clientId, onSuccess) {
-//        $.ajax({
-//            type: "GET",
-//            url: "http://yearofthecu.com:3838/supportersByAge",
-//            data: { "clientId": 1 },
-//            dataType: "json",
-//            success: function(data) {
-//                onSuccess(data);
-//            }
-//        })
-//    }
-
-//------------------------------Navigation Controls--------------------------------------
-
-    $('.nav li').click(function(){
-        $(this).parent('ul').children('li').removeClass('active');
-        $(this).addClass('active');
-    });
-    $('.nav-stacked li').click(function(){
-        var Name = $(this).children('a').text().replace(' ', '-');
-        $('.view').hide()
-        $('#' + Name + '-View').show()
-    });
-
-
-//-------------------------------Generate Charts-----------------------------------------
-
-    var chart = null;
-
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart1',
-            type: 'area',
-            marginBottom: 70
-        },
-        title: {
-            text: 'Supporters'
-        },
-        xAxis: {
-            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov']
-        },
-        yAxis: {
-            title: {
-                text: 'Count'
-            },
-            plotLines: [{
-                value: 0,
-                width: 1,
-                color: '#808080'
-            }]
-        },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.series.name +'</b><br/>'+
-                    this.x +': '+ this.y;
-            }
-        },
-        series: [{
-            name: 'Supporters',
-            data: [4, 152, 480, 725, 900]
-        }]
-    });
-
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart7',
-            type: 'column',
-            marginBottom: 70
-        },
-        title: {
-            text: 'Supporters'
-        },
-        xAxis: {
-            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov']
-        },
-        yAxis: {
-            title: {
-                text: 'Count'
-            },
-            plotLines: [{
-                value: 0,
-                width: 1,
-                color: '#808080'
-            }]
-        },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.series.name +'</b><br/>'+
-                    this.x +': '+ this.y;
-            }
-        },
-        series: [{
-            name: 'Supporters',
-            data: [19, 152, 480, 725, 900]
-        }]
-    });
-
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart12',
-            type: 'column'
-        },
-        title: {
-            text: 'Clicks'
-        },
-        xAxis: {
-            categories: ['Aug', 'Sept', 'Oct']
-        },
-        yAxis: {
-            title: {
-                text: 'Clicks'
-            }
-        },
-        series: [{
-            name: 'Facebook',
-            data: [11520, 21310, 32240]
-        }, {
-            name: 'G+',
-            data: [3250, 4480, 5720]
-        }, {
-            name: 'Twitter',
-            data: [11200, 14342, 15542]
-        }, {
-            name: 'MySpace',
-            data: [1120, 2750, 3830]
-        }]
-    });
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart13',
-            type: 'column'
-        },
-        title: {
-            text: 'Distribution'
-        },
-        xAxis: {
-            categories: ['Aug', 'Sept', 'Oct']
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Supporters'
-            },
-            stackLabels: {
-                enabled: true,
-                style: {
-                    fontWeight: 'bold',
-                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-                }
-            }
-        },
-        legend: {
-            align: 'right',
-            x: -100,
-            verticalAlign: 'top',
-            y: 20,
-            floating: true,
-            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
-            borderColor: '#CCC',
-            borderWidth: 1,
-            shadow: false
-        },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.x +'</b><br/>'+
-                    this.series.name +': '+ this.y +'<br/>'+
-                    'Total: '+ this.point.stackTotal;
-            }
-        },
-        plotOptions: {
-            column: {
-                stacking: 'normal',
-                dataLabels: {
-                    enabled: true,
-                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
-                }
-            }
-        },
-        series: [{
-            name: 'Facebook',
-            data: [1520, 2310, 3240]
-        }, {
-            name: 'G+',
-            data: [350, 480, 520]
-        }, {
-            name: 'Twitter',
-            data: [1200, 1342, 1542]
-        }, {
-            name: 'MySpace',
-            data: [120, 250, 330]
-        }]
-    });
-});
-
-function ChangePage(page){
-    $('.page').hide();
-    $('#' + page + '-Page, #' + page + '-SideNav').fadeIn();
-    $('#' + page + '-SideNav ').children('li :first').click();
-}
 //-------------------------------Document Ready -----------------------------------------
 $(document).ready(function(){
     prettyPrint();
@@ -309,75 +72,149 @@ $(document).ready(function(){
 
 
 
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart2',
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
-        },
-        title: {
-            text: 'Age'
-        },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
-            }
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    color: '#DDD',
-                    connectorColor: '#FFF',
+    GetSupportersByDate(callbackDate);
+
+    function callbackDate(data1){
+        var chart = new Highcharts.Chart(
+            {
+                chart: {
+                    renderTo: 'chart1',
+                    type: 'area',
+                    marginBottom: 70
+                },
+                title: {
+                    text: 'Total: '
+                },
+                xAxis: {
+                    categories: data1.categories
+                },
+                yAxis: {
+                    title: {
+                        text: 'Count'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
                     formatter: function() {
-                        return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                        return '<b>'+ this.series.name +'</b><br/>'+
+                            this.x +': '+ this.y +'°C';
+                    }
+                },
+                series: [{
+                    name: 'Supporters',
+                    data: data1.data
+                }]
+            });
+    }
+
+
+    function GetSupportersByDate(callbackDate) {
+        $.ajax({
+            type: "GET",
+            url: "http://yearofthecu.com:3738/usersByDate",
+            dataType: "json",
+            success: function(data) {
+                callbackDate(data);
+            }
+        })
+    }
+
+    GetSupportersByAge(callbackAge);
+
+    function callbackAge(data2){
+
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart2',
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'Age'
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                }
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        color: '#DDD',
+                        connectorColor: '#FFF',
+                        formatter: function() {
+                            return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                        }
                     }
                 }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Age',
+                data: data2
+            }]
+        });
+    }
+
+    function GetSupportersByAge(callbackAge) {
+        $.ajax({
+            type: "GET",
+            url: "http://yearofthecu.com:3738/usersByAge",
+            dataType: "json",
+            success: function(data) {
+                callbackAge(data);
             }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Age',
-            data: [
-                ['Ages 31 - 40',   20.0],
-                ['Ages 13 - 19',       12.00],
-                {
-                    name: 'Ages 20 - 30',
-                    y: 65.0,
-                    sliced: true,
-                    selected: true
-                },
-                ['Ages 41 - 60',    3]
-            ]
-        }]
-    });
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart3',
-            type: 'column'
-        },
-        title: {
-            text: 'Gender'
-        },
-        xAxis: {
-            categories: ['Gender']
-        },
-        yAxis: {
+        })
+    }
+
+    GetSupportersByGender(callbackGender);
+
+    function callbackGender(data3){
+        var chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart3',
+                type: 'column'
+            },
             title: {
-                text: 'Supporters'
+                text: 'Gender'
+            },
+            xAxis: {
+                categories: ['Gender']
+            },
+            yAxis: {
+                title: {
+                    text: 'Supporters'
+                }
+            },
+            series: [{
+                name: 'Male',
+                data: [data3.male]
+            }, {
+                name: 'Female',
+                data: [data3.female]
+            }]
+        });
+    }
+
+    function GetSupportersByGender(callbackGender) {
+        $.ajax({
+            type: "GET",
+            url: "http://yearofthecu.com:3738/usersByGender",
+            dataType: "json",
+            success: function(data) {
+                callbackGender(data);
             }
-        },
-        series: [{
-            name: 'Male',
-            data: [2370]
-        }, {
-            name: 'Female',
-            data: [1240]
-        }]
-    });
+        })
+    }
+
     chart = new Highcharts.Chart({
         chart: {
             renderTo: 'chart4',
