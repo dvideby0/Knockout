@@ -2,8 +2,18 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Admin Console</title>
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+    </style>
     <link rel="stylesheet" href="lib/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="lib/css/colorpicker.css">
     <link rel="stylesheet" href="lib/css/datepicker.css">
@@ -44,23 +54,23 @@
     </div>
 </div>
 
-<div class="container-fluid" style="margin-top: 60px;">
+<div class="container-fluid">
     <div class="span2">
-        <ul id="Dashboard-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+        <ul id="Dashboard-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page">
             <li class="active"><a>Supporters</a></li>
             <li><a>Campaigns</a></li>
             <li><a>Channels</a></li>
         </ul>
-        <ul id="Campaigns-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+        <ul id="Campaigns-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page">
             <li class="active"><a>Manage Campaigns</a></li>
             <li><a>New Campaign</a></li>
         </ul>
-        <ul id="Reports-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+        <ul id="Reports-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page">
             <li class="active"><a href="#">Supporter Reports</a></li>
             <li><a href="#">Campaign Reports</a></li>
             <li><a href="#">Channel Reports</a></li>
         </ul>
-        <ul id="Admin-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page" style="margin-top: 75px;">
+        <ul id="Admin-SideNav" class="nav navbar-fixed-top nav-pills nav-stacked span2 page">
             <li class="active"><a href="#">User Administration</a></li>
             <li><a href="#">Button Designer</a></li>
         </ul>
@@ -171,55 +181,62 @@
                 </div>
             </div>
             <div id="New-Campaign-View" class="view">
-                <div class="span4">
+                <div class="span3">
                     <h2>New Campaign</h2>
                     <div>
-                        Name: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span4" />
+                        Name: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
                     </div>
                     <div>
-                        URL: <input style="margin-bottom: 20px;" id="Campaign-URL-Input" class="btn-input span4" />
+                        URL: <input style="margin-bottom: 20px;" id="Campaign-URL-Input" class="btn-input span3" />
                     </div>
                     <div>
-                        Points to Award: <input type="number" style="margin-bottom: 35px;" id="Campaign-Points-Input" class="btn-input span4" />
-                    </div>
-                    <div>
-                        Message: <textarea id="Campaign-Message-Input" style="height: 200px;"  class="span4 txt-input"></textarea>
+                        Message: <textarea id="Campaign-Message-Input" style="height: 200px;"  class="span3 txt-input"></textarea>
                     </div>
                 </div>
                 <div class="span3">
                     <div style="margin-top: 55px;">
-                        Age From: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
-                        Age To: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
-                        Sex:<br/>
-                        <select style="margin-bottom: 20px;" id="Campaign-Name-Input" class="">
+                        Age From: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Age-From-Input" class="btn-input span3" />
+                        Age To: <input type="number" min="10" max="100" style="margin-bottom: 20px;" id="Campaign-Age-To-Input" class="btn-input span3" />
+                        Sex:
+                        <select style="margin-bottom: 20px;" id="Campaign-Gender-Input" class="span3">
                             <option value="Both" selected>Both</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        </select><br/>
-                        Location: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
-                        Education:<br/>
-                            <input type="checkbox" id="Campaign-Name-Input" class="btn-input span1" title="All"/>All<br/>
-                            <input type="checkbox" id="Campaign-Name-Input" class="btn-input span1" title="High School"/>High School<br/>
-                            <input type="checkbox" id="Campaign-Name-Input" class="btn-input span1" title="College"/>College<br/><br/>
-                        Influence Score: <input style="margin-bottom: 20px;" id="Campaign-Name-Input" class="btn-input span3" />
-                        Avg. Friend Count: <input id="Campaign-Name-Input" class="btn-input span3" />
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        Location: <input style="margin-bottom: 20px;" id="Campaign-Location-Input" class="btn-input span3" />
+                        <div id="Education-Div">
+                            Education:
+                            <div>
+                                <input type="checkbox" id="Campaign-HS-Input" class="btn-input" title="High School"/> High School
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Campaign-College-Input" class="btn-input" title="College"/> College
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Campaign-Graduate-Input" class="btn-input" title="All"/> Graduate School
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="span2"  style="margin-top: 70px; text-align: right;">
-                    <div class="input-append date" id="Campaign-Start-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
+                <div class="span3"  style="margin-top: 55px; text-align: left;">
+                    <div>
+                        Influence Score: <input style="margin-bottom: 20px;" id="Campaign-Influence-Input" class="btn-input span3" />
+                        Avg. Friend Count: <input id="Campaign-Friend-Count-Input" class="btn-input span3" />
+                    </div>
+                    <div style="margin-top: 30px; margin-left: 0;" class="input-append date span3" id="Campaign-Start-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
                         <input size="16" type="text" value="Start Date" readonly="">
                         <span class="add-on"><i class="icon-calendar"></i></span>
                     </div>
-                    <div style="margin-top: 30px;" class="input-append date" id="Campaign-End-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
+                    <div style="margin-top: 30px; margin-left: 0;" class="input-append date span3" id="Campaign-End-Input" data-date="10-20-2012" data-date-format="mm-dd-yyyy">
                         <input size="16" type="text" value="End Date" readonly="">
                         <span class="add-on"><i class="icon-calendar"></i></span>
                     </div>
-                    <div style="margin-top: 30px;" class="span2">
-                        Active: <input style="margin-top: 0; margin-right: -45px;" id="Campaign-Active-CBox" type="checkbox" />
+                    <div style="margin-top: 30px; margin-left: 0;" class="span3">
+                        <input id="Campaign-Active-CBox" type="checkbox" /> Active
                     </div>
-                </div>
-                <div class="span10" style="text-align: right;">
-                    <button style="margin-top: 30px;" class="btn btn-primary">Save</button>
+                    <div class="span2" style="text-align: left; margin-left: 0;">
+                        <button style="margin-top: 30px;" class="btn btn-primary btn-large span2" onclick="SaveCampaign()">Save</button>
+                    </div>
                 </div>
             </div>
         </div>

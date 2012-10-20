@@ -604,3 +604,16 @@ function ChangePage(page){
     $('#' + page + '-Page, #' + page + '-SideNav').fadeIn();
     $('#' + page + '-SideNav ').children('li :first').click();
 }
+
+function SaveCampaign(){
+    $.ajax({
+        type: 'POST',
+        url: 'http://yearofthecu:3737/campaign',
+        dataType: 'application/json',
+        data: JSON.stringify({Name: $('#Campaign-Name-Input').val(), URL: $('#Campaign-URL-Input').val(), Message: $('#Campaign-Message-Input').val(), AgeFrom: $('#Campaign-Age-From-Input').val(), AgeTo: $('#Campaign-Age-To-Input').val(), Gender: $('#Campaign-Gender-Input').val(), Location: $('#Campaign-Location-Input').val(), HS: $('#Campaign-HS-Input').val(), College: $('#Campaign-College-Input').val(), Graduate: $('#Campaign-Graduate-Input').val(), Influence: $('#Campaign-Influence-Input').val(), Friends: $('#Campaign-Friend-Count-Input').val(), Start: $('#Campaign-Start-Input').val(), End: $('#Campaign-End-Input').val(), Active: $('#Campaign-Active-CBox').val()}),
+        timeout: 20000,
+        success: function(data){
+            alert(data);
+        }
+    });
+}
