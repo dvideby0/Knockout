@@ -13,18 +13,7 @@ $(document).ready(function() {
             GetSupporters(function(data) {
 
                 var ds = new recline.Model.Dataset({
-                    records: data,
-                    fields: [
-                        {id: 'id'},
-                        {id: 'name'},
-                        {id: 'email'},
-                        {id: 'dob', type: 'date'},
-                        {id: 'gender'},
-                        {id: 'education'},
-                        {id: 'city'},
-                        {id: 'state'},
-                        {id: 'created_date', type: 'date'}
-                    ]
+                    records: data
                 });
 
                 grid = new recline.View.SlickGrid({
