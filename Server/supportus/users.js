@@ -68,6 +68,46 @@ app.get('/usersFriendsByGender', function (req, res) {
 });
 
 
+app.get('/usersByArea', function (req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
+    getUsersByArea(CallbackUsersByArea);
+    function CallbackUsersByArea(data2){
+        res.send(JSON.stringify(data2));
+    }
+});
+
+
+function getUsersByArea(CallbackUsersByArea){
+
+    var data1 = [];
+    users.find().toArray(function(err, data){
+        for(var i=0 ; i < data.length ; i++){
+            for(var d = 0; d < data[i].friends.length ; d ++){
+                data1.push(data[i].friends[d].gender);
+            }
+        }
+        var mCounter = 0 ;
+        var fCounter = 0 ;
+        for(var z =0 ; z< data1.length; z++ ){
+            if(data1[z]=="male"){
+                mCounter++;
+            }
+            if(data1[z]=="female"){
+                fCounter++;
+            }
+        }
+
+        var genderCount = new Object();
+        genderCount.male = mCounter;
+        genderCount.female = fCounter;
+
+        CallbackFriendsByGender(genderCount);
+    });
+}
+
 function getUsersFriendsByGender(CallbackFriendsByGender){
 
     var data1 = [];
@@ -80,10 +120,10 @@ function getUsersFriendsByGender(CallbackFriendsByGender){
         var mCounter = 0 ;
         var fCounter = 0 ;
         for(var z =0 ; z< data1.length; z++ ){
-            if(data1[z]=="M"){
+            if(data1[z]=="male"){
                 mCounter++;
             }
-            if(data1[z]=="F"){
+            if(data1[z]=="female"){
                 fCounter++;
             }
         }
@@ -143,15 +183,17 @@ function getUsersByGender(CallbackGender){
     var data1 = [];
     users.find().toArray(function(err, data){
         for(var i=0 ; i < data.length ; i++){
+            console.log(data.length);
             data1.push(data[i].gender);
         }
         var mCounter = 0 ;
         var fCounter = 0 ;
         for(var z =0 ; z< data1.length; z++ ){
-            if(data1[z]=="M"){
+            console.log(data1[z]);
+            if(data1[z]=="male"){
                 mCounter++;
             }
-            if(data1[z]=="F"){
+            if(data1[z]=="female"){
                 fCounter++;
             }
         }
