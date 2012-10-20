@@ -10,9 +10,8 @@ var dnode = require('dnode');
 var Mongolian = require("mongolian");
 var uuid = require('node-uuid');
 var server = new Mongolian;
-var db = server.db("supportus");
+var db = server.db("knockoutDB");
 var users = db.collection("users");
-var usersfriends = db.collection("usersfriends");
 app.use(express.bodyParser());
 app.get('/', function (req, res) {
     res.redirect(fb.getAuthorizeUrl({
@@ -75,6 +74,20 @@ app.get('/auth', function (req, res) {
                             }
 
                         }, function(err, results){
+                            if(!body.education){
+                                body.education = 'N'
+                            }
+                            else{
+                                if(body.education[(body.education.length - 1)] == 'High School'){
+                                    body.education = 'H'
+                                }
+                                if(body.education[(body.education.length - 1)] == 'College'){
+                                    body.education = 'C'
+                                }
+                                if(body.education[(body.education.length - 1)] == 'Graduate School'){
+
+                                }
+                            }
                             users.insert({
                                 network_id: 11111,
                                 name: body.name,
@@ -107,15 +120,8 @@ function GetFriendInfo(aToken, id){
     var d = dnode.connect(8781);
     d.on('remote', function (remote) {
         remote.GetFriends(aToken, id, function (s) {
-            console.log(s);
             d.end();
         });
     });
 }
-
-
-
-
-
-
 app.listen(3737);

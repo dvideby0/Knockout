@@ -5,9 +5,8 @@ var dnode = require('dnode');
 var Mongolian = require("mongolian");
 var uuid = require('node-uuid');
 var server = new Mongolian;
-var db = server.db("supportus");
+var db = server.db("knockoutDB");
 var users = db.collection("users");
-var usersfriends = db.collection("richfriends");
 
 
 var rpc = dnode({
