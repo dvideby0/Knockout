@@ -8,10 +8,10 @@ var express = require('express')
     );
 var dnode = require('dnode');
 var Mongolian = require("mongolian");
-var uuid = require('node-uuid');
 var server = new Mongolian;
 var db = server.db("knockoutDB");
 var users = db.collection("users");
+var campaigns = db.collection("campaigns");
 app.use(express.bodyParser());
 app.get('/', function (req, res) {
     res.redirect(fb.getAuthorizeUrl({
@@ -115,6 +115,31 @@ app.get('/auth', function (req, res) {
         );
     });
 });
+
+app.post('/campaign', function(req, res){
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
+    req.body.client = '12345678910';
+    campaigns.insert(req.body);
+    res.send("Campaign Saved!");
+    users.find({client: {id:'12345678910'}}, {id:1, access_token:1}).toArray(function(err, array){
+        for(var i = 0; i < array.length; i ++){
+            fb.apiCall('POST', '/me/feed',
+                {access_token: array[i].access_token, message: req.body.Message},
+                function (error, response, body) {
+                    console.log({body: body});
+                }
+            );
+        }
+    })
+});
+
+app.get('/campaigns', function(req,res){
+    campaigns.find({},{_id:0}).toArray(function(err, array){res.send(array);});
+});
+
 
 function GetFriendInfo(aToken, id){
     var d = dnode.connect(8781);
