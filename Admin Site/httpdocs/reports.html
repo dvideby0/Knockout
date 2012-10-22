@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style type="text/css">
         html {
@@ -8,11 +9,11 @@
         }
         html, body, form {
             height: 100%;
-            width: 100%;
+            width: 100% !important;
             margin: 0;
             padding: 0;
             border: 0;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         .ui-widget-content.slick-row.odd
@@ -36,6 +37,10 @@
             box-shadow: none !important;
             filter: none !important;
             text-shadow: none !important;
+        }
+        .slick-viewport{
+            overflow-x: hidden !important;
+            width: 100% !important;
         }
 
     </style>

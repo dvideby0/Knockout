@@ -1,6 +1,28 @@
 body {
-    padding-top: 15%;
+    padding-top: 5%;
 }
 .hero-unit{
     text-align: center;
+}
+
+.company-image{
+    font-size: 20px;
+    font-weight: bold;
+}
+.company-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.points-current{
+    font-size: 20px;
+    font-weight: bold;
+}
+.points-pending{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+.view-rewards{
+    font-size: 20px;
+    font-weight: bold;
 }

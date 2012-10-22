@@ -7,6 +7,14 @@ var db = server.db("knockoutDB");
 var users = db.collection("users");
 var campaigns = db.collection("campaigns");
 
+app.options('/',function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Max-Age", "3628800");
+    res.send('options response');
+});
+
 app.get('/supporters', function (req, res) {
 
     res.header("Access-Control-Allow-Origin", "*");

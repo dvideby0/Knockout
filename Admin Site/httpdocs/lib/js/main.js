@@ -1,6 +1,7 @@
 //-------------------------------Document Ready -----------------------------------------
 $(document).ready(function(){
     prettyPrint();
+    CampaignsShow();
     $('#Dashboard-Page, #Dashboard-SideNav, #Supporters-View').show();
     $('#Btn-Background-Color').ColorPicker({
         color: '#0000ff',
@@ -55,17 +56,6 @@ $(document).ready(function(){
         $(this).datepicker('show');
     });
 
-    $.ajax({
-        type: 'GET',
-        url: 'http://yearofthecu.com:3737/campaigns',
-        timeout: 20000,
-        success: function(data){
-            for(var i = 0; i <data.length; i++){
-                $('#Manage-Campaign-Table').append('<tr><td>' + i + '</td><td>' + data[i].Name + '</td><td>' + data[i].Start + '</td><td>' + data[i].End + '</td><td>' + data[i].Active + '</td></tr>')
-            }
-        }
-    });
-
 //------------------------------Navigation Controls--------------------------------------
 
     $('.nav li').click(function(){
@@ -112,7 +102,7 @@ $(document).ready(function(){
                 tooltip: {
                     formatter: function() {
                         return '<b>'+ this.series.name +'</b><br/>'+
-                            this.x +': '+ this.y +'°C';
+                            this.x +': '+ this.y;
                     }
                 },
                 series: [{
@@ -255,7 +245,7 @@ $(document).ready(function(){
                 tooltip: {
                     formatter: function() {
                         return '<b>'+ this.series.name +'</b><br/>'+
-                            this.x +': '+ this.y +'°C';
+                            this.x +': '+ this.y;
                     }
                 },
                 series: [{
@@ -612,6 +602,18 @@ $(document).ready(function(){
         }]
     });
 
+    $('#Campaigns-SideNav li a').bind('click', function() {
+        if($(this).text() == 'Manage Campaigns'){
+            CampaignsShow();
+        }
+    });
+    $('#Campaign-Status-Selectors button').click(function(){
+        $(this).parent().children('button').removeClass('active');
+        $(this).addClass('active');
+        $('#Manage-Campaign-Table-Active, #Manage-Campaign-Table-Inactive, #Manage-Campaign-Table-Completed').hide();
+        $('#Manage-Campaign-Table-' + $(this).text()).show();
+    })
+
 });
 
 function ChangePage(page){
@@ -625,14 +627,37 @@ function SaveCampaign(){
         type: 'POST',
         url: 'http://yearofthecu.com:3737/campaign',
         dataType: 'application/json',
-        data: {Name: $('#Campaign-Name-Input').val(), URL: $('#Campaign-URL-Input').val(), Message: $('#Campaign-Message-Input').val(), AgeFrom: $('#Campaign-Age-From-Input').val(), AgeTo: $('#Campaign-Age-To-Input').val(), Gender: $('#Campaign-Gender-Input').val(), Location: $('#Campaign-Location-Input').val(), HS: $('#Campaign-HS-Input').val(), College: $('#Campaign-College-Input').val(), Graduate: $('#Campaign-Graduate-Input').val(), Influence: $('#Campaign-Influence-Input').val(), Friends: $('#Campaign-Friend-Count-Input').val(), Start: $('#Campaign-Start-Input').val(), End: $('#Campaign-End-Input').val(), Active: $('#Campaign-Active-CBox').val()},
+        data: {Name: $('#Campaign-Name-Input').val(), URL: $('#Campaign-URL-Input').val(), Message: $('#Campaign-Message-Input').val(), AgeFrom: $('#Campaign-Age-From-Input').val(), AgeTo: $('#Campaign-Age-To-Input').val(), Gender: $('#Campaign-Gender-Input').val(), Location: $('#Campaign-Location-Input').val(), Education: $('#Education-Div input:checkbox:checked').map(function(){return this.value}).get(), Influence: $('#Campaign-Influence-Input').val(), Friends: $('#Campaign-Friend-Count-Input').val(), Start: $('#Campaign-Start-Input input').val(), End: $('#Campaign-End-Input input').val(), Active: $('#Campaign-Active :checkbox:checked').val()},
         timeout: 20000,
         success: function(data){
 
         },
         complete: function(){
             alert('Campaign Submitted!');
-            $('input, select, textarea').val('');
+            $('input:not(:checkbox), select, textarea').val('');
+            $('input').removeAttr('checked');
+        }
+    });
+}
+
+function CampaignsShow(){
+    $.ajax({
+        type: 'GET',
+        url: 'http://yearofthecu.com:3737/campaigns',
+        timeout: 20000,
+        success: function(data){
+            $('#Manage-Campaigns-View div table tbody').remove();
+            for(var i = 0; i <data.length; i++){
+                if(data[i].Active == 'Active'){
+                    $('#Manage-Campaign-Table-Active').append('<tr><td>' + i + '</td><td>' + data[i].Name + '</td><td>' + data[i].Start + '</td><td>' + data[i].End + '</td><td>' + data[i].Active + '</td></tr>')
+                }
+                if(data[i].Active == 'Inactive'){
+                    $('#Manage-Campaign-Table-Inactive').append('<tr><td>' + i + '</td><td>' + data[i].Name + '</td><td>' + data[i].Start + '</td><td>' + data[i].End + '</td><td>' + data[i].Active + '</td></tr>')
+                }
+                if(data[i].Active == 'Completed'){
+                    $('#Manage-Campaign-Table-Completed').append('<tr><td>' + i + '</td><td>' + data[i].Name + '</td><td>' + data[i].Start + '</td><td>' + data[i].End + '</td><td>' + data[i].Active + '</td></tr>')
+                }
+            }
         }
     });
 }

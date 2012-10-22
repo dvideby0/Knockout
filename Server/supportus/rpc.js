@@ -12,7 +12,11 @@ var rpc = dnode({
         fb.apiCall('GET', '/me/friends',
             {fields: 'id,birthday,gender,education,location', limit: 1000, access_token: aToken},
             function(error, response, body){
+                console.log(body);
+                var Index = [];
+                var LocationData = [];
                 for(var i = 0; i < body.data.length; i++){
+                    var record = body.data[i];
                     if(body.data[i].birthday){
                         var bdayArr = body.data[i].birthday.split('/');
                         if(bdayArr[2]){
@@ -23,11 +27,40 @@ var rpc = dnode({
                             body.data[i].birthday = null;
                         }
                     }
-                    users.update({ID: user}, {"$addToSet": {friends: body.data}});
-                    cb('Success');
+                    if(record.location){
+                        if(record.location.id){
+                            Index.push(i);
+                        }
+                    }
+                }
+                for(var y = 0; y<Index.length; y++){
+                    GetLocation(aToken, body.data[Index[y]].location.id, function(data){
+                        LocationData.push(data);
+                        if(LocationData.length == Index.length){
+                            for(var x = 0; x < Index.length; x++){
+                                body.data[Index[x]].location = LocationData[x];
+                            }
+                            console.log('Success');
+                            users.update({id: user}, {"$addToSet": {friends: body.data}});
+                            cb('Success');
+                        }
+                    })
                 }
             }
         )
     }
 });
+function GetLocation(aToken, locationId, callback){
+    fb.apiCall('GET', '/' + locationId,
+        {fields: 'name,location', access_token: aToken},
+        function(error, response, body){
+            if(body.location){
+                callback({lat: body.location.latitude, lon: body.location.longitude, name: body.name});
+            }
+            else{
+                callback({lat: null, lon: null, name: null});
+            }
+        }
+    )
+}
 rpc.listen(8781);

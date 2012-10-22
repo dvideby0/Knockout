@@ -8,8 +8,6 @@ var db = server.db("knockoutDB");
 var users = db.collection("users");
 
 
-
-
 app.get('/usersByAge', function (req, res) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
@@ -90,7 +88,7 @@ function getUsersByArea(CallbackUsersByArea){
             area.count = 1;
             var flag = true;
              for(var t = 0 ; t < data1.length ; t++){
-                 console.log(data1[t].nam + "db" + area.name);
+                 //console.log(data1[t].nam + "db" + area.name);
                  if(data1[t].name == area.name){
                      data1[t].count = data1[t].count+area.count;
                      flag = false;
@@ -124,7 +122,7 @@ function getUsersFriendsByGender(CallbackFriendsByGender){
             if(data[i].friends){
             var data2 = data[i].friends[0];
             for(var d = 0; d < data2.length ; d ++){
-                console.log(data2[d].gender);
+                //console.log(data2[d].gender);
                 if(data2[d].gender){
                 data1.push(data2[d].gender);
                 }
@@ -197,13 +195,13 @@ function getUsersByGender(CallbackGender){
     var data1 = [];
     users.find().toArray(function(err, data){
         for(var i=0 ; i < data.length ; i++){
-            console.log(data.length);
+            //console.log(data.length);
             data1.push(data[i].gender);
         }
         var mCounter = 0 ;
         var fCounter = 0 ;
         for(var z =0 ; z< data1.length; z++ ){
-            console.log(data1[z]);
+            //console.log(data1[z]);
             if(data1[z]=="male"){
                 mCounter++;
             }
@@ -231,9 +229,9 @@ function getUsersByAge(CallbackAge){
             var userByDate = new Object();
             userByDate.id = data[i].id;
             userByDate.createDate = data[i].dob;
-            console.log(userByDate.id + "dob" +new Date(userByDate.createDate*1000).getFullYear());
-            console.log(userByDate.id + "dob" +new Date().getFullYear());
-            console.log("dob1" +(new Date().getFullYear()-new Date(userByDate.createDate*1000).getFullYear()));
+            //console.log(userByDate.id + "dob" +new Date(userByDate.createDate*1000).getFullYear());
+            //console.log(userByDate.id + "dob" +new Date().getFullYear());
+            //console.log("dob1" +(new Date().getFullYear()-new Date(userByDate.createDate*1000).getFullYear()));
             dates.push((new Date().getFullYear()-new Date(userByDate.createDate*1000).getFullYear()));
             data1.push(userByDate);
         }
@@ -248,15 +246,15 @@ function getUsersByAge(CallbackAge){
         var cat = [];
         var val = [];
 
-        console.log(min);
-        console.log(dates_length);
-        console.log(max);
+        //console.log(min);
+        //console.log(dates_length);
+        //console.log(max);
 
         while(date_loop){
             var count = 0;
             while(dates[k] < max){
-                console.log(dates[k]);
-                console.log(max);
+                //console.log(dates[k]);
+                //console.log(max);
                 count++;
                 if(k > dates_length-1){
                     break;
@@ -265,7 +263,7 @@ function getUsersByAge(CallbackAge){
                 }
             }
             cat.push('Ages '+min+' - '+max);
-            console.log(count);
+            //console.log(count);
             var per = Math.round((count/dates_length)*100);
             val.push(per);
             min = max;
@@ -284,7 +282,7 @@ function getUsersByAge(CallbackAge){
 
 
         for (var m = 0 ; m < ages.length ; m++){
-            console.log(ages[m]);
+            //console.log(ages[m]);
         }
 
         CallbackAge(ages);
@@ -328,7 +326,12 @@ function getUsersCreateDate(Callback){
                     k++;
                 }
             }
-            cat.push(months[parseInt(max.getMonth(),10)]+parseInt(max.getDate(),10));
+            if(parseInt(max.getDate(),10) -5 < 1){
+                cat.push(months[(parseInt(max.getMonth(),10) -1)]+ (parseInt(max.getDate(),10) -5));
+            }
+            else{
+                cat.push(months[parseInt(max.getMonth(),10)]+ (parseInt(max.getDate(),10) -5));
+            }
             val.push(count);
             if(dates[dates_length-1] < max){
                 break;
@@ -341,8 +344,9 @@ function getUsersCreateDate(Callback){
         chart1.data = val;
 
         for (var m = 0 ; m < cat.length ; m++){
-            console.log(cat[m] + " count " + val[m]);
+            //console.log(cat[m] + " count " + val[m]);
         }
+        console.log(chart1);
         Callback(chart1);
     });
 }

@@ -86,6 +86,12 @@ function getSupportersByNetwork(CallbackSupportersByNetwork){
                     }
                     console.log(data3[k].date + k);
                 }
+                if(parseInt(max.getDate(),10) -5 < 1){
+                    cat.push(months[(parseInt(max.getMonth(),10) -1)]+ (parseInt(max.getDate(),10) -5));
+                }
+                else{
+                    cat.push(months[parseInt(max.getMonth(),10)]+ (parseInt(max.getDate(),10) -5));
+                }
                 cat.push(months[parseInt(max.getMonth(),10)]+parseInt(max.getDate(),10));
                 val.push(count);
                 if(data3[dates_length-1].date < max){

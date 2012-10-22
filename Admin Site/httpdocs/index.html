@@ -143,19 +143,44 @@
             <div id="Manage-Campaigns-View" class="view">
                 <div class="span10">
                     <h2>Campaigns</h2>
-                    <div class="btn-group" style="margin-bottom: 30px; text-align: right;">
+                    <div class="btn-group" id="Campaign-Status-Selectors" style="margin-bottom: 30px; text-align: right;">
                         <button class="btn active">Active</button>
                         <button class="btn">Inactive</button>
                         <button class="btn">Completed</button>
                     </div>
-                    <table id="Manage-Campaign-Table" class="table">
-                        <tr>
-                            <th>Id</th>
-                            <th>Name</th>
-                            <th>Start</th>
-                            <th>End</th>
-                            <th>Status</th>
-                        </tr>
+                    <table id="Manage-Campaign-Table-Active" class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Start</th>
+                                <th>End</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table id="Manage-Campaign-Table-Inactive" style="display: none;" class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Start</th>
+                                <th>End</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                    </table>
+                    <table id="Manage-Campaign-Table-Completed" style="display: none;" class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Start</th>
+                                <th>End</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
                     </table>
                 </div>
             </div>
@@ -187,13 +212,16 @@
                         <div id="Education-Div">
                             Education:
                             <div>
-                                <input type="checkbox" id="Campaign-HS-Input" class="btn-input" title="High School"/> High School
+                                <input type="checkbox" id="Campaign-NA-Input" class="btn-input" value="N"/> N/A
                             </div>
                             <div>
-                                <input type="checkbox" id="Campaign-College-Input" class="btn-input" title="College"/> College
+                                <input type="checkbox" id="Campaign-HS-Input" class="btn-input" value="H"/> High School
                             </div>
                             <div>
-                                <input type="checkbox" id="Campaign-Graduate-Input" class="btn-input" title="All"/> Graduate School
+                                <input type="checkbox" id="Campaign-College-Input" class="btn-input" value="C"/> College
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Campaign-Graduate-Input" class="btn-input" value="G"/> Graduate School
                             </div>
                         </div>
                     </div>
@@ -213,8 +241,8 @@
                         <input size="16" type="text" value="End Date" readonly="">
                         <span class="add-on"><i class="icon-calendar"></i></span>
                     </div>
-                    <div style="margin-top: 30px; margin-left: 0;" class="span3">
-                        <input id="Campaign-Active-CBox" type="checkbox" /> Active
+                    <div style="margin-top: 30px; margin-left: 0;" class="span3" id="Campaign-Active">
+                        <input id="Campaign-Active-CBox" type="checkbox" value="Active" /> Active
                     </div>
                     <div class="span2" style="text-align: left; margin-left: 0;">
                         <button style="margin-top: 30px;" class="btn btn-primary btn-large span2" onclick="SaveCampaign()">Save</button>
@@ -225,15 +253,15 @@
         <div id="Reports-Page" class="row page">
             <div id="Supporter-Reports-View" class="view span10">
                 <h2>Supporter Reports</h2>
-                <iframe src="reports.html?type=supporters" style="width:100%;height:500px;border: none;"></iframe>
+                <iframe src="reports.html?type=supporters" class="span10" style="height:500px;border: none; overflow-x: hidden;"></iframe>
             </div>
             <div id="Campaign-Reports-View" class="view span10">
                 <h2>Campaign Reports</h2>
-                <iframe src="reports.html?type=campaigns" style="width:100%;height:500px;border: none;"></iframe>
+                <iframe src="reports.html?type=campaigns" class="span10" style="height:500px;border: none; overflow-x: hidden;"></iframe>
             </div>
             <div id="Channel-Reports-View" class="view span10">
                 <h2>Channel Reports</h2>
-                <iframe src="reports.html?type=channels" style="width:100%;height:500px;border: none;"></iframe>
+                <iframe src="reports.html?type=channels" class="span10" style="height:500px;border: none; overflow-x: hidden;"></iframe>
             </div>
         </div>
         <div id="Admin-Page" class="row page">

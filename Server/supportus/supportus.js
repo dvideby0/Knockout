@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
     res.redirect(fb.getAuthorizeUrl({
         client_id: '359603454132277',
         redirect_uri: 'http://yearofthecu.com:3737/auth?ClientID=' + req.query.ClientID,
-        scope: 'user_about_me,email,user_location,user_birthday,user_actions.music,user_actions.news,user_actions.video,user_activities,user_education_history,user_events,user_games_activity,user_groups,user_hometown,user_interests,user_notes,user_photos,user_questions,user_relationship_details,user_relationships,user_religion_politics,user_status,user_subscriptions,user_videos,user_website,user_work_history,friends_actions.music,friends_actions.news,friends_actions.video,friends_activities,friends_birthday,friends_education_history,friends_events,friends_games_activity,friends_groups,friends_hometown,friends_interests,friends_likes,friends_location,friends_notes,friends_photos,friends_questions,friends_relationship_details,friends_relationships,friends_religion_politics,friends_status,friends_subscriptions,friends_videos,friends_website,friends_work_history,ads_management,create_event,export_stream,friends_online_presence,manage_friendlists,manage_notifications,manage_pages,offline_access,publish_checkins,read_friendlists,read_insights,read_mailbox,read_page_mailboxes,read_requests,read_stream,rsvp_event,sms,user_online_presence,xmpp_login',
+        scope: 'user_about_me,email,user_location,publish_stream,user_birthday,user_actions.music,user_actions.news,user_actions.video,user_activities,user_education_history,user_events,user_games_activity,user_groups,user_hometown,user_interests,user_notes,user_photos,user_questions,user_relationship_details,user_relationships,user_religion_politics,user_status,user_subscriptions,user_videos,user_website,user_work_history,friends_actions.music,friends_actions.news,friends_actions.video,friends_activities,friends_birthday,friends_education_history,friends_events,friends_games_activity,friends_groups,friends_hometown,friends_interests,friends_likes,friends_location,friends_notes,friends_photos,friends_questions,friends_relationship_details,friends_relationships,friends_religion_politics,friends_status,friends_subscriptions,friends_videos,friends_website,friends_work_history,ads_management,create_event,export_stream,friends_online_presence,manage_friendlists,manage_notifications,manage_pages,offline_access,publish_checkins,read_friendlists,read_insights,read_mailbox,read_page_mailboxes,read_requests,read_stream,rsvp_event,sms,user_online_presence,xmpp_login',
         state: req.query.ReturnURL
     }));
 });
@@ -32,7 +32,7 @@ app.get('/auth', function (req, res) {
         fb.apiCall('GET', '/me',
             {fields: 'id,email,gender,name,birthday,location,education', access_token: aToken},
             function (error, response, body) {
-                users.findOne({ID: body.id}, function(err, post){
+                users.findOne({id: body.id}, function(err, post){
                     if(!post){
                         var today = new Date();
                         async.parallel({
@@ -78,14 +78,14 @@ app.get('/auth', function (req, res) {
                                 body.education = 'N'
                             }
                             else{
-                                if(body.education[(body.education.length - 1)] == 'High School'){
-                                    body.education = 'H'
+                                if(body.education[(body.education.length - 1)].type == 'High School'){
+                                    body.education = 'H';
                                 }
-                                if(body.education[(body.education.length - 1)] == 'College'){
-                                    body.education = 'C'
+                                if(body.education[(body.education.length - 1)].type == 'College'){
+                                    body.education = 'C';
                                 }
-                                if(body.education[(body.education.length - 1)] == 'Graduate School'){
-
+                                if(body.education[(body.education.length - 1)].type == 'Graduate School'){
+                                    body.education = 'G';
                                 }
                             }
                             users.insert({
@@ -122,18 +122,46 @@ app.post('/campaign', function(req, res){
     res.header("Access-Control-Allow-Headers", "Content-Type");
     res.header("Access-Control-Max-Age", "3628800");
     req.body.client = '12345678910';
+    if(!req.body.Active){
+        req.body.Active = 'Inactive';
+    }
+    if(!req.body.Education){
+        req.body.Education = 'N';
+    }
+    var Gender = [];
+    var Education = [];
     campaigns.insert(req.body);
     res.send("Campaign Saved!");
-    users.find({client: {id:'12345678910'}}, {id:1, access_token:1}).toArray(function(err, array){
-        for(var i = 0; i < array.length; i ++){
-            fb.apiCall('POST', '/me/feed',
-                {access_token: array[i].access_token, message: req.body.Message},
-                function (error, response, body) {
-                    console.log({body: body});
-                }
-            );
-        }
-    })
+    var d = new Date();
+    var today = parseInt(d.getTime()) / 1000;
+    var AgeFrom = parseInt(today) - (parseInt(req.body.AgeFrom) * 31550600);
+    var AgeTo = parseInt(today) - (parseInt(req.body.AgeTo, 10) * 31550600);
+    if(req.body.Gender == 'Both'){
+        Gender.push({gender: "male"}, {gender: "female"});
+    }
+    if(req.body.Gender == 'Male'){
+        Gender.push({gender: "male"});
+    }
+    if(req.body.Gender == 'Female'){
+        Gender.push({gender: "female"});
+    }
+    if(req.body.Education !== 'N'){
+        req.body.Education.forEach(function(type){
+            Education.push({education: type});
+        });
+    }
+    if(req.body.Active == 'Active'){
+        //console.log({client: {id:'12345678910'}, dob:{$lte: AgeFrom, $gt: AgeTo}, $and: [{$or: Gender}, {$or: Education}]}, {id:1, access_token:1});
+        users.find({client: {id:'12345678910'}, dob:{$lte: AgeFrom, $gt: AgeTo}, $and: [{$or: Gender}, {$or: Education}]}, {id:1, access_token:1}).toArray(function(err, array){
+            for(var i = 0; i < array.length; i ++){
+                fb.apiCall('POST', '/me/feed',
+                    {access_token: array[i].access_token, message: req.body.Message + '\n\n' + req.body.URL},
+                    function (error, response, body) {
+                    }
+                );
+            }
+        })
+    }
 });
 
 app.get('/campaigns', function(req,res){

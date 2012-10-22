@@ -1,0 +1,103 @@
+<html>
+<head>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="lib/css/style.css">
+</head>
+<title>Awesome Credit Union</title>
+<body bgcolor=#FFFFFF text=#001C66>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#"><font size="5" color="#5BB75B">A</font>wesome <font size="5" color="#5BB75B">C</font>redit <font size="5" color="#5BB75B">U</font>nion</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">Services</a></li>
+                    <li><a href="#about">Loans</a></li>
+                    <li><a href="#about">Locations</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <form class="navbar-form pull-right">
+                    <input class="span2" type="text" placeholder="Customer ID">
+                    <input class="span2" type="password" placeholder="Password">
+                    <button type="submit" class="btn btn-small">Sign in</button>
+                    <a class="btn btn-success btn-small" href="javascript:ShowModal();" role="button">Support Us <i class="icon-thumbs-up"></i></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="hero-unit">
+        <div class="row">
+            <div class="span5">
+                <h1>1000 Debit Reward Points!</h1>
+                <h2>Earn stuff faste.!</h2>
+                <p>For 2000 points, we will give you 200 Visa Reward Points on your Awesome Credit Union Debit Card!</p>
+                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>
+            <div class="offset1 span4">
+                <img src="lib/img/visa.jpg" style="margin-top: 60px;">
+            </div>
+        </div>
+    </div>
+    <div class="hero-unit">
+        <div class="row">
+            <div class="span5">
+                <h1>.5% off your auto loan!</h1>
+                <h2>Lower Your Rate, just for helping us grow!</h2>
+                <p>For 100000 points, we'll take .5% off your already low auto loan rate! Thanks for helping spread the word of the value Awesome CU brings to our members!</p>
+                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>
+            <div class="offset1 span4">
+                <img src="lib/img/gtr.jpg" style="margin-top: 60px;">
+            </div>
+        </div>
+    </div>
+    <div class="hero-unit">
+        <div class="row">
+            <div class="span5">
+                <h1>T-shirt!</h1>
+                <h2>Show the love!</h2>
+                <p>For 1000 points, who doesn't love a T-Shirt?</p>
+                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>
+            <div class="offset1 span4">
+                <img src="lib/img/Blank-T-shirt.gif" style="margin-top: 60px;">
+            </div>
+         </div>
+    </div>
+   <hr>
+
+    <footer>
+        <p>&copy; Awesome Credit Union 2012</p>
+    </footer>
+
+</div>
+<div class="modal hide" id="myModal" role="dialog" style="display: none;">
+    <div class="modal-header">
+        <a type="button" class="close" href="javascript:HideModal()">x</a>
+        <h3 id="myModalLabel">Support Us<img style="margin-left: 5px; margin-top: -10px;" src="lib/img/logo-25.png"></h3>
+    </div>
+    <div class="modal-body">
+        <h2>Thank You</h2>
+        <p>We apprecate your help. When you choose to "support" us, you will be allowing Awesome Credit Union to tell your friends about all the great things we have going on here. In return we want to reward you with some REWARD points on your Awesome MasterCard.</p>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-danger" href="javascript:HideModal();">No Thanks</a>
+        <a class="btn btn-success" onclick="Register();" id="SupportUsLink" data-dismiss="modal">Count Me In!</a>
+    </div>
+</div>
+<script type="text/javascript" src="lib/js/jquery.js"></script>
+<script type="text/javascript" src="lib/js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="lib/js/main.js"></script>
+</body>
+</html>
