@@ -26,6 +26,7 @@
     <script type="text/javascript" src="lib/js/colorpicker.js"></script>
     <script type="text/javascript" src="lib/js/pretify.js"></script>
     <script type="text/javascript" src="lib/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="lib/js/tinyscoll.js"></script>
     <script type="text/javascript" src="lib/js/main.js"></script>
     <script type="text/javascript" src="lib/js/reporting/recline.js"></script>
     <script type="text/javascript" src="lib/js/bootstrap-transition.js"></script>
@@ -148,7 +149,7 @@
                         <button class="btn">Inactive</button>
                         <button class="btn">Completed</button>
                     </div>
-                    <table id="Manage-Campaign-Table-Active" class="table">
+                    <table id="Manage-Campaign-Table-Active" class="table table-striped">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -159,7 +160,7 @@
                             </tr>
                         </thead>
                     </table>
-                    <table id="Manage-Campaign-Table-Inactive" style="display: none;" class="table">
+                    <table id="Manage-Campaign-Table-Inactive" style="display: none;" class="table table-stiped">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -171,7 +172,7 @@
                         </thead>
 
                     </table>
-                    <table id="Manage-Campaign-Table-Completed" style="display: none;" class="table">
+                    <table id="Manage-Campaign-Table-Completed" style="display: none;" class="table table-striped">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -268,13 +269,16 @@
             <div id="User-Administration-View" class="view">
                 <div class="span10">
                     <h2>User Administration</h2>
-                    <table id="Admin-User-Table" class="table">
+                    <table id="Admin-User-Table" class="table table-striped">
+                        <thead>
                         <tr>
                             <th>Username</th>
                             <th>Role</th>
                             <th>Active</th>
                             <th>Password</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>rbrookfield</td>
                             <td>Administrator</td>
@@ -305,13 +309,14 @@
                             <td>Yes</td>
                             <td><a href="javascript:" class="btn btn-danger">Reset</a></td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
             <div id="Button-Designer-View" class="view">
                 <div class="span5">
                     <h2 style="margin-bottom: 140px;">Button Designer</h2>
-                    <div style="width: 300px; text-align: right;">
+                    <div id="Btn-Designer-Form" style="width: 300px; text-align: right;">
                         <div style="margin-bottom: 15px; margin-top: 80px;">
                             Button Text: <input style="margin-right: 40px;" class="btn-input" id="Btn-Text" placeholder="Support Us">
                         </div>
@@ -325,7 +330,7 @@
                             Border Color: <input class="btn-input" id="Btn-Border-Color">
                         </div>
                         <div>
-                            <button style="margin-top: 30px;  margin-right: 40px;" class="btn btn-primary">Save</button>
+                            <button style="margin-top: 30px;  margin-right: 40px;" class="btn btn-primary" onclick="UpdatePreviewBtn()">Save</button>
                         </div>
                     </div>
                 </div>
@@ -335,7 +340,7 @@
                             <strong>Button</strong>
                             <br />
                             <br />
-                            <button class="btn">Support Us</button>
+                            <button class="btn" id="Btn-Preview">Support Us</button>
                             <br />
                             <br />
                             <strong>HTML</strong>

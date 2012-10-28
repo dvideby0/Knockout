@@ -270,46 +270,46 @@ $(document).ready(function(){
     GetSupportersByEducation(callbackEducation);
 
     function callbackEducation(data5){
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart5',
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
-        },
-        title: {
-            text: 'Education'
-        },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
-            }
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    color: '#DDD',
-                    connectorColor: '#FFF',
-                    formatter: function() {
-                        return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart5',
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'Education'
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                }
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        color: '#DDD',
+                        connectorColor: '#FFF',
+                        formatter: function() {
+                            return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                        }
                     }
                 }
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Education',
-            data: [
-                ['High School', data5.high],
-                ['Bachelors Degree',data5.bach],
-                ['Masters Degree', data5.master],
-                ['N/A', data5.none]
-            ]
-        }]
-    });
+            },
+            series: [{
+                type: 'pie',
+                name: 'Education',
+                data: [
+                    ['High School', data5.high],
+                    ['Bachelors Degree',data5.bach],
+                    ['Masters Degree', data5.master],
+                    ['N/A', data5.none]
+                ]
+            }]
+        });
     }
     function GetSupportersByEducation(callbackEducation) {
         $.ajax({
@@ -325,64 +325,64 @@ $(document).ready(function(){
     GetSupportersByFriendsGender(callbackFriendsGender);
 
     function callbackFriendsGender(data6){
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart6',
-            type: 'column'
-        },
-        title: {
-            text: 'Avg. Friends'
-        },
-        xAxis: {
-            categories: ['Gender']
-        },
-        yAxis: {
-            title: {
-                text: 'Average'
-            }
-        },
-        series: [{
-            name: 'Male',
-            data: [data6.male]
-        }, {
-            name: 'Female',
-            data: [data6.female]
-        }]
-    });
-
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart7',
-            type: 'column',
-            marginBottom: 70
-        },
-        title: {
-            text: 'Supporters'
-        },
-        xAxis: {
-            categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov']
-        },
-        yAxis: {
-            title: {
-                text: 'Count'
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart6',
+                type: 'column'
             },
-            plotLines: [{
-                value: 0,
-                width: 1,
-                color: '#808080'
+            title: {
+                text: 'Avg. Friends'
+            },
+            xAxis: {
+                categories: ['Gender']
+            },
+            yAxis: {
+                title: {
+                    text: 'Average'
+                }
+            },
+            series: [{
+                name: 'Male',
+                data: [data6.male]
+            }, {
+                name: 'Female',
+                data: [data6.female]
             }]
-        },
-        tooltip: {
-            formatter: function() {
-                return '<b>'+ this.series.name +'</b><br/>'+
-                    this.x +': '+ this.y;
-            }
-        },
-        series: [{
-            name: 'Supporters',
-            data: [19, 152, 480, 725, 900]
-        }]
-    });
+        });
+
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart7',
+                type: 'column',
+                marginBottom: 70
+            },
+            title: {
+                text: 'Supporters'
+            },
+            xAxis: {
+                categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov']
+            },
+            yAxis: {
+                title: {
+                    text: 'Count'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.series.name +'</b><br/>'+
+                        this.x +': '+ this.y;
+                }
+            },
+            series: [{
+                name: 'Supporters',
+                data: [19, 152, 480, 725, 900]
+            }]
+        });
 
     }
     function GetSupportersByFriendsGender(callbackFriendsGender) {
@@ -474,24 +474,24 @@ $(document).ready(function(){
 
     GetNetworks(callNetwork);
     function callNetwork(data11){
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'chart11',
-            type: 'column'
-        },
-        title: {
-            text: 'Supporters'
-        },
-        xAxis: {
-            categories: data11.x
-        },
-        yAxis: {
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart11',
+                type: 'column'
+            },
             title: {
                 text: 'Supporters'
-            }
-        },
-        series: data11.y
-    });
+            },
+            xAxis: {
+                categories: data11.x
+            },
+            yAxis: {
+                title: {
+                    text: 'Supporters'
+                }
+            },
+            series: data11.y
+        });
     }
 
     function GetNetworks(callNetwork) {
@@ -612,7 +612,7 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('#Manage-Campaign-Table-Active, #Manage-Campaign-Table-Inactive, #Manage-Campaign-Table-Completed').hide();
         $('#Manage-Campaign-Table-' + $(this).text()).show();
-    })
+    });
 
 });
 
@@ -660,4 +660,10 @@ function CampaignsShow(){
             }
         }
     });
+}
+
+function UpdatePreviewBtn(){
+    var Values = $('#Btn-Designer-Form div input:not(button)').map(function(){return this.value}).get();
+    $('#Btn-Preview').css({'text-shadow': 'none', 'background-image': 'none', 'background-color': Values[1], 'color': Values[2], 'border': '1px solid' + Values[3]});
+    $('#Btn-Preview').text(Values[0]);
 }
